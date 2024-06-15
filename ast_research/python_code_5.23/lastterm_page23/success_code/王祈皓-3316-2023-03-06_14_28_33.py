@@ -1,0 +1,5 @@
+boynumber = float(input(""))
+girlnumber = float(input(""))
+maleratio = "%.2f"%(float(boynumber/(boynumber+girlnumber))*100+"%")
+femaleratio = "%.2f"%(float(girlnumber/(boynumber+girlnumber))*100+"%")
+print("The male students ratio is",maleratio,",the female students ratio is",femaleratio )

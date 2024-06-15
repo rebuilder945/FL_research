@@ -1,0 +1,5 @@
+name=input()
+a=eval(input())
+b=eval(input())
+len=b*b/(2*a)
+print("The acceleration of %s is %.2f M / s, the take-off speed is %.2f M / s, and the shortest take-off runway length is %.2f M."%(name,a,b,len))

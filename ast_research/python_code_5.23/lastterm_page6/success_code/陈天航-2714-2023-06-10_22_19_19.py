@@ -1,0 +1,12 @@
+a = eval(input())
+if a<60:
+    print("E")
+elif a<70:
+    print("D")
+elif a<80:
+    print("C")
+elif a<90:
+    print("B")
+else:
+    print("A")
+

@@ -1,0 +1,6 @@
+a=eval(input())
+b=eval(input())
+c=100*a/(a+b)
+e=100*b/(a+b)
+stext="The male students ratio is %.2f%%,the female students ratio is %.2f%%"%(c,e)
+print(stext)

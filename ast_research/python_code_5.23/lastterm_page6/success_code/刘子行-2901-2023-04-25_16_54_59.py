@@ -1,0 +1,11 @@
+sums=0
+n=0
+m=True
+while(m):
+    s=input()
+    if(s!='#'):
+        n+=1
+        sums+=int(s)
+    else:
+        m=False
+print(n,sums)

@@ -1,0 +1,11 @@
+import math
+A=input()
+B=input()
+A=A.split(',')
+B=B.split(',')
+x1=float(A[0])
+x2=float(A[1])
+y1=float(B[0])
+y2=float(B[1])
+d=math.sqrt((x1-y1)**2+(x1-y2)**2)
+print("%.2f"%d)

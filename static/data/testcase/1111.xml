@@ -1,0 +1,17 @@
+<testDataSet count="3">
+    <testData1>
+        <input>7
+8</input>
+        <output>8</output>
+    </testData1>
+    <testData2>
+        <input>57
+50</input>
+        <output>57</output>
+    </testData2>
+    <testData3>
+        <input>57
+60</input>
+        <output>60</output>
+    </testData3>
+</testDataSet>

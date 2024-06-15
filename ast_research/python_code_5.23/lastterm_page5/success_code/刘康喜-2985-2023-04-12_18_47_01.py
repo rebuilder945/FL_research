@@ -1,0 +1,6 @@
+student = eval(input())
+info = student(-1)
+avg = sum(info)/len(info)
+print(info)
+print("%.2f"%avg)
+

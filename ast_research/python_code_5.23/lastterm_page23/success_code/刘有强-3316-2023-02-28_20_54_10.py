@@ -1,0 +1,5 @@
+boys=input("男生人数：")
+girls=input("女生人数：")
+bi2=int(boys)/(int(boys)+int(girls))
+gi2=int(girls)/(int(boys)+int(girls))
+print("The male students ratio is",'{:.2f}%'.format(bi2*100),",the female students ratio is",'{:.2f}%'.format(gi2*100))

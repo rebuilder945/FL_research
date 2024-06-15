@@ -1,0 +1,5 @@
+name=str(input())
+sc=eval(input())
+ls=name.split(',')
+ls2=list(zip(ls,sc))
+print(ls2)

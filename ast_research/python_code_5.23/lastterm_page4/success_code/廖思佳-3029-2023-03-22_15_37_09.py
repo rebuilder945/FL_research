@@ -1,0 +1,5 @@
+names=input().split(",")
+print(names)
+grades=eval(input())
+new=list(zip(names,grades))
+print(new)

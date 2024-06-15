@@ -1,0 +1,13 @@
+def count_foreign(ids):
+    for i in lst:
+        a=0
+        if len(str(i))==9:
+            a+=1
+        else:
+            pass
+    return a
+            
+
+origin=input().split()
+print(count_foreign(origin))
+

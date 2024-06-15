@@ -1,0 +1,54 @@
+<testDataSet count="5">
+    <testData1>
+        <input>[&quot;aaab&quot;, &quot;ccccdz&quot;]</input>
+        <output>a,3
+b,1
+c,4
+d,1
+z,1</output>
+    </testData1>
+    <testData2>
+        <input>[&quot;alsjfklajsdf&quot;,&quot;laksdjfoabbxjhshsuuhhjsd&quot;,&quot;hjkkhjkhjshjkshjkhjks&quot;]</input>
+        <output>a,4
+b,2
+d,3
+f,3
+h,10
+j,11
+k,8
+l,3
+o,1
+s,9
+u,2
+x,1</output>
+    </testData2>
+    <testData3>
+        <input>[&quot;aaa&quot;,&quot;bbb&quot;,&quot;ccc&quot;,&quot;ddd&quot;]</input>
+        <output>a,3
+b,3
+c,3
+d,3</output>
+    </testData3>
+    <testData4>
+        <input>[&quot;fasfs&quot;]</input>
+        <output>a,1
+f,2
+s,2</output>
+    </testData4>
+    <testData5>
+        <input>[&quot;gasjkjskfjsalkjiow&quot;,&quot;gfasjkljwiotqpow&quot;]</input>
+        <output>a,3
+f,2
+g,2
+i,2
+j,6
+k,4
+l,2
+o,3
+p,1
+q,1
+s,4
+t,1
+w,3</output>
+    </testData5>
+</testDataSet>

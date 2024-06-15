@@ -1,0 +1,5 @@
+lst=eval(input())
+n=max(lst)
+m=min(lst)
+lst.remove(n,m)
+print(lst)

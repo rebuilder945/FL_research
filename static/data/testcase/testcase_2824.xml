@@ -1,0 +1,27 @@
+<testDataSet count="5">
+    <testData1>
+        <input>The strdup() function new returns a pointer to a new string 
+new</input>
+        <output>49</output>
+    </testData1>
+    <testData2>
+        <input>strace - trace system calls and signals
+-</input>
+        <output>7</output>
+    </testData2>
+    <testData3>
+        <input>rgument form of open is decoded
+of</input>
+        <output>13</output>
+    </testData3>
+    <testData4>
+        <input>tice how the `struct stat' argument is dereferenced is do
+is</input>
+        <output>52</output>
+    </testData4>
+    <testData5>
+        <input>it means that he is a playboy in a wealthy family
+good</input>
+        <output>-1</output>
+    </testData5>
+</testDataSet>

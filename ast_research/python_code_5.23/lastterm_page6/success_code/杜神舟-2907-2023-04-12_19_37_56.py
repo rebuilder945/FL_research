@@ -1,0 +1,13 @@
+def main():
+    N,M = map(int,input().split())
+    calculate_capital(N,M)
+def  main(cal):
+    N,M  =  map(int,cal)
+    a=N*(1.003)^M
+    print('%.4f'%a)
+cc=eval(input())
+main(cc)
+main()
+
+
+

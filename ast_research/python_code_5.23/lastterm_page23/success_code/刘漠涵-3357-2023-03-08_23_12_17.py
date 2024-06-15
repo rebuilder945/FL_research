@@ -1,0 +1,8 @@
+plane=input()
+a=float(input())
+v=float(input())
+l=v**2/(2*a)
+a="%.2f"%(a)
+v="%.2f"%(v)
+l="%.2f"%(l)
+print("The acceleration of",plane,"is",a,"M / s, the take-off speed is",v,"M / s, and the shortest take-off runway length is",l,"M.")

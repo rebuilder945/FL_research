@@ -1,0 +1,18 @@
+a,b,c,d=map(str,input().split(' '))
+stu={}
+stu['name']=a
+stu['english']=float(b)
+stu['python']=float(c)
+stu['math']=float(d)
+avg=(float(b)+float(c)+float(d))/3
+lst1=[]
+lst1.append(stu['english'])
+lst1.append(stu['python'])
+lst1.append(stu['math'])
+lst1.sort()
+lst1.reverse()
+lst1.insert(3,avg)
+print("{} {:.2f} {:.2f} {:.2f} {:.2f}".format(stu['name'],float(lst1[0]),float(lst1[1]),float(lst1[2]),float(lst1[3])))
+
+
+

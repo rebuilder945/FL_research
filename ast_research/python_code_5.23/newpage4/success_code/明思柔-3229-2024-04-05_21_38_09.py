@@ -1,0 +1,9 @@
+a=eval(input())
+b=[]
+for i in a:
+    if a.count(i)==1:
+        b.append(i)
+    b.sort
+print(','.join(str(i)for i in b))
+if b==[]:
+    print(False)

@@ -1,0 +1,8 @@
+n,m,l=map(int,input().split(','))
+a=['1','1']
+a.pop()
+while m>0:
+    a.append(n)
+    n+=1
+    m-=1
+print(a)

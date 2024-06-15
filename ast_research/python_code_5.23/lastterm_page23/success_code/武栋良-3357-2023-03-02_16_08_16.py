@@ -1,0 +1,6 @@
+name = str()
+a = float()
+a != 0
+v = float()
+l = v*v/(2*a)
+print("The acceleration of %.s is %.2f, the take-off speed is %.2f, and the shortest take-off runway length is %.2f"%(name,a,v,l))

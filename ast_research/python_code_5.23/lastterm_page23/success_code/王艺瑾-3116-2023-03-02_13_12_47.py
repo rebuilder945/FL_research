@@ -1,0 +1,10 @@
+a=eval(input())
+b=eval(input())
+a=a.split(",")
+b=b.split(",")
+x1=a[0]
+y1=a[1]
+x2=b[0]
+y2=b[1]
+e=((x1-x2)**2+(y1-y2)**2)**0.5
+print("%.2f"%(e))

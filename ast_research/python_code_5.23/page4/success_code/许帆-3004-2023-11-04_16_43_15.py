@@ -1,0 +1,21 @@
+a = input().split()
+b = 2
+lst = []
+if 2 in a:
+    lst.append(2)
+    a.remove(2)
+for i in a:
+    for x in range(int(i)-3):
+        if b < int(i) and int(i)/b == 0:
+            break
+        elif b < int(i) and int(i)/b != 0:
+            b += 1
+        elif b == int(i)-1:
+            lst.append(i)
+print(lst)
+
+
+
+    
+print(lst)
+

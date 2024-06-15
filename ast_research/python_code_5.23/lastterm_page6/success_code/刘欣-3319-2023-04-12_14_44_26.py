@@ -1,0 +1,6 @@
+shuxue=eval(input())
+yuwen=eval(input())
+if shuxue>=99 and yuwen>=99:
+    print("You won a scholarship of 500 yuan!")
+if shuxue<30 and yuwen<30:
+    print("You need to relearn!")

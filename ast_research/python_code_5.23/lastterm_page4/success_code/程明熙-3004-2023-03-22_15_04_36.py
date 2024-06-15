@@ -1,0 +1,16 @@
+a=eval(input())
+c=[]
+d=[]
+for i in a:
+    
+        for b in range(2,i):
+            if i%b==0:
+                
+                c.append(i)
+
+c.sort()
+c=list(set(c))
+for i in c:
+    if i in a:
+        a.remove(i)
+print(a)

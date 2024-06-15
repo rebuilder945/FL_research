@@ -1,0 +1,44 @@
+#class Stock
+class Stock:
+    def __init__(self, code: str, name: str, price_yesterday: float, price_today: float):
+        self.__code = code
+        self.__name = name
+        self.__price_yesterday = price_yesterday
+        self.__price_today = price_today
+
+    def getName(self):
+        return self.__name
+
+    def getCode(self):
+        return self.__code
+
+    def getPriceYesterday(self):
+        return self.__price_yesterday
+
+    def setPriceYesterday(self, price_yesterday: float):
+        self.__price_yesterday = price_yesterday
+
+    def getPriceToday(self):
+        return self.__price_today
+
+    def setPriceToday(self, price_today: float):
+        self.__price_today = price_today
+
+    def getChangePercent(self):
+        return (self.__price_today - self.__price_yesterday) / self.__price_yesterday
+
+
+sCode = input() #Stock Code
+sName = input() #Stock Name
+priceYesterday = float(input())  #Price/Yesterday
+priceToday = float(input())  #Price Today
+s = Stock(sCode,sName,priceYesterday,priceToday)
+print("Code:",s.getCode())
+print("Name:",s.getName())
+print("Price/Yesterday:%.2f\nPrice Today:%.2f" % (s.getPriceYesterday(),s.getPriceToday()))
+s.setPriceYesterday(50.25)
+print("Edit Price/Yesterday To:%.2f" % 50.25)
+print("Price Change Percentage:%.2f%%" % (s.getChangePercent()*100))
+print(Stock.__doc__)
+
+

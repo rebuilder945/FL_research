@@ -1,0 +1,22 @@
+<testDataSet count="5">
+    <testData1>
+        <input>200001</input>
+        <output>20200001</output>
+    </testData1>
+    <testData2>
+        <input>200001 200002</input>
+        <output>20200001 20200002</output>
+    </testData2>
+    <testData3>
+        <input>200001 200002 200003</input>
+        <output>20200001 20200002 20200003</output>
+    </testData3>
+    <testData4>
+        <input>200001 200002 200003 200004</input>
+        <output>20200001 20200002 20200003 20200004</output>
+    </testData4>
+    <testData5>
+        <input>200001 200002 200003 200004 200005</input>
+        <output>20200001 20200002 20200003 20200004 20200005</output>
+    </testData5>
+</testDataSet>

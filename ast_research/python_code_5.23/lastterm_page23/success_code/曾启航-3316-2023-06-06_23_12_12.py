@@ -1,0 +1,5 @@
+a=eval(input())
+b=eval(input())
+c=a/(a+b)
+d=b/(a+b)
+print("Th male students ratio is {0:.2%},the female students ratio is {1:.2%}".format(c,d))

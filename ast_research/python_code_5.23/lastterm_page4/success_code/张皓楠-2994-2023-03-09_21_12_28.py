@@ -1,0 +1,7 @@
+a = input().split(",")
+b,c = eval(input())
+d = a[b]
+for i in range(c):
+    a.append(d)
+a = eval(a)
+print(a)

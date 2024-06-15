@@ -1,0 +1,19 @@
+def Fibonacci(num,  n):
+ a = 1
+ b = 1
+ if n < 3:
+  return ("1")
+ else:
+  for i in range(n):
+   a,b = b,a+b
+   return (b)
+
+
+
+
+
+num = [1, 1]
+n = int(input())
+print(Fibonacci(num, n))
+
+

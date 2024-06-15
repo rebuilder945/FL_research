@@ -1,0 +1,10 @@
+a=input()
+b=input()
+A=a.split(",")
+B=b.split(",")
+x1=float(A[0])
+y1=float(A[1])
+x2=float(B[0])
+y2=float(b[1])
+l=((x1-x2)**2+(y1-y2)**2)**0.5
+print("{%.2f}".format(l))

@@ -1,0 +1,14 @@
+<testDataSet count="3">
+    <testData1>
+        <input>1,2,3,4,5</input>
+        <output>['5', '1', '2', '3', '4']</output>
+    </testData1>
+    <testData2>
+        <input>5,hello,9,6,1</input>
+        <output>['1', '5', 'hello', '9', '6']</output>
+    </testData2>
+    <testData3>
+        <input>%,2,0,*,h,4</input>
+        <output>['4', '%', '2', '0', '*', 'h']</output>
+    </testData3>
+</testDataSet>

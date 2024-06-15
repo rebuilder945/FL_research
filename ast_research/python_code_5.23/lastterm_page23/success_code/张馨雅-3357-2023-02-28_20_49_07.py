@@ -1,0 +1,5 @@
+pn=input('输入飞机名称')
+a=eval(input('加速度'))
+v=eval(input('起飞速度'))
+length=float(v*v/(2*a))
+print(pn,a,v,'%.2f'%length)

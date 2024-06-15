@@ -1,0 +1,5 @@
+name=input("")
+v=input("")
+a=input("")
+l=(v*v)/(2*a)
+print("name""v""a""l")

@@ -1,0 +1,6 @@
+nums = eval(input())
+a = max(nums)
+b = min(nums)
+nums.remove(a)
+nums.remove(b)
+print(nums)

@@ -1,0 +1,7 @@
+n,m,l=input.split(",")
+n=int(n)
+m=int(m)
+l=int(l)
+k=n+l*(m-1)
+a=list(range(m,k+1,l))
+print(a)

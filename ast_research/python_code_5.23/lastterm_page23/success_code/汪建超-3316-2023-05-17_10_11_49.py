@@ -1,0 +1,5 @@
+a = int(input())
+b = int(input())
+c = a/(a+b)
+d = b/(a+b)
+print("The male students ratio is %.2f%%,the female students ratio is %.2f%%"%(c,d))

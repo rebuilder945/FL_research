@@ -1,0 +1,6 @@
+num=input()
+num=num.split()
+de=input()
+num.remove(de)
+num=" ".join(num)
+print(num)

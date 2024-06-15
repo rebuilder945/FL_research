@@ -1,0 +1,7 @@
+names=input().split(',')
+grades=input().split(',')
+gradeslst=list(map(int,grades))
+general=list(zip(names,gradeslst))
+general2=list(map(list,general))
+general2.sort(key=lambda x:x[1])
+print(general2)

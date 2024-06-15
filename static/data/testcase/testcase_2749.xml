@@ -1,0 +1,22 @@
+<testDataSet count="5">
+    <testData1>
+        <input>AbcedF</input>
+        <output>aBCEDf</output>
+    </testData1>
+    <testData2>
+        <input>Hello World</input>
+        <output>hELLO wORLD</output>
+    </testData2>
+    <testData3>
+        <input>abc12345CDE</input>
+        <output>ABC12345cde</output>
+    </testData3>
+    <testData4>
+        <input>我爱Python</input>
+        <output>我爱pYTHON</output>
+    </testData4>
+    <testData5>
+        <input>    1234</input>
+        <output>    1234</output>
+    </testData5>
+</testDataSet>

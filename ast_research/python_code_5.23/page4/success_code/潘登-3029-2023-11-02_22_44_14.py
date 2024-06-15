@@ -1,0 +1,6 @@
+a=input()
+b=input()
+x=list(a)
+y=list(b)
+c=list(zip(x,y))
+print(c)

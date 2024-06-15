@@ -1,0 +1,9 @@
+m=eval(input())
+n=eval(input())
+if m<0 or n<0:
+    print("illegal data")
+elif m>0 and m==n:
+    print("It's a square")
+else:
+    print("It's a rectangle")
+

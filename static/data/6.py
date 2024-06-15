@@ -1,0 +1,5 @@
+n=input()
+a=input()
+v=input()
+d=v*v/(2*a)
+print(n,a,v,d)

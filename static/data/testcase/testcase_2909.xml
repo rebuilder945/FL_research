@@ -1,0 +1,22 @@
+<testDataSet count="5">
+    <testData1>
+        <input>201822</input>
+        <output>None</output>
+    </testData1>
+    <testData2>
+        <input>201804</input>
+        <output>201804zhangsi</output>
+    </testData2>
+    <testData3>
+        <input>201807</input>
+        <output>201807wangsan</output>
+    </testData3>
+    <testData4>
+        <input>201812</input>
+        <output>201812lisi</output>
+    </testData4>
+    <testData5>
+        <input>201816</input>
+        <output>201816zhaosi</output>
+    </testData5>
+</testDataSet>

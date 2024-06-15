@@ -1,0 +1,22 @@
+<testDataSet count="5">
+<testData1>
+<input>[5,5,4,1,4]</input>
+<output>[5, 1, 4]</output>
+</testData1>
+<testData2>
+<input>[True, 3, True, 0.1, 'ba', 'ab', 'ba']</input>
+<output>[3, True, 0.1, 'ab', 'ba']</output>
+</testData2>
+<testData3>
+<input>[4,3,2,3,2,4,True]</input>
+<output>[3, 2, 4, True]</output>
+</testData3>
+<testData4>
+<input>[1,2,3,4,1,2,3,4,5,5]</input>
+<output>[1, 2, 3, 4, 5]</output>
+</testData4>
+<testData5>
+<input>[]</input>
+<output>[]</output>
+</testData5>
+</testDataSet>

@@ -1,0 +1,13 @@
+uplist=['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O,''P','Q','R','S','T','U','V','W','X','Y','Z']
+lowlist=['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
+s=input()
+lst=list(s)
+for x in lst:
+    if x==uplist[m]:
+        x=uplist[26-m]
+        print(x,end="")
+    elif x==lowlist[n]:
+        x=lowlist[26-n]
+        print(x,end="")
+    else:
+        print(x,end="")

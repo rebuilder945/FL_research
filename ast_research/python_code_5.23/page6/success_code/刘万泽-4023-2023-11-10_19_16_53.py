@@ -1,0 +1,22 @@
+def main():
+    total_count = int(input())
+    calculate_days(total_count)
+def  calculate_days(total_count):
+        N=eval(input())
+        i=0
+        while N>0:
+                 if N%2==0:
+                     N=N/2-2
+                     i+=1
+                 else:
+                     N= (N-3)/2
+                     i+=1
+        print(i)                  
+                       
+              
+                      
+            
+                  
+main()
+
+

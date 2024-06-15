@@ -1,0 +1,9 @@
+ls=input().split()
+a,b=input().split()
+a=eval(a)
+b=eval(b)
+c=ls[a]
+d=ls[b]
+ls[a]=d
+ls[b]=c
+print(ls)

@@ -1,0 +1,10 @@
+a=input()
+x=eval(input())
+y=x.split()
+n=y[0]
+m=y[1]
+b=a.split()
+c=b[n]
+b[m]=b[n]
+b[n]=c
+print(b)

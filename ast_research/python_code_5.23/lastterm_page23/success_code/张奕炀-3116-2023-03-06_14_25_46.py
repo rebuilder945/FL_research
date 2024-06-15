@@ -1,0 +1,5 @@
+a,b = eval(input())
+c,d = eval(input())
+e = pow(a-c,2)+pow(b-d,2)
+f = pow(e,0.5)
+print("%.2f"%(f))

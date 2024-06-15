@@ -1,0 +1,23 @@
+dict_mi_ming={}
+
+
+for i in range(26):
+    mi=chr(ord('a')+i)
+    ming=chr(ord('a')+25-i)
+    dict_mi_ming[mi]=ming
+
+
+for i in range(26):
+    mi=chr(ord('A')+1)
+    ming=chr(ord('A')+25-i)
+    dict_mi_ming[mi]=ming
+
+line=input()
+result=""
+for ch in line:
+    if ch.isalpha():
+        result+=dict_mi_ming[ch]
+    else:
+        result+=ch
+print(line)
+print(result)

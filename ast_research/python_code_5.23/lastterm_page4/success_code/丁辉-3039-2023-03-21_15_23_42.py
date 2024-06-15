@@ -1,0 +1,5 @@
+a=eval(input())
+b=max(a)
+c=min(a)
+d=a.pop(b,c)
+print(d)

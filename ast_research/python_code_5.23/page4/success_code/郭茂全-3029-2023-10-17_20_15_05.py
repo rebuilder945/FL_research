@@ -1,0 +1,5 @@
+a=[eval(input())]
+grade=eval(input())
+b=zip(a,grade)
+list=list(b)
+print(list)

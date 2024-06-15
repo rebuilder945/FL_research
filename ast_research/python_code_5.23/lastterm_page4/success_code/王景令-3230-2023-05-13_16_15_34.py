@@ -1,0 +1,6 @@
+a = eval(input())
+a.sort(reverse = True)
+b = map(str,a)
+c = ''.join(b)
+d = int(c)
+print(d)

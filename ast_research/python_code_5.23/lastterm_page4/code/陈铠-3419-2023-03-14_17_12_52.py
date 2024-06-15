@@ -1,0 +1,14 @@
+def calDegrees(nums):
+      a=nums.copy()
+      a.sort()
+      b=[ ]
+      for i in nums:
+        c=a.count(i)
+        b.append(c)
+       return max(b)
+
+
+nums = eval(input())
+d=calDegrees(nums) #调用自定义函数
+print(d)
+

@@ -1,0 +1,32 @@
+<testDataSet count="5">
+    <testData1>
+        <input>C900
+4.5
+50</input>
+        <output>The acceleration of C900 is 4.50 M / s, the take-off speed is 50.00 M / s, and the shortest take-off runway length is 277.78 M.</output>
+    </testData1>
+    <testData2>
+        <input>B-300
+5.234
+80</input>
+        <output>The acceleration of B-300 is 5.23 M / s, the take-off speed is 80.00 M / s, and the shortest take-off runway length is 611.39 M.</output>
+    </testData2>
+    <testData3>
+        <input>JRC200
+2.568
+40</input>
+        <output>The acceleration of JRC200 is 2.57 M / s, the take-off speed is 40.00 M / s, and the shortest take-off runway length is 311.53 M.</output>
+    </testData3>
+    <testData4>
+        <input>kkk
+5.6
+65.8</input>
+        <output>The acceleration of kkk is 5.60 M / s, the take-off speed is 65.80 M / s, and the shortest take-off runway length is 386.57 M.</output>
+    </testData4>
+    <testData5>
+        <input>bbb
+3.678
+72.56</input>
+        <output>The acceleration of bbb is 3.68 M / s, the take-off speed is 72.56 M / s, and the shortest take-off runway length is 715.74 M.</output>
+    </testData5>
+</testDataSet>

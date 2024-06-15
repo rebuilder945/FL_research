@@ -1,0 +1,5 @@
+boys=eval(input())
+girls=eval(input())
+nv=100*girls/(boys+girls)
+nan=100*boys/(boys+girls)
+print('The male students ratio is%.2f%%,the female students ratio is %.2f%%'%(nv,nan))

@@ -1,0 +1,22 @@
+<testDataSet count="5">
+    <testData1>
+        <input>0</input>
+        <output>green</output>
+    </testData1>
+    <testData2>
+        <input>10</input>
+        <output>black</output>
+    </testData2>
+    <testData3>
+        <input>18</input>
+        <output>red</output>
+    </testData3>
+    <testData4>
+        <input>25</input>
+        <output>red</output>
+    </testData4>
+    <testData5>
+        <input>50</input>
+        <output>error</output>
+    </testData5>
+</testDataSet>

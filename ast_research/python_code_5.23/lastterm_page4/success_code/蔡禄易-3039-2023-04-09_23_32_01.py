@@ -1,0 +1,5 @@
+a = input().split(",")
+a = list(map(int,a))
+a.remove(max(a))
+a.remove(min(a))
+print(a)

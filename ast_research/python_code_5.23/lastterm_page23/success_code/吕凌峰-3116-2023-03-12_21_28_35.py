@@ -1,0 +1,4 @@
+a,b =eval(input())
+c,d =eval(input())
+x=((a-c)**2+(b-d)**2)**0.5
+print("%.2f"%x)

@@ -1,0 +1,11 @@
+iboy=input()
+igirl=input()
+boyint=int(iboy)
+girlint=int(igirl)
+percentageboy=100*boyint/(boyint+girlint)
+percentagegirl=100*girlint/(boyint+girlint)
+Spercentageboy=float(percentageboy)
+Spercentagegirl=float(percentagegirl)
+stext="The male students ratio is %.2f%%,\
+the female students ratio is %.2f%%" % (Spercentageboy,Spercentagegirl)
+print(stext)

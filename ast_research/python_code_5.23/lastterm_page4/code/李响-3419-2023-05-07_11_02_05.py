@@ -1,0 +1,11 @@
+def calDegrees(nums) :
+     from i in range(nums):
+        a = max(count(i))
+        return a
+
+
+
+nums = eval(input())
+d=calDegrees(nums) #调用自定义函数
+print(d)
+

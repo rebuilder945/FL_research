@@ -1,0 +1,10 @@
+n, m = eval(input())
+nums = [x for i in range(n,m):
+     if i%2==0
+         nums.append(i)]
+
+
+
+print(nums)
+
+

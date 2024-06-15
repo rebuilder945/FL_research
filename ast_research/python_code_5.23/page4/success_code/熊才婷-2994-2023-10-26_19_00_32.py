@@ -1,0 +1,12 @@
+lst=input()
+lst=lst.split(',')
+n,m=eval(input())
+l=len(lst)
+if -l<=n<l:
+    x=lst[n]
+    for i in range(m):
+        lst.append(x)
+    lst1=[int(x) for x in lst]
+    print(lst1)
+else:
+    print("error")

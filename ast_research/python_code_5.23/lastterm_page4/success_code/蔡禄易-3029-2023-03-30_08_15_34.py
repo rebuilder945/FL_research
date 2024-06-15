@@ -1,0 +1,5 @@
+a = eval(input())
+e = input().split(",")
+e = list(map(int,e))
+combinelist = list(zip(a,e))
+print(combinelist)

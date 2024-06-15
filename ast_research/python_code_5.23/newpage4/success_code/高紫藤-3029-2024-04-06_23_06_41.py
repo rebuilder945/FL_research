@@ -1,0 +1,11 @@
+a = list(input().split(","))
+b = eval(input())
+c = []
+
+for i in range(len(a)):
+   d = list(a[i],b[i])
+   c.append(d)
+print(c)
+
+
+

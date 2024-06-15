@@ -1,0 +1,10 @@
+a=int(input(""))
+b=int(input(""))
+c=int(input(""))
+he=a+b+c
+pj=he/3
+#hee=str(he)
+#pjj=str(pj)[:4]
+#print({u},{i},format(u=hee,i=pjj))
+#print("%.2f"%(he),"%.2f"%(pj))
+print("%.2f,%.2f"%(he,pj))

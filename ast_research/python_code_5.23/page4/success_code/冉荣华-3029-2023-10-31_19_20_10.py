@@ -1,0 +1,5 @@
+n = input().split(',')
+n=list(n)
+c = eval(input())
+zipped=zip(n,c)
+print(list(zipped))

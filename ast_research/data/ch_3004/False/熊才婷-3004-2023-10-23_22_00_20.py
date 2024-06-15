@@ -1,0 +1,11 @@
+lst=eval(input())
+lst1=[]
+for i in lst:
+    if i==2 or i==3:
+        lst1.append(i)
+    elif i>=4:
+        for x in range(2,i):
+            if i%x==0:
+                break
+            lst1.append(i)
+print(lst1)

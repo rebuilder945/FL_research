@@ -1,0 +1,10 @@
+list=input().split(" ")
+list3=input().split(" ")
+n=int(list3[0])
+m=int(list3[1])
+list2=[list[n],list[m]]
+list.pop(n)
+list.insert(n,list2[1])
+list.pop(m)
+list.insert(m,list[0])
+print(list)

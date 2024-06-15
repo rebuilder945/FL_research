@@ -1,0 +1,6 @@
+a=eval(input())
+b=a.copy()
+for x in b:
+    if a.count(x)==1:
+        print(x)
+   

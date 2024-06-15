@@ -1,0 +1,10 @@
+A=input()
+A=A
+a=input()
+a=a
+B=input()
+B=B
+b=input()
+b=b
+l=(A-B)*(A-B)+(a-b)*(a-b)
+print("%.2f%l")

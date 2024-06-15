@@ -1,0 +1,22 @@
+def  myFun(a,b):
+       al=[]
+       bl=[]
+       k=0
+       for x in a:
+           al.append(x)
+       for x in b :
+           bl.append(x)
+       for i in range(1,len(bl)+1):
+           k=k+(int(al[-i])*int(bl[-i]))
+           if i==len(bl) or i==len(al):
+               break
+       return k
+
+num=input().split()
+a=num[0]
+b=num[1]
+if a.isdigit() and b.isdigit(): #判断a,b是否都是数字
+       print(myFun(a,b))  #调用自定义函数
+else:
+       print("error")
+

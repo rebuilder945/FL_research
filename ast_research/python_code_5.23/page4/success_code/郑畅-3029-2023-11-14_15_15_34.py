@@ -1,0 +1,5 @@
+name = input().split(',')
+name = list(name)
+grade = eval(input())
+c = list(x+y for x in name for y in grade)
+print(c)

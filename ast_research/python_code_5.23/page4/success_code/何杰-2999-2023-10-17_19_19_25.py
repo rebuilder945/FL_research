@@ -1,0 +1,11 @@
+str1=input().split()
+n=input().split()
+a=int(n[0])
+b=int(n[1])
+y=[a]
+z=[b]
+str1.pop(b)
+str1.insert(b,y)
+str1.pop(a)
+str1.insert(a,z)
+print(str1)

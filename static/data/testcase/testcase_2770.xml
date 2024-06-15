@@ -1,0 +1,28 @@
+<testDataSet count="5">
+    <testData1>
+        <input>aaaabbb
+abababa</input>
+        <output>True</output>
+    </testData1>
+    <testData2>
+        <input>python
+Python</input>
+        <output>False</output>
+    </testData2>
+    <testData3>
+        <input>abcda
+aadcb</input>
+        <output>True</output>
+    </testData3>
+    <testData4>
+        <input>
+
+</input>
+        <output>True</output>
+    </testData4>
+    <testData5>
+        <input>112233
+123123</input>
+        <output>True</output>
+    </testData5>
+</testDataSet>

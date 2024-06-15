@@ -1,0 +1,22 @@
+<testDataSet count="5">
+    <testData1>
+        <input>1234567</input>
+        <output>The land area is 28.342</output>
+    </testData1>
+    <testData2>
+        <input>1000</input>
+        <output>The land area is 0.023</output>
+    </testData2>
+    <testData3>
+        <input>43560</input>
+        <output>The land area is 1.000</output>
+    </testData3>
+    <testData4>
+        <input>100</input>
+        <output>The land area is 0.002</output>
+    </testData4>
+    <testData5>
+        <input>2345</input>
+        <output>The land area is 0.054</output>
+    </testData5>
+</testDataSet>

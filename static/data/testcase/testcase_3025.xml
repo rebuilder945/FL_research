@@ -1,0 +1,27 @@
+<testDataSet count="5">
+    <testData1>
+        <input>bcd abc bcd abc bbb abc</input>
+        <output>abc 3
+</output>
+    </testData1>
+    <testData2>
+        <input>bcd abc bbb abc bbb</input>
+        <output>abc 2
+bbb 2</output>
+    </testData2>
+    <testData3>
+        <input>abc</input>
+        <output>abc 1</output>
+    </testData3>
+    <testData4>
+        <input>a e e a b q b</input>
+        <output>a 2
+b 2
+e 2</output>
+    </testData4>
+    <testData5>
+        <input>q b</input>
+        <output>b 1
+q 1</output>
+    </testData5>
+</testDataSet>

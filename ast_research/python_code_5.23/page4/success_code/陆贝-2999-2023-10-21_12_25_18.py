@@ -1,0 +1,2 @@
+jz=input()
+print(jz)

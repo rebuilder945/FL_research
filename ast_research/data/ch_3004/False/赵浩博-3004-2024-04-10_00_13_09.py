@@ -1,0 +1,11 @@
+def sushu(n):
+    for i in range(1,n//2+1):
+        if n%i==0:
+            return False
+    return True
+a=eval(input())
+a1=[]
+for x in range(len(a)):
+    if bool(sushu(a[x]))==True:
+        a1.append(a[x])
+print(a1,end='')

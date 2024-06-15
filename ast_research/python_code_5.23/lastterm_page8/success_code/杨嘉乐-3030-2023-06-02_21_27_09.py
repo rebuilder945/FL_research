@@ -1,0 +1,6 @@
+namel=list(input().split(","))
+scorel=list(map(int,input().split(",")))
+cor=list(map(list,zip(namel,scorel)))
+cor.sort(key=lambda criteria:criteria[1],reverse=False)
+print(cor)
+

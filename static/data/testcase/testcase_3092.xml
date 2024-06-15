@@ -1,0 +1,22 @@
+<testDataSet count="2">
+    <testData1>
+        <input>Jack Ma
+55
+1.62
+43</input>
+        <output>Name: Jack Ma
+Age: 55
+BMI = 16.385
+Result = underweight</output>
+    </testData1>
+    <testData2>
+        <input>Biden
+77  
+1.94
+120</input>
+        <output>Name: Biden
+Age: 77
+BMI = 31.884
+Result = obesity</output>
+    </testData2>
+</testDataSet>

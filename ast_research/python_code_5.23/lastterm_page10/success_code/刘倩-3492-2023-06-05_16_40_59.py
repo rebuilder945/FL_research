@@ -1,0 +1,14 @@
+s = input()
+
+if not string:
+    print("None")
+else:
+    found = False
+    for x in a:
+        if a.count(x) == 1:
+            print(x)
+            found = True
+            break
+
+    if not found:
+        print("None")

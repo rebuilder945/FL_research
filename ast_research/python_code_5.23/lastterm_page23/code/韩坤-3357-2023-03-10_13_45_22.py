@@ -1,0 +1,5 @@
+sname=input()
+jiasudu=float(input())
+sudu=float(input())
+lenh=sudu*sudu/(2*jiasudu)
+print("The acceleration of %s is %.2f, the take-off speed is %2f, and the shortest take-off runway length is %2f"%)

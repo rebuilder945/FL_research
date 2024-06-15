@@ -1,0 +1,11 @@
+# 颜色混合器
+c1=input()        #   这里用 eval(input) 是错误的！！！！！
+c2=input()
+if (c1,c2)==('red','blue') or (c1,c2)==('blue','red'):
+    print('purple')
+elif (c1,c2)==('red','yellow') or (c1,c2)==('yellow','red'):
+    print('orange')
+elif (c1,c2)==('blue','yellow') or (c1,c2)==('yellow','blue'):
+    print('green')
+else:
+    print('error')

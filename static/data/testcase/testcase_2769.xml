@@ -1,0 +1,28 @@
+<testDataSet count="5">
+    <testData1>
+        <input>4sdf&amp;13TBD</input>
+        <output>4sdf&amp;13TBD
+4hwu&amp;13GYW</output>
+    </testData1>
+    <testData2>
+        <input>abcdO7655*</input>
+        <output>abcdO7655*
+zyxwL7655*
+</output>
+    </testData2>
+    <testData3>
+        <input>ZYXabc10*^</input>
+        <output>ZYXabc10*^
+ABCzyx10*^</output>
+    </testData3>
+    <testData4>
+        <input>R olev blf!</input>
+        <output>R olev blf!
+I love you!</output>
+    </testData4>
+    <testData5>
+        <input>Oruv rh hslig, R ovzim kbgslm!</input>
+        <output>Oruv rh hslig, R ovzim kbgslm!
+Life is short, I learn python!</output>
+    </testData5>
+</testDataSet>

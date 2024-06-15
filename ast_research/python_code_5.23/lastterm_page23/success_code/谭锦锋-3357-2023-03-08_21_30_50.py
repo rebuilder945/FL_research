@@ -1,0 +1,5 @@
+name = input()
+a = input()
+v = input()
+length = eval(v)*eval(v)/(2*eval(a))
+print("The acceleration of",name,"is",a,"M/s,the take-off speed is",v,"M/s,and the shortest take-off runway length is","%.2f"%length,"M.")

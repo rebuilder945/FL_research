@@ -1,0 +1,5 @@
+airName=str(input())
+a=float(input())
+v=float(input())
+length=v*v/(2*a)
+print("The acceleration of %s"%airName," is %.2f M / s,"%a," the take-off speed is %.2f M / s,"%v," and the shortest take-off runway length is %.2f M."%length)

@@ -1,0 +1,31 @@
+<testDataSet count="5">
+    <testData1>
+        <input>999</input>
+        <output>153
+370
+371
+407</output>
+    </testData1>
+    <testData2>
+        <input>4000</input>
+        <output>153
+370
+371
+407</output>
+    </testData2>
+    <testData3>
+        <input>100</input>
+        <output>none</output>
+    </testData3>
+    <testData4>
+        <input>400</input>
+        <output>153
+370
+371</output>
+    </testData4>
+    <testData5>
+        <input>370</input>
+        <output>153
+370</output>
+    </testData5>
+</testDataSet>

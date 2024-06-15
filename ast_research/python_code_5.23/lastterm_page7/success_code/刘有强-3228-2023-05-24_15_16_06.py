@@ -1,0 +1,19 @@
+def classify(x,ls):
+		lst1=[]
+		lst2=[]
+		for i in ls:
+			if x >= i:
+				lst1.append(i)
+			elif x < i:
+				lst2.append(i)
+		dic['k1']=lst2
+		dic['k2']=lst1
+	
+x = int(input())
+ls = input().split()
+ls = list(map(int,ls)) # map函数使用说明：int函数作用于ls中每一个元素，返回一个新的整数序列，再用list转换成列表
+dic = {}
+classify(x,ls)
+
+print(sorted(list(dic.items())))
+

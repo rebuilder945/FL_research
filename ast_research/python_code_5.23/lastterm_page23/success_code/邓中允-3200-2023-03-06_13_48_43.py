@@ -1,0 +1,2 @@
+sn=""
+print(sn.upper())

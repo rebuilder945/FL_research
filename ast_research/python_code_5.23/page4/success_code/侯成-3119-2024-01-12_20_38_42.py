@@ -1,0 +1,9 @@
+list1=eval(input())
+list2=list1.copy()
+for x in list1:
+    a=list1.count(x)
+    if a>1:
+        while a>1:
+            list2.remove(x)
+            a-=1
+print(list2)

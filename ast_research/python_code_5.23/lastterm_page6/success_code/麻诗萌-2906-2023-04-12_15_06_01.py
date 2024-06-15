@@ -1,0 +1,12 @@
+def main():
+    total_count = int(input())
+    calculate_days(total_count)
+def calculate_days(total_count) :
+    while N>0:
+        N=N-(N//0.5+2)
+        n +=1
+    print(n)
+
+main()
+
+

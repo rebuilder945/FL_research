@@ -1,0 +1,5 @@
+name = eval(input())
+a = eval(input())
+v = eval(input())
+len = v * v / (2 * a)
+print('%s,%.2f,%.2f,%.2f'%(name,a,v,len))

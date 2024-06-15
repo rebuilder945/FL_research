@@ -1,0 +1,8 @@
+A=input()
+a=float(input())
+a=2*a
+v=float(input())
+v=v
+B=v*v/a
+print("The acceleration of %s,is %2f,M/s,the take-off speed is %2f,M/s,and the shortest take-off runway length is %2f,M."%(A,a,v,B))
+#("The  consumption  is  %.4f,  the  tip  is  %.4f,  the  tax  is  %.4f,so  the  total  consumption  is  %.4f"%(consumption,tip,tax,total))

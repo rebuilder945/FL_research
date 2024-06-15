@@ -1,0 +1,6 @@
+man = int(input())
+girl = int(input())
+a = float(man/(man+girl)*100)
+b = float(girl/(man+girl)*100)
+sText = 'The male students ratio is %.2f%%,the female students ratio is %.2f%%'%(a,b)
+print(sText)

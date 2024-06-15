@@ -1,0 +1,44 @@
+<testDataSet count="5">
+    <testData1>
+        <input>python
+python
+hello
+q</input>
+        <output>python 2</output>
+    </testData1>
+    <testData2>
+        <input>aaa
+bbb
+ccc
+ddd
+bbb
+q</input>
+        <output>bbb 2</output>
+    </testData2>
+    <testData3>
+        <input>a
+i
+a
+o
+a
+q</input>
+        <output>a 3</output>
+    </testData3>
+    <testData4>
+        <input>egg
+apple
+egg
+egg
+q</input>
+        <output>egg 3</output>
+    </testData4>
+    <testData5>
+        <input>hhh
+ttt
+ttt
+ttt
+ttt
+q</input>
+        <output>ttt 4</output>
+    </testData5>
+</testDataSet>

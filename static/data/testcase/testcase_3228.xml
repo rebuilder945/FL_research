@@ -1,0 +1,27 @@
+<testDataSet count="5">
+    <testData1>
+        <input>23
+2 6 55 49 9</input>
+        <output>[('k1', [55, 49]), ('k2', [2, 6, 9])]</output>
+    </testData1>
+    <testData2>
+        <input>20
+20</input>
+        <output>[('k1', []), ('k2', [20])]</output>
+    </testData2>
+    <testData3>
+        <input>998
+114 514 2021 3060 960 886 410 998 751 1950 3070 1066 1660 560 0</input>
+        <output>[('k1', [2021, 3060, 1950, 3070, 1066, 1660]), ('k2', [114, 514, 960, 886, 410, 998, 751, 560, 0])]</output>
+    </testData3>
+    <testData4>
+        <input>50
+0 5 9 50 94 64 32 64 128 8</input>
+        <output>[('k1', [94, 64, 64, 128]), ('k2', [0, 5, 9, 50, 32, 8])]</output>
+    </testData4>
+    <testData5>
+        <input>16
+2 4 8 16 32 64</input>
+        <output>[('k1', [32, 64]), ('k2', [2, 4, 8, 16])]</output>
+    </testData5>
+</testDataSet>

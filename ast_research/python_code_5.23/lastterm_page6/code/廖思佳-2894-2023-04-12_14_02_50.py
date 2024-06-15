@@ -1,0 +1,9 @@
+n=eval(input())
+h1=0
+for i in range(n+1):
+      if x%2==0:
+            h1=h1+x
+            elif x%2!==0
+            countinue
+print(h1)
+

@@ -1,0 +1,12 @@
+x = float(input())
+def f(x):
+    if x<20:
+        return 6*x**2
+    if 20<=x<40:
+        return (3*x-60)**0.5
+    if x>=40:
+        return 100/(x+1)
+    print("%.2f"%N)
+f(x)
+
+

@@ -1,0 +1,25 @@
+a=input()
+b=[]
+b.append(a)
+while(a !="q"):
+    a=input()
+    b.append(a)
+b.pop()
+#print(b)
+c={}
+for i in b:
+    if i in c:
+        c[i]=c[i]+1
+    else:
+        c[i]=1
+ 
+#print(c)
+d=list(c.items())
+d.sort(key=lambda x:x[1],reverse=True)
+m,n=d[0]
+print("{} {}".format(m,n))
+# 输出字典c的各个项
+# for n,m in c.items():
+#     print(n,m)
+
+

@@ -1,0 +1,7 @@
+m=int(input())
+n=int(input())
+a=(100*m/(m+n))
+b=(100*n/(m+n))
+aText="%.2f%%"%(a)
+bText="%.2f%%"%(b)
+print("The male students ratio is",aText," ,the female students ratio is",bText)

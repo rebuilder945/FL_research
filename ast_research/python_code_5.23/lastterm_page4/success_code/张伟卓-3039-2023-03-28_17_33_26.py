@@ -1,0 +1,7 @@
+nums = input().split()
+nums = list(map(int, nums))
+max_num = max(nums)
+min_num = min(nums)
+nums.remove(max_num)
+nums.remove(min_num)
+print(nums)

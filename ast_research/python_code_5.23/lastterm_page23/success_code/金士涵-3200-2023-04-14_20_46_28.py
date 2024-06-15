@@ -1,0 +1,2 @@
+sname=""
+print(sname.upper())

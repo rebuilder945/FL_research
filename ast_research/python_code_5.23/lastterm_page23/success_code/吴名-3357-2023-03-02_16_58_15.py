@@ -1,0 +1,6 @@
+n=str(input())
+a=eval(input())
+v=eval(input())
+length=v*v/(2*a)
+s='The acceleration of %s is %s M / s, the take-off speed is %s M / s, and the shortest take-off runway length is %.2f M.'%(n,a,v,length)
+print(s)

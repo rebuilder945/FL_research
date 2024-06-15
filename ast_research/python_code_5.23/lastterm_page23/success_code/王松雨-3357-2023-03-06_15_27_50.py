@@ -1,0 +1,8 @@
+name=input()
+a=input()
+v=input()
+sa=float(a)
+sv=float(v)
+length=sv*sv/(sa*2)
+# print("The acceleration of ",name,"is",sa,"M / s,","the take-off speed is",sv,"M / s,","and the shortest take-off runway length is ",length,"M.")
+print("The acceleration of %s is %.2f M / s, the take-off speed is %.2f M / s, and the shortest take-off runway length is %.2f M."%(name,sa,sv,length))

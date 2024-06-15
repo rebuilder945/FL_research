@@ -1,0 +1,5 @@
+mcount=input()
+fcount=input()
+mbili=mcount/(mcount+fcount)
+fbili=fcount/(mcount+fcount)
+print("The male students ratio is %.2f %,the female students ratio is %.2f %")(mbili,fbili)

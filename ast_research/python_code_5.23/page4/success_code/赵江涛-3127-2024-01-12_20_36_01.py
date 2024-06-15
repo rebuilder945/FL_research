@@ -1,0 +1,5 @@
+n = eval(input())
+list = list(range(1,n+1))
+list.remove(list[0])
+list.append(list[0])
+print(list)

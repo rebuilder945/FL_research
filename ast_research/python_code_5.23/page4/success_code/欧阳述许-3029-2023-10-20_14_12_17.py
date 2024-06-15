@@ -1,0 +1,10 @@
+name=input().split(',')
+name=list(name)
+grade=eval(input())
+m=[]
+for x in range(len(name)):
+    n=[]
+    n.append(name[x])
+    n.append(name[x])
+    m.append(n)
+print(m)

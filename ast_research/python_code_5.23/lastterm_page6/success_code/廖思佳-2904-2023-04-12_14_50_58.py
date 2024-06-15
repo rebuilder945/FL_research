@@ -1,0 +1,12 @@
+def main():
+    a=int(input())
+    calculate_sum(a)
+    def calculate_sum(a):
+        s=0
+        n=0
+        while n<=a:
+            s+=a*10**n+m
+            n+=1
+            print(s)
+main()
+

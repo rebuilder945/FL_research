@@ -1,0 +1,9 @@
+a=input()
+b=input()
+c=input()
+a=int(a)
+b=int(b)
+c=int(c)
+t=a+b+c
+aver=(a+b+c)/3
+print(t,'%.2f'%aver)

@@ -1,0 +1,5 @@
+name=input().split(',')
+score=list(eval(input()))
+ns= map(lambda t:[*t],zip(name,score))
+ns=sorted(ns,key=lambda t:t[1])
+print(ns)

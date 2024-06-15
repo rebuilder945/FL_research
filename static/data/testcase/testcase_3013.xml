@@ -1,0 +1,54 @@
+<testDataSet count="5">
+    <testData1>
+        <input>USA 94
+China 81
+Japan 50
+India 55
+ok</input>
+        <output>['China', 'India', 'Japan', 'USA']
+[50, 55, 81, 94]
+yes
+280</output>
+    </testData1>
+    <testData2>
+        <input>Korea 50
+China 81
+Kuwait 20
+India 55
+ok</input>
+        <output>['China', 'India', 'Korea', 'Kuwait']
+[20, 50, 55, 81]
+yes
+206</output>
+    </testData2>
+    <testData3>
+        <input>Korea 60
+China 82
+Kuwait 20
+ok</input>
+        <output>['China', 'Korea', 'Kuwait']
+[20, 60, 82]
+no
+162</output>
+    </testData3>
+    <testData4>
+        <input>Korea 60
+China 82
+Kuwait 20
+India 40
+ok</input>
+        <output>['China', 'India', 'Korea', 'Kuwait']
+[20, 40, 60, 82]
+yes
+202</output>
+    </testData4>
+    <testData5>
+        <input>Korea 50
+China 80
+ok</input>
+        <output>['China', 'Korea']
+[50, 80]
+no
+130</output>
+    </testData5>
+</testDataSet>

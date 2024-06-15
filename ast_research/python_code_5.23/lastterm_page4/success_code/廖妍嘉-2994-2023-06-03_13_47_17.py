@@ -1,0 +1,19 @@
+ls=list(map(int,input().split(",")))
+n,m=eval(input())
+ls2=[]
+if n<len(ls) or n>-len(ls):
+    a=ls[n]
+    ls2.append(a)
+    ls3=ls2*m
+    ls.remove(ls[n])
+    print(ls+ls3)
+else:
+    print("error")
+
+
+        
+
+            
+
+
+        

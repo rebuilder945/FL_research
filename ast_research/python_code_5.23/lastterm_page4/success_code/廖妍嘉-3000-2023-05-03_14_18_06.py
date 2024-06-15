@@ -1,0 +1,6 @@
+a=eval(input())
+b=sum(a)
+n=len(a)
+c='%.2f'%(b/n)
+print(c)
+

@@ -1,0 +1,5 @@
+n = int(input())
+lst = list(range(1,n+1))
+sss = lst.pop(0)
+lst.append(sss)
+print(lst)

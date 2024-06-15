@@ -1,0 +1,13 @@
+x1=input("请输入A的横坐标")
+y1=input("请输入A的纵坐标")
+x2=input("请输入B的横坐标")
+y2=input("请输入B的纵坐标")
+x1=eval(x1)
+x2=eval(x2)
+y1=eval(y1)
+y2=eval(y2)
+d1=x1-x2
+d2=y1-y2
+d3=d1**2+d2**2
+d=d3**0.5
+print(d)

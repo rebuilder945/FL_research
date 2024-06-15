@@ -1,0 +1,6 @@
+icard = input()
+birthday = birthday  = icard[6:10] +'-'+icard[10:12]+'-'+icard[12:14]
+mask = mask  =  icard[:6]+'*'*8+icard[-4:]
+print(birthday)
+print(mask)
+

@@ -1,0 +1,8 @@
+a=eval(input())
+a.reverse()
+b=['']
+for i in a:
+    if i not in b:
+        a.insert(0,i)
+print(a)
+    

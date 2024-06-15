@@ -1,0 +1,32 @@
+<testDataSet count="5">
+    <testData1>
+        <input>William,Jeffer,George,Bush,George
+Jack,Jeffer,Lee,George</input>
+        <output>['George', 'Jeffer']
+['Bush', 'George', 'Jack', 'Jeffer', 'Lee', 'William']</output>
+    </testData1>
+    <testData2>
+        <input>Zhang
+Zhang</input>
+        <output>['Zhang']
+['Zhang']</output>
+    </testData2>
+    <testData3>
+        <input>William,Bush,Jeffer
+Jack,Jeffer,Lee,George,Lee</input>
+        <output>['Jeffer']
+['Bush', 'George', 'Jack', 'Jeffer', 'Lee', 'William']</output>
+    </testData3>
+    <testData4>
+        <input>William,Jeffer,Clinton
+Jack,Jeffer,Lee,George,Wang,Jefferson</input>
+        <output>['Jeffer']
+['Clinton', 'George', 'Jack', 'Jeffer', 'Jefferson', 'Lee', 'Wang', 'William']</output>
+    </testData4>
+    <testData5>
+        <input>William
+Jack</input>
+        <output>[]
+['Jack', 'William']</output>
+    </testData5>
+</testDataSet>

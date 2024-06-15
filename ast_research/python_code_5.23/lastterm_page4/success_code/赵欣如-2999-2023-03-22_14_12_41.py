@@ -1,0 +1,11 @@
+a=input()
+n1=input()
+b=a.split()
+m1=n1.split()
+n=int(m1[0])
+m=int(m1[1])
+strn=b[n]
+strm=b[m]
+b[n]=strm
+b[m]=strn
+print(b)

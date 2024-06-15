@@ -1,0 +1,23 @@
+<testDataSet count="5">
+    <testData1>
+        <input>-5 -2
+</input>
+        <output>illegal input</output>
+    </testData1>
+    <testData2>
+        <input>2 5</input>
+        <output>234 243 324 342 423 432</output>
+    </testData2>
+    <testData3>
+        <input>4 9</input>
+        <output>456 457 458 465 467 468 475 476 478 485 486 487 546 547 548 564 567 568 574 576 578 584 586 587 645 647 648 654 657 658 674 675 678 684 685 687 745 746 748 754 756 758 764 765 768 784 785 786 845 846 847 854 856 857 864 865 867 874 875 876</output>
+    </testData3>
+    <testData4>
+        <input>0 4</input>
+        <output>102 103 120 123 130 132 201 203 210 213 230 231 301 302 310 312 320 321 </output>
+    </testData4>
+    <testData5>
+        <input>9 12</input>
+        <output>illegal input</output>
+    </testData5>
+</testDataSet>

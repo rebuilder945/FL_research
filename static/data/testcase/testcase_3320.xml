@@ -1,0 +1,28 @@
+<testDataSet count="5">
+    <testData1>
+        <input>12
+12</input>
+        <output>It's a square</output>
+    </testData1>
+    <testData2>
+        <input>10
+8
+</input>
+        <output>It's a rectangle</output>
+    </testData2>
+    <testData3>
+        <input>-10
+10</input>
+        <output>illegal data</output>
+    </testData3>
+    <testData4>
+        <input>0
+0</input>
+        <output>illegal data</output>
+    </testData4>
+    <testData5>
+        <input>-5
+-8</input>
+        <output>illegal data</output>
+    </testData5>
+</testDataSet>

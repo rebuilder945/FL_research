@@ -1,0 +1,12 @@
+s=input()
+a=s.split()
+x=input()
+y=x.split()
+b=y[0]
+c=y[1]
+b=eval(b)
+c=eval(c)
+d=a[b]
+a[b]=a[c]
+a[c]=d
+print(a)

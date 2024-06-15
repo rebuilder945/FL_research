@@ -1,0 +1,40 @@
+# 【问题描述】
+
+#     本题目要求读入一个字符串，输出字符串的最长数字子串。
+
+# 【输入形式】
+
+#     输入一个字符串
+# 【输出形式】
+
+#     输出最长数字子串，若有多个最长数字子串输出最后一个，若字符串无数字字符，则输出“No digits”。
+
+# 【输入样例】
+
+# sdffsd123werrer456fgdgdg1dfgdf12
+
+# 【样例输出】
+
+#   456 
+s = input()
+lst = []
+for i in s:
+    if "0"<= i <="9":
+        lst.append(i)
+if lst == []:
+    print("No digits")
+else:
+    for i in s:
+        if "0"<= i <="9":
+            pass
+        else:
+            s =s.replace(i," ")
+    lst1 = s.split()
+    m = len(max(lst1,key=len))
+    lst1.reverse()
+    for i in lst1:
+        if len(i) == m:
+            print(i)
+            break
+    
+

@@ -1,0 +1,5 @@
+p=input("飞机名称")
+q=input("a")
+x=input("v")
+l=x*x/(2q)
+print(' The acceleration of p is q%.2f M / s, the take-off speed is x%.2f M / s, and the shortest take-off runway length is l%.2f M.')

@@ -1,0 +1,5 @@
+ls=eval(input())
+ls.sort(reverse=True)
+ls1=list(map(str,ls))
+m=''.join(ls1)
+print(int(m))

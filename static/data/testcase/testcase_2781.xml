@@ -1,0 +1,22 @@
+<testDataSet count="5">
+    <testData1>
+        <input>320124198808240056</input>
+        <output>Correct</output>
+    </testData1>
+    <testData2>
+        <input>110108196711301866</input>
+        <output>Wrong</output>
+    </testData2>
+    <testData3>
+        <input>37070419881216001X</input>
+        <output>Wrong</output>
+    </testData3>
+    <testData4>
+        <input>53010219200508011X</input>
+        <output>Correct</output>
+    </testData4>
+    <testData5>
+        <input>12345</input>
+        <output>Error</output>
+    </testData5>
+</testDataSet>

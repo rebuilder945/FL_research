@@ -1,0 +1,9 @@
+n=eval(input())
+a=list(0,n)
+b=[]
+b.append(a)
+q=b[0]
+b.pop(0)
+t=b.copy()
+t.insert(-1,q)
+print(t)

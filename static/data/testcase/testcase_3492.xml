@@ -1,0 +1,23 @@
+<testDataSet count="5">
+    <testData1>
+        <input>I love my family!</input>
+        <output>I</output>
+    </testData1>
+    <testData2>
+        <input>
+</input>
+        <output>None</output>
+    </testData2>
+    <testData3>
+        <input>eeval(inapuvtl))</input>
+        <output>(</output>
+    </testData3>
+    <testData4>
+        <input>eeval(inapuvt(l))</input>
+        <output>i</output>
+    </testData4>
+    <testData5>
+        <input>ahfua3w8hab  fu</input>
+        <output>3</output>
+    </testData5>
+</testDataSet>

@@ -1,0 +1,12 @@
+def add_id(data2):
+    a=''
+    for i in data2:
+        id=i.insert(0,20)
+        a+=id+' '
+    return a.split()
+
+data1=input().split()
+result=add_id(data1)
+for x in result:
+    print(x,end=" ")
+

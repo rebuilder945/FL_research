@@ -1,0 +1,5 @@
+airname = input()
+aira = input()
+airv = input()
+length = airv*airv/(2*aira)
+print('The acceleration of %d is %d M / s, the take-off speed is %d M / s, and the shortest take-off runway length is %.2f M.'%(airname,aira,airv,length)

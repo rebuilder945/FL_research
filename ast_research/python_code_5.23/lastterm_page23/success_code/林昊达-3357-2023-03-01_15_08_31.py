@@ -1,0 +1,6 @@
+fname=input()
+acceleration=float(input())
+speed=float(input())
+length=speed*speed/(2*acceleration)
+text="The acceleration of %s is %.2f M / s, the take-off speed is %.2f M / s, and the shortest take-off runway length is %.2f M." %(fname,acceleration,speed,length)
+print(text)

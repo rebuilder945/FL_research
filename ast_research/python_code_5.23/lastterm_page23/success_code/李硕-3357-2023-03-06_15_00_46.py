@@ -1,0 +1,5 @@
+P=input()
+a=float(input())
+v = float(input())
+x=v**2/(2*a)
+print("The acceleration of {} is {:.2f}M/s,the take-off speed is {:.2f}M/s,and the take-off ruway length is {:.2f}M.".format(P,a,v,x))

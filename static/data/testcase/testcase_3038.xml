@@ -1,0 +1,27 @@
+<testDataSet count="5">
+    <testData1>
+        <input>lisi</input>
+        <output>0
+lisi test!!!</output>
+    </testData1>
+    <testData2>
+        <input>wangwu</input>
+        <output>0
+wangwu test!!!</output>
+    </testData2>
+    <testData3>
+        <input>zhaoliu</input>
+        <output>0
+zhaoliu test!!!</output>
+    </testData3>
+    <testData4>
+        <input>qianqi</input>
+        <output>0
+qianqi test!!!</output>
+    </testData4>
+    <testData5>
+        <input>zhenqiu</input>
+        <output>0
+zhenqiu test!!!</output>
+    </testData5>
+</testDataSet>

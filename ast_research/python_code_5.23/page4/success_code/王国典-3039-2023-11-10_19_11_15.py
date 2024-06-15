@@ -1,0 +1,6 @@
+Is=eval(input())
+a=max(Is)
+b=min(Is)
+Is.remove(a)
+Is.remove(b)
+print(Is)

@@ -1,0 +1,6 @@
+ls1 = list(map(str,input().split(",")))
+ls2 = eval(input())
+ls3 = []
+for i in range(len(ls1)):
+    ls3.append([ls1[i],ls2[2]])
+print(ls3)

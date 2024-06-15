@@ -1,0 +1,5 @@
+Name=input()
+a=float(input())
+v=float(input())
+length=v*v/(2*a)
+print(Name %.2f,a %.2f,v %.2f,length %.2f)

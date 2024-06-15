@@ -1,0 +1,11 @@
+p = input().split()
+dic = {'name':p[0],'english':p[1],'python':p[2],'math':p[3]}
+avg1 = 0
+for x in dic[2:]:
+    avg1 += dic[x]
+avg = avg1/3
+n = list(dic.items()[2:])
+n.sort(key=lambda x:x[1],reverse=True)
+for x in n:
+    print(x[1],end=' ')
+print(avg)

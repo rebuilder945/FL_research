@@ -1,0 +1,16 @@
+m=eval(input())
+alaph=0
+space=0
+digit=0
+other=0
+for i in m:
+    if i.isspace():
+        space+=1
+    elif i.isalaph():
+        alaph+=1
+    elif i.isdigit():
+        digit+=1
+    else:
+        other=0
+print("%d %d %d %d"%(alaph,space,digit,other))
+

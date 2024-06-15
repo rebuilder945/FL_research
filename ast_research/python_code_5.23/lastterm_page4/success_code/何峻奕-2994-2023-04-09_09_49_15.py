@@ -1,0 +1,10 @@
+l=eval(input())
+n,m=map(int,input().split(","))
+b=[]
+if n>len(l)-1 or n<-len(l):
+    print("error")
+elif n<len(l)-1 or n>-len(l):
+    a=l[n]
+    b.append(a)
+    c=b*m
+print(l+c)

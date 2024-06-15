@@ -1,0 +1,13 @@
+a = eval(input())
+b = []
+c = len(a)
+for i in range(c):
+    n = max(a)
+    b.append(n)
+    a.remove(n)
+x = 0
+for i in range(c):
+    x = x + b[i]*10**(c-1-i)
+print(x)
+
+

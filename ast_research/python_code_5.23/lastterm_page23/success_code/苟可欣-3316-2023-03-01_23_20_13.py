@@ -1,0 +1,5 @@
+m=eval(input())
+f=eval(input())
+mb=m/(m+f)
+fb=f/(m+f)
+print("The male students ratio is %.2f%%, the female students ratio is %.2f%%" %(mb,fb))

@@ -1,0 +1,9 @@
+'''a=list(map(str,input().split()))
+n,m=map(int,input().split())
+a[n],a[m]=a[m],a[n]
+print(a)'''
+
+a=list(map(str,input().split()))
+n,m=map(int,input().split())
+a[n],a[m]=a[m],a[n]
+print(a)

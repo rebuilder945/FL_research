@@ -1,0 +1,5 @@
+A=input()
+a=input()
+v=input()
+B=v*v/(2a)
+print("The acceleration of",A,"is",a,"M/s,","the take-off speed is",v,"M/s,"and the shortest take-off runway length is",B,"M.")

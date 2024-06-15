@@ -1,0 +1,8 @@
+coverage
+gradio
+openpyxl
+graphviz
+tree_sitter
+tree_sitter_python
+
+# pip install git+https://github.com/Suresoft-GLaDOS/SBFL.git

@@ -1,0 +1,6 @@
+x1 = input()
+x2 = input()
+y1 = input()
+y2 = input()
+x1,x2,y1,y2 = eval(x1,x2,y1,y2)
+print(x1,x2,y1,y2)

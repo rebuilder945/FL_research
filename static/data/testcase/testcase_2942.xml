@@ -1,0 +1,35 @@
+<testDataSet count="5">
+    <testData1>
+        <input>abcdefghi
+defabcdghi
+</input>
+        <output>4
+</output>
+    </testData1>
+    <testData2>
+        <input>abcdef
+fedcba
+</input>
+        <output>1</output>
+    </testData2>
+    <testData3>
+        <input>abcdef
+efcdab</input>
+        <output>2
+
+
+</output>
+    </testData3>
+    <testData4>
+        <input>abcdefgh
+bcgdsfge
+</input>
+        <output>2
+</output>
+    </testData4>
+    <testData5>
+        <input>abcdefghijk
+abcde</input>
+        <output>5</output>
+    </testData5>
+</testDataSet>

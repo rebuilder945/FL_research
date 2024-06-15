@@ -1,0 +1,11 @@
+list=eval(input())
+nums=[]
+for n in range(list):
+    if n >= 2:       
+        for i in range(2, n):
+            if n % i != 0:
+                nums.append(n)
+    else:
+        nums.append(n)
+print(nums)
+

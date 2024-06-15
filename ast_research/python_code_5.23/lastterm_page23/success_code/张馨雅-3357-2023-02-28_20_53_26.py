@@ -1,0 +1,5 @@
+pn=input('输入飞机名称')
+a=eval(input('加速度'))
+v=eval(input('起飞速度'))
+length=float(v*v/(2*a))
+print('The acceleration of',pn,'is','%.2f'%a,'M / s, the take-off speed is','%.2f'%v,' M / s, and the shortest take-off runway length is ''%.2f'%length,'M.')

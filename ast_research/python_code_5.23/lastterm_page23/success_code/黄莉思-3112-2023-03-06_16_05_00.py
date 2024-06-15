@@ -1,0 +1,9 @@
+n1=input()
+n2=input()
+n3=input()
+N1=float(n1)
+N2=float(n2)
+N3=float(n3)
+s=N1+N2+N3
+T=s/3
+print("%.0f,%.2f"%(s,T))

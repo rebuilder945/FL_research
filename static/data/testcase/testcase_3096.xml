@@ -1,0 +1,16 @@
+<testDataSet count="1">
+    <testData1>
+        <input>10010
+ChongQing Unversity
+10.1
+15.1
+</input>
+        <output>Code: 10010
+Name: ChongQing Unversity
+Price/Yesterday:10.10
+Price Today:15.10
+Edit Price/Yesterday To:50.25
+Price Change Percentage:-69.95%
+Stock Information Class</output>
+    </testData1>
+</testDataSet>

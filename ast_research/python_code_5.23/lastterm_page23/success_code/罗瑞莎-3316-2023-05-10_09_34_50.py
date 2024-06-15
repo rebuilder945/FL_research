@@ -1,0 +1,6 @@
+Boy = input()
+Girl = input()
+All = int(Boy)+int(Girl)
+Br = '{:.2%}'.format(int(Boy)/All)
+Gr = '{:.2%}'.format(int(Girl)/All)
+print("The male students ratio is %s,the female students ratio is %s" %(Br,Gr))

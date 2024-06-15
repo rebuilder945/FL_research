@@ -1,0 +1,14 @@
+a=list(input().split())
+stu={}
+stu['name']=a[0]
+stu['english']=int(a[1])
+stu['python']=int(a[2])
+stu['math']=int(a[3])
+avg=(a[1]+a[2]+a[3])/3
+print(stu['name'],end=" ")
+b=a[1:4]
+b.sort(reserve=True)
+print("%.2f"%b[0],end=" ")
+print("%.2f"%b[1],end=" ")
+print("%.2f"%b[2],end=" ")
+print("%.2f"%avg,end=" ")

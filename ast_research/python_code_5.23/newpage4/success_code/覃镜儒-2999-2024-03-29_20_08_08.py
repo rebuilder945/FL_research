@@ -1,0 +1,7 @@
+a=list(input())
+n,m=int(input())
+b=a.pop(n)
+c=a.pop(m)
+a.insert(n,c)
+a.insert(m,b)
+print(a)

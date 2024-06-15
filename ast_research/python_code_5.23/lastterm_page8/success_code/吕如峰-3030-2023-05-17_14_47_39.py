@@ -1,0 +1,10 @@
+a=input().split(",")
+b=input().split(",")
+b1= str(b).replace("'", "")
+d=b1.replace("[", "").replace("]", "").split(", ")
+d=[int(x) for x in list_Data]
+c=map(lambda t: [*t], zip(a, d))
+c=sorted(c, key=lambda t: t[1])
+print(c)
+print(a)
+print(b)

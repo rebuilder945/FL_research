@@ -1,0 +1,22 @@
+<testDataSet count="5">
+    <testData1>
+        <input>20190001张</input>
+        <output>20190001</output>
+    </testData1>
+    <testData2>
+        <input>20190001张 20190002王</input>
+        <output>20190001 20190002 </output>
+    </testData2>
+    <testData3>
+        <input>20190001张 20190002王 20190003李</input>
+        <output>20190001 20190002 20190003</output>
+    </testData3>
+    <testData4>
+        <input>20190001张 20190002王 20190003李 20160004赵</input>
+        <output>20190001 20190002 20190003 20160004</output>
+    </testData4>
+    <testData5>
+        <input>20190001张 20190002王 20190003李 20160004赵 20160005陈</input>
+        <output>20190001 20190002 20190003 20160004 20160005</output>
+    </testData5>
+</testDataSet>

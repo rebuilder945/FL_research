@@ -1,0 +1,9 @@
+def shift(lst):
+lst1.pop()
+lst1.insert(0,lst1.pop())
+return lst
+
+list1 = input().split(",") #输入格式 1,2,3,4,5
+shift(list1)
+print(list1)
+

@@ -1,0 +1,12 @@
+n=eval(input())
+if n>0 and type(n)==int:
+    b=[]
+    c=[]
+    for i in range(n+1):
+        for x in range(1,i):
+            if i%x==0:
+                c.append(x)
+            if len(c)==1:
+                b.append(i)
+    print(b)
+

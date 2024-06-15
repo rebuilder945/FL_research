@@ -1,0 +1,8 @@
+name = input()
+a = float (input())
+v = float (input())
+length=v*v/(2*a)
+print("The acceleration of B350 is 3.57 M / s, the take-off speed is 60.00 M / s, and the shortest take-off runway length is 503.92 M.")
+
+
+

@@ -1,0 +1,10 @@
+name = input()
+a = input()
+a = float(a)
+a = float("%.2f"%a)
+v = input ()
+v = float(a)
+v = float('%.2f'%v)
+length = v*v/(2*a)
+print("The acceleration of",name,"is",a,"M / s, the take-off speed is",v,"M / s, and the shortest take-off runway length is",length,"M.")
+

@@ -1,0 +1,11 @@
+lis=input()
+lis1=input()
+y=lis1.split()
+n=int(y[0])
+m=int(y[1])
+x=lis.split()
+a=x[n]
+b=x[m]
+x[n]=b
+x[m]=a
+print(x)

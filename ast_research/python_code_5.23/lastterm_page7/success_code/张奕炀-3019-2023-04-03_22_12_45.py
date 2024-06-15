@@ -1,0 +1,15 @@
+list0 = input().split()
+stu = {}
+stu["name"] = list0[0]
+stu["english"] = int(list0[1])
+stu["python"] = int(list0[2])
+stu["math"] = int(list0[3])
+stu["avg"] = (stu["english"] + stu["python"] + stu["math"]) / 3
+list1 = [list0[1],list0[2],list0[3]]
+list1 = list(map(int,list1))
+list1.sort(reverse=True)
+print(list0[0],end=" ")
+print("%.2f"%list1[0],end=" ")
+print("%.2f"%list1[1],end=" ")
+print("%.2f"%list1[2],end=" ")
+print("%.2f"%stu["avg"],end=" ")

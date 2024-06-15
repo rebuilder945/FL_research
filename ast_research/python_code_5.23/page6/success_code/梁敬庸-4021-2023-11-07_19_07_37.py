@@ -1,0 +1,48 @@
+stu_list=[['201801','zhangyi'],['201802','zhanger'],['201803','zhangsan'],['201804','zhangsi'],
+
+['201805','wangyi'],['201806','wanger'],['201807','wangsan'],['201808','wangsi'],
+
+['201809','liyi'],['201810','lier'],['201811','lisan'],['201812','lisi'],
+
+['201813','zhaoyi'],['201814','zhaoer'],['201815','zhaosan'],['201816','zhaosi'],
+
+['201817','zhouyi'],['201818','zhouer'],['201819','zhousan'],['201820','zhousi']]
+a=eval(input())
+if a<201801 or a>201820:
+    print("None")
+else:
+    if a>201810:
+        if a>201815:
+            
+            for x in stu_list[15:-1]:
+                a=str(a)
+                if a in x:
+                    for i in x:
+                        print(i,end="")
+        elif a<201815:
+            
+            for x in stu_list[10:15]:
+                a=str(a)
+                if a in x:
+                    for i in x:
+                        print(i,end="")                
+    
+    
+    
+    
+    
+    elif a<201810:
+        if a>201805:
+            
+            for x in stu_list[5:10]:
+                a=str(a)               
+                if a in x:
+                    for i in x:
+                        print(i,end="")
+        elif a<201805:
+            
+            for x in stu_list[0:5]:
+                a=str(a)
+                if a in x:
+                    for i in x:
+                        print(i,end="")

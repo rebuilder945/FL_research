@@ -1,0 +1,5 @@
+v=float(input("the take-off speed is =%.2f"))
+a=float(input("The acceleration of=%.2f"))
+length=v**2/(2*a)
+b=float(input("飞机名称："))
+print("the shortest take-off runway length is=%.2f米"%length)

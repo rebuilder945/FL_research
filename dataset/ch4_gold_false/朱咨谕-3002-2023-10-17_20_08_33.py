@@ -1,0 +1,6 @@
+ls1=eval(input())
+sum1=sum(ls1)
+#print(sum1)
+av=sum1/len(ls1)
+if sum1%len(ls1)==0 : print(av)
+else : print("%.2f"%av)

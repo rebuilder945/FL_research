@@ -1,0 +1,12 @@
+a=list(input().split(','))
+n,m=eval(input())
+c=len(a)
+if n not in range(c+1):
+    print('error')
+else:
+    c=a[n-1]
+    e=[str(i)for i in c]
+    d=a+e*m
+    f=[int(i)for i in d ]
+    print(f)
+    

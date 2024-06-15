@@ -1,0 +1,19 @@
+def f(x):
+    a=0
+    for x1 in range(2,x):
+        if x%x1==0:
+            a+=1
+    if x==0 or x==1:
+        return 1
+    elif a==0:
+        return 0
+    elif a!=0:
+        return 1
+list1=eval(input())
+list2=[]
+for x in list1:
+    b=f(x)
+    if b==0:
+        list2.append(x)
+print(list2)
+

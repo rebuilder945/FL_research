@@ -1,0 +1,14 @@
+ls = eval(input())
+n = eval(input())
+# 重复列表元素n次
+Is1=list(Is)
+Is2=Is1*n
+ls3 = [x*x for x in ls2]
+# 下面代码去除重复元素
+ls4=[]
+for x in ls3:
+   if x not in Is4:
+       Is4.append(x)
+
+print(ls4)
+

@@ -1,0 +1,10 @@
+def main():
+    a=int(input())
+    calculate_sum(a)
+def calculate_sum(a):  
+        b=[]
+        for i in range(a-1):
+                b.append(a*(a-i)*(10**i))
+        print(sum(b))
+main()
+

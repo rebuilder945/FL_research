@@ -1,0 +1,10 @@
+<testDataSet count="2">
+    <testData1>
+        <input>hello World</input>
+        <output>HELLO WORLD</output>
+    </testData1>
+    <testData2>
+        <input>p8,88OPo</input>
+        <output>P8,88OPO</output>
+    </testData2>
+</testDataSet>

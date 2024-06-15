@@ -1,0 +1,5 @@
+a=eval(input())
+a.sort()
+a.reverse()
+b=eval(''.join(a))
+print(b)

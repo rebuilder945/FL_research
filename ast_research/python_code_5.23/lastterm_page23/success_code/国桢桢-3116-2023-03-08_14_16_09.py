@@ -1,0 +1,7 @@
+a,b = eval(input())
+c,d = eval(input())
+e = (a-c)**(a-c)+(b-d)**(b-d)
+f = e**(1/2)
+f = float(f)
+g = "%.2f"%(f)
+print(g)

@@ -1,0 +1,5 @@
+b = eval (input())
+g = eval (input())
+ratb = 'precent: {:.2%}'.format(b/(g+b))
+ratg = 'precent: {:.2%}'.format(g/(g+b))
+print('The male students ratio is %s,the female students ratio is %s'%(ratb,ratg))

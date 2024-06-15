@@ -1,0 +1,5 @@
+a=eval(input())
+a.reverse()
+b=()
+a.append(b)
+print(b)

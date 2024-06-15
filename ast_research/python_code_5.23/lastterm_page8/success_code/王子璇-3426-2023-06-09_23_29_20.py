@@ -1,0 +1,12 @@
+def function(x):
+    if x<20:
+        a=x**2+1
+        print('%.2f'%a)
+    elif 20<=x<40:
+        b=(3*x-60)**0.5
+        print('%.2f'%b)
+    else:
+        c=100/(x+1)
+        print('%.2f'%c)
+x=eval(input())
+function(x)

@@ -1,0 +1,13 @@
+def main():
+    total_count = int(input())
+    calculate_days(total_count)
+def calculate_days(total_count):
+    import math
+    a=0
+    while total_count>0:
+        total_count=math.ceil(total_count/2)-2
+        a+=1
+    print(a)
+main()
+
+

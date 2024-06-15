@@ -1,0 +1,5 @@
+names = input().split(',')
+scores = list(eval(input))
+namesandscores = list(zip(names,scores))
+listsorted = sorted(namesandscores,key=scores)
+print(listsorted)

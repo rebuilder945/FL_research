@@ -1,0 +1,31 @@
+<testDataSet count="5">
+    <testData1>
+        <input>tom,jack,james
+88,34,12
+</input>
+        <output>[['james', 12], ['jack', 34], ['tom', 88]]</output>
+    </testData1>
+    <testData2>
+        <input>jack,james,albert
+99,100,32
+</input>
+        <output>[['albert', 32], ['jack', 99], ['james', 100]]</output>
+    </testData2>
+    <testData3>
+        <input>ben,tom,alice
+22,45,43</input>
+        <output>[['ben', 22], ['alice', 43], ['tom', 45]]</output>
+    </testData3>
+    <testData4>
+        <input>rice,alice,jane
+56,78,99
+</input>
+        <output>[['rice', 56], ['alice', 78], ['jane', 99]]</output>
+    </testData4>
+    <testData5>
+        <input>tom,jane,jack
+89,56,98
+</input>
+        <output>[['jane', 56], ['tom', 89], ['jack', 98]]</output>
+    </testData5>
+</testDataSet>

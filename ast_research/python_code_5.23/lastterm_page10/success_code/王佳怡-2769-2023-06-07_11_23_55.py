@@ -1,0 +1,13 @@
+D={}
+for i in range(26):
+    D[chr(ord("A")+i)]=chr(ord("A")+25-i)
+    D[chr(ord("a")+i)]=chr(ord("a")+25-i)
+a=input()
+c=""
+for i in a:
+    if "a"<=i<="z" or "A"<=i<="Z":
+        c+=D[i]
+    else:
+        c+=i
+print(a)
+print(c)

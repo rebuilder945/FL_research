@@ -1,0 +1,31 @@
+a=eval(input())
+b=eval(input())
+if a>0 and b>0:
+    if a==b:
+        print("It's a square")
+    elif a!=b:
+        print("It's a square")
+else:
+    print("illegal data")
+
+
+
+
+
+
+
+
+
+        
+
+
+
+    
+
+
+
+
+
+
+
+

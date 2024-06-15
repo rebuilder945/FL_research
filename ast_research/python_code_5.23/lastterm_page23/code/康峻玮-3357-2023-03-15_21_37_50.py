@@ -1,0 +1,5 @@
+n = input()
+a = input()
+v = input()
+length=v*v/(2a)
+print("The acceleration of %s is %.2f M / s, the take-off peed is %.2f M / s, and the shortest take-off runway length is %.2f M."(n,a,v,length))

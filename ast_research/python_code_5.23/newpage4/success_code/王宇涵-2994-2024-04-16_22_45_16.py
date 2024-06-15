@@ -1,0 +1,13 @@
+a1=eval(input())
+a=list(a1)
+lst=a.copy()
+n,m=eval(input())
+if n>len(a):
+    print("error")
+else:
+    b=a.pop(n)
+    x=1
+    while x<=m:
+        lst.append(b)
+        x+=1
+print(lst)

@@ -1,0 +1,12 @@
+def main():
+    N,M = map(int,input().split())
+    calculate_capital(N,M)
+def calculate_capital(N,M):
+    fBalance = N
+    for i in range(M):
+          fBalance = fBalance + fBalance*0.003
+    print("%.4f"%(fBalance))
+main()
+
+
+

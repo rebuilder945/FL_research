@@ -1,0 +1,13 @@
+min_sum=0
+max_sum=0
+for i in range(0,len(nums),2):
+    mix_sum+=nums[i]
+    max_sum+=nums[i+1]
+
+
+
+
+nums = eval(input())
+v = maxsum(nums)#调用自定义函数
+print(v)
+

@@ -1,0 +1,28 @@
+<testDataSet count="5">
+    <testData1>
+        <input>510232199910010312</input>
+        <output>1999-10-01
+510232********0312</output>
+    </testData1>
+    <testData2>
+        <input>100001200001010114</input>
+        <output>2000-01-01
+100001********0114</output>
+    </testData2>
+    <testData3>
+        <input>310210201805290316</input>
+        <output>2018-05-29
+310210********0316</output>
+    </testData3>
+    <testData4>
+        <input>450054199012310319</input>
+        <output>1990-12-31
+450054********0319</output>
+    </testData4>
+    <testData5>
+        <input>10001019991001031X</input>
+        <output>1999-10-01
+100010********031X
+</output>
+    </testData5>
+</testDataSet>

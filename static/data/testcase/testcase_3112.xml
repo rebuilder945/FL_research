@@ -1,0 +1,14 @@
+<testDataSet count="2">
+    <testData1>
+        <input>7
+8
+9</input>
+        <output>24,8.00</output>
+    </testData1>
+    <testData2>
+        <input>57
+58
+60</input>
+        <output>175,58.33</output>
+    </testData2>
+</testDataSet>

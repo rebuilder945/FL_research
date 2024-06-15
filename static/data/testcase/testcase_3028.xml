@@ -1,0 +1,27 @@
+<testDataSet count="5">
+<testData1>
+<input>2,3,3
+</input>
+<output>[2, 5, 8]</output>
+</testData1>
+<testData2>
+<input>2,4,3
+</input>
+<output>[2, 5, 8, 11]</output>
+</testData2>
+<testData3>
+<input>2,4,5
+</input>
+<output>[2, 7, 12, 17]</output>
+</testData3>
+<testData4>
+<input>2,5,5
+</input>
+<output>[2, 7, 12, 17, 22]</output>
+</testData4>
+<testData5>
+<input>5,6,7
+</input>
+<output>[5, 12, 19, 26, 33, 40]</output>
+</testData5>
+</testDataSet>

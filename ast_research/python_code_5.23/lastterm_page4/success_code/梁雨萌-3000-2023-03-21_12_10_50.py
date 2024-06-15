@@ -1,0 +1,5 @@
+a=eval(input())
+add=sum(a)
+equal=add/len(a)
+word="%.2f"%(equal)
+print(word)

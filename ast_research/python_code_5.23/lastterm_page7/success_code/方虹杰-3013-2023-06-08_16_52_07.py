@@ -1,0 +1,18 @@
+g={}
+i=input().split()
+a=[]
+b=[]
+
+while i !=['ok']:
+    a.append(i[0])
+    b.append(int(i[1]))
+    i=input().split()
+b.sort()
+print(a)
+print(b)
+if 'India'not in a:
+    print('no')
+print(sum(b))
+
+
+

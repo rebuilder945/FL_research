@@ -1,0 +1,6 @@
+b=int(input())
+g=int(input())
+br=(b*100)/(b+g)
+gr=(g*100)/(b+g)
+stext="The male students ratio is %.2f%,the female students ratio is %.2f%"%(br,gr)
+print(stext)

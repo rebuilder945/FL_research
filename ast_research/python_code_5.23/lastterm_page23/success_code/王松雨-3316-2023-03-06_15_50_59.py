@@ -1,0 +1,7 @@
+male=input()
+female=input()
+a=float(male)
+b=float(female)
+c=100*a/(a+b)
+d=100*b/(a+b)
+print("The male students ratio is %.2f%% ,the female students ratio is %.2f%%"%(c,d))

@@ -1,0 +1,13 @@
+a=eval(input())
+b=min(a)
+c=max(a)
+if b==c:
+    print([])
+else:
+    d=a.count(b)
+    e=a.count(c)
+    for i in range(d):
+        a.remove(b)
+    for i in range(e):
+        a.remove(c)
+    print(a)

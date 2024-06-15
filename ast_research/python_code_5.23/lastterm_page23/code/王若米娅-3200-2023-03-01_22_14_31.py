@@ -1,0 +1,2 @@
+sName=
+print(sName.upper())

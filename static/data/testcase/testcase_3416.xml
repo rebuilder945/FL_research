@@ -1,0 +1,22 @@
+<testDataSet count="5">
+    <testData1>
+        <input>&amp;100</input>
+        <output>$14.75</output>
+    </testData1>
+    <testData2>
+        <input>hf</input>
+        <output>Error</output>
+    </testData2>
+    <testData3>
+        <input>$15.00</input>
+        <output>&amp;101.70</output>
+    </testData3>
+    <testData4>
+        <input>USD25.98</input>
+        <output>RMB176.14</output>
+    </testData4>
+    <testData5>
+        <input>RMB200.3</input>
+        <output>USD29.54</output>
+    </testData5>
+</testDataSet>

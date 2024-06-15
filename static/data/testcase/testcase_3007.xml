@@ -1,0 +1,31 @@
+<testDataSet count="5">
+<testData1>
+<input>[1,2,3,4,5,6,7,8]
+2,3
+</input>
+<output>[1, 2, 4, 5, 6, 7, 8]</output>
+</testData1>
+<testData2>
+<input>[2,3,5,6,7,8,910]
+5,5
+</input>
+<output>[2, 3, 5, 6, 7, 8, 910]</output>
+</testData2>
+<testData3>
+<input>[22,44,22,66,88,99]
+3,4
+</input>
+<output>[22, 44, 22, 88, 99]</output>
+</testData3>
+<testData4>
+<input>[23,34,45,56,67,78,89]
+9,2
+</input>
+<output>error</output>
+</testData4>
+<testData5>
+<input>[12,3,4,56,-98,-45]
+0,0</input>
+<output>[12, 3, 4, 56, -98, -45]</output>
+</testData5>
+</testDataSet>

@@ -1,0 +1,22 @@
+<testDataSet count="5">
+    <testData1>
+        <input>2024</input>
+        <output>In 2024 February has 29 days.</output>
+    </testData1>
+    <testData2>
+        <input>2000</input>
+        <output>In 2000 February has 29 days.</output>
+    </testData2>
+    <testData3>
+        <input>2013</input>
+        <output>In 2013 February has 28 days.</output>
+    </testData3>
+    <testData4>
+        <input>2099</input>
+        <output>In 2099 February has 28 days.</output>
+    </testData4>
+    <testData5>
+        <input>2038</input>
+        <output>In 2038 February has 28 days.</output>
+    </testData5>
+</testDataSet>

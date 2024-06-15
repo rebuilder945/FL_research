@@ -1,0 +1,11 @@
+a=[]
+a.extend(input().split())
+x=str(input())
+d=x.split()
+n=eval(d[0])
+m=eval(d[1])
+N=a[n]
+M=a[m]
+a[n]=M
+a[m]=N
+print(a)

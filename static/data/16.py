@@ -1,0 +1,5 @@
+a=eval(input())
+b=eval(input())
+c=a*100/(a+b)
+d=b*100/(a+b)
+print(str("a", "b", c, d))

@@ -1,0 +1,13 @@
+def main():
+    num = eval(input())
+    calculate_e(num)
+def calculate_e(num):
+    e=1
+    s=num
+    while s>=1:
+        e+=1/s!
+        s-=1
+    print("%.6f"%(e))
+main()
+
+

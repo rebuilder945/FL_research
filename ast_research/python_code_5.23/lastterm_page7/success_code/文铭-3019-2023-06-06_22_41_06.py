@@ -1,0 +1,6 @@
+stl = str(input()).split(" ")
+stu = dict(english=int(stl[1]),python=int(stl[2]),math=int(stl[3]))
+avg = sum(stu.values())/len(stu.values())
+lst = list(stu.values())
+lst.sort(reverse=True)
+print("{} {:.2f} {:.2f} {:.2f} {:.2f}".format(stl[0],lst[0],lst[1],lst[2],avg))

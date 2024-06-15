@@ -1,0 +1,6 @@
+X=eval(input())
+x=eval(input())
+Y=eval(input())
+y=eval(input())
+l=(X-Y)*(X-Y)+(x-y)*(x-y)
+print("%.2f%l")

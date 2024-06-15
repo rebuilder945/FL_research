@@ -1,0 +1,15 @@
+def Fibonacci(n):
+      num=[1,1]
+      for i in range(n-2):
+            b=num[-1]+num[-2]
+            num.append(b)
+       return a[-1]
+
+
+
+
+num = [1, 1]
+n = int(input())
+print(Fibonacci(num, n))
+
+

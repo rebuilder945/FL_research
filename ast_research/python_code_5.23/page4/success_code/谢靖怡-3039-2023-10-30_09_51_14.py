@@ -1,0 +1,6 @@
+ls=eval(input())
+maxnum=max(ls)
+minnum=min(ls)
+ls.remove(maxnum)
+ls.remove(minnum)
+print(ls)

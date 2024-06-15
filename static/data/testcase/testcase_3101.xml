@@ -1,0 +1,8 @@
+<testDataSet count="1">
+    <testData1>
+        <input>aaa
+bbb
+3.1478</input>
+        <output>Book destroyed-aaa,bbb,3.15</output>
+    </testData1>
+</testDataSet>

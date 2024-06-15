@@ -1,0 +1,11 @@
+from distutils.log import error
+
+
+a=eval(input())
+n,m=eval(input())
+a=a.split(",")
+if 0<=n<=m<=len(a):
+    del a[n:m]
+    print(a)
+else:
+    print('error')

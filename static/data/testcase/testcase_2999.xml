@@ -1,0 +1,30 @@
+<testDataSet count="5">
+<testData1>
+<input>hello world python is great
+2 4
+</input>
+<output>['hello', 'world', 'great', 'is', 'python']</output>
+</testData1>
+<testData2>
+<input>china japan france germany
+1 3
+</input>
+<output>['china', 'germany', 'france', 'japan']</output>
+</testData2>
+<testData3>
+<input>the spring is warm and the sumer is hot
+3 6
+</input>
+<output>['the', 'spring', 'is', 'sumer', 'and', 'the', 'warm', 'is', 'hot']</output>
+</testData3>
+<testData4>
+<input>China is a great country
+-1 2</input>
+<output>['China', 'is', 'country', 'great', 'a']</output>
+</testData4>
+<testData5>
+<input>I love nature and Chinese tea culture
+-3 0</input>
+<output>['Chinese', 'love', 'nature', 'and', 'I', 'tea', 'culture']</output>
+</testData5>
+</testDataSet>

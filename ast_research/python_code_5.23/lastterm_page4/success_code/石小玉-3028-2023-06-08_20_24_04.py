@@ -1,0 +1,3 @@
+n,m,l=eval(input())
+x=range(n,n+(m-1)*l+1,l)
+print(list(x))

@@ -1,0 +1,5 @@
+a = eval(input())
+b = eval(input())
+c = (a * 100) / (a + b)
+d = (b * 100) / (a + b)
+print("The male students ratio is", c,"% , the female students ratio is", d, "% .")

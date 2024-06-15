@@ -1,0 +1,12 @@
+x1=eval(input())
+yi=eval(input())
+x2=eval(input())
+y2=eval(input())
+a=x1-x2
+b=y1-y2
+c=a^2
+d=b^2
+e=c+d
+f=e^0.5
+g="%.2f"%(f)
+print(g)

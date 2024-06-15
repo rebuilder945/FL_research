@@ -1,0 +1,6 @@
+ls=eval(input())
+x=max(ls)
+y=min(ls)
+ls.remove("x")
+ls.remove("y")
+print(ls)

@@ -1,0 +1,2 @@
+sNzme=()
+print(sName.upper())

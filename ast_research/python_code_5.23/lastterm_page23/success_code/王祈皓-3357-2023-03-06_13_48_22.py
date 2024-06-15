@@ -1,0 +1,5 @@
+airname = input("飞机的名字")
+airv = input("飞机的速度")
+aira = input("飞机的加速度")
+length = airv*airv/(2*aira)
+print(airname,airv,aira,length)

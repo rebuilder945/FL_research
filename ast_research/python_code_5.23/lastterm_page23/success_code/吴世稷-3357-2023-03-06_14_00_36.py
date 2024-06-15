@@ -1,0 +1,5 @@
+elysia1=input()
+elysia2=input()
+elysia3=input()
+length=eval(elysia3)*eval(elysia3)/(2*eval(elysia2))
+print("The acceleration of %s is %.2fM/s, the take-off speed is %.2fM/s, and the shortest take-off runway length is %.2fM."%(elysia1,eval(elysia2),eval(elysia3),length))

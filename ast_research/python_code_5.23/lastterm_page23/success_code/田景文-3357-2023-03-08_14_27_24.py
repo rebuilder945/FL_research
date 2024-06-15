@@ -1,0 +1,5 @@
+sName=str(input())
+sA=float(input())
+sV=float(input())
+sLength=sV*sV/(2*sA)
+print("The acceleration of",sName," is",round(sA,2),"M/s,the take-off speed is",round(sV,2),"M/s , and the shortest take-off runway length is",round(sLength,2),"M.")

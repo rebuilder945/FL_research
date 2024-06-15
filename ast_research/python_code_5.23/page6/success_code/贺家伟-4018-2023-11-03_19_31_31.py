@@ -1,0 +1,11 @@
+def shift(lst):
+    a=[]
+    for i in range(0,len(lst)-1):
+        a.append(lst[i+1])
+    a.append(lst[0])
+    return a
+
+list1 = input().split(",") #输入格式 1,2,3,4,5
+shift(list1)
+print(list1)
+

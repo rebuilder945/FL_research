@@ -1,0 +1,5 @@
+sName = "hello world"
+print(sName.upper())
+
+sName="p8,88OPO"
+print(sName.upper())

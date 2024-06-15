@@ -1,0 +1,5 @@
+names = input().split(',')
+scores = list(map(int, input().split(',')))
+nested_list = list(zip(names, scores))
+nested_list.sort(key=lambda x: x[1])
+print(nested_list)

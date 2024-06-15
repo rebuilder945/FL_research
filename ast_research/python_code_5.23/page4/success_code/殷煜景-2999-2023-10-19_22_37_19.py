@@ -1,0 +1,6 @@
+a=list(input().split(" "))
+n,m=eval(input().split(" "))
+b=a.pop(n,m)
+a.insert(m-1,b[0])
+a.insert(n-1,b[1])
+print(a)

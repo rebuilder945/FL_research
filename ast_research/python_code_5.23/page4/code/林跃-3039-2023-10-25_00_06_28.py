@@ -1,0 +1,8 @@
+lst=eval(input())
+a=lst.count(max(lst))
+b=lst.count(min(lst))
+for i in range(a)
+    lst.remove(max(lst))
+for i in range(b)
+    lst.remove(min(lst))
+print(lst)

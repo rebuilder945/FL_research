@@ -1,0 +1,5 @@
+a=eval(input())
+a.sort(reverse=True)
+b=set(a)
+c=''.join(str(i) for i in b)
+print(c)

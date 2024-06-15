@@ -1,0 +1,7 @@
+n=eval(input())
+h1=0
+for x in n:
+      if x%2==0:
+            h1+= x%2
+print(h1)
+

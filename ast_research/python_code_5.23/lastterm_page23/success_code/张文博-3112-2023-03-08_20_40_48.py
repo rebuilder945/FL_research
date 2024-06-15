@@ -1,0 +1,5 @@
+a=eval(input())
+b=eval(input())
+c=eval(input())
+text="%d,%.2f" % (a+b+c,(a+b+c)/3)
+print(text)

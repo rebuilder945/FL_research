@@ -1,0 +1,13 @@
+def shift(lst):
+
+    if len(lst) <= 1:
+        return  # nothing to shift
+    last_element = lst[-1]
+    for i in range(len(lst)-1, 0, -1):
+        lst[i] = lst[i-1]
+    lst[0] = last_element
+
+list1 = input().split(",") #输入格式 1,2,3,4,5
+shift(list1)
+print(list1)
+

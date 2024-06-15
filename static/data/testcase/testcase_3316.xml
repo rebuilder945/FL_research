@@ -1,0 +1,27 @@
+<testDataSet count="5">
+    <testData1>
+        <input>12
+8</input>
+        <output>The male students ratio is 60.00%,the female students ratio is 40.00%</output>
+    </testData1>
+    <testData2>
+        <input>30
+0</input>
+        <output>The male students ratio is 100.00%,the female students ratio is 0.00%</output>
+    </testData2>
+    <testData3>
+        <input>21
+10</input>
+        <output>The male students ratio is 67.74%,the female students ratio is 32.26%</output>
+    </testData3>
+    <testData4>
+        <input>10
+20</input>
+        <output>The male students ratio is 33.33%,the female students ratio is 66.67%</output>
+    </testData4>
+    <testData5>
+        <input>0
+12</input>
+        <output>The male students ratio is 0.00%,the female students ratio is 100.00%</output>
+    </testData5>
+</testDataSet>

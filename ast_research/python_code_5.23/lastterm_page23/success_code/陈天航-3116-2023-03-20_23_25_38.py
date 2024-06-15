@@ -1,0 +1,10 @@
+A=eval(input())
+A=A
+a=eval(input())
+a=a
+B=eval(input())
+B=B
+b=eval(input())
+b=b
+l=(A-B)*(A-B)+(a-b)*(a-b)
+print("%.2f%l")

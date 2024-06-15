@@ -1,0 +1,12 @@
+a=list(map(int,input().split(",")))
+n,m=eval(input())
+d=[]
+if -len(a)<=n<=len(a):
+    d.append(a[n])
+    c=d*m
+    e=a+c
+    print(e)
+else:
+    print("error")
+
+

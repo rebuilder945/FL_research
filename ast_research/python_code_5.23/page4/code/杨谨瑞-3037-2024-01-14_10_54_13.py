@@ -1,0 +1,17 @@
+ls = eval(input())
+n = eval(input())
+# 重复列表元素n次
+num=len(ls)
+ls2=[]
+for i in range(num):
+    for j in range(n):
+        ls2+=[ls[i]]
+ls3 = [x*x for x in ls2]
+# 下面代码去除重复元素
+ls4=[]
+for x in ls3:
+   if x is not in ls4:
+       ls4+=[x]
+
+print(ls4)
+

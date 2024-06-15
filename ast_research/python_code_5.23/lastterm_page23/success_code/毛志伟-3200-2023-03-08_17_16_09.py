@@ -1,0 +1,2 @@
+sWord = ''
+print (sWord.upper())

@@ -1,0 +1,24 @@
+def shui(n):
+    lst =[]
+    if n < 100:
+        return 'none'
+    else:
+        for x in range(100,n+1):
+            a = str(x)
+            if eval(a[0])**3+eval(a[1])**3+eval(a[2])**3 == x:
+                lst.append(x)
+        if len(lst)==0:
+            return 'none'
+        else:
+            return lst
+m = eval(input())
+a = shui(m)
+if a == 'none':
+    print('none')
+else:
+    for x in a:
+        print(x)
+
+
+
+    

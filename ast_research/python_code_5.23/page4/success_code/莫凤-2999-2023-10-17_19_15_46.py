@@ -1,0 +1,7 @@
+list1=list(input().split())
+a,b=eval(input())
+c=list1.pop(a)
+list1.insert(b-1,c)
+d=list1.pop(b)
+list1.insert(a,d)
+print(list1)

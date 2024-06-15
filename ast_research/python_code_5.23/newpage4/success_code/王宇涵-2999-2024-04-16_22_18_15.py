@@ -1,0 +1,11 @@
+lst1= eval(input())
+lst=list(lst1)
+n,m=eval(input())
+a=lst.pop(n)
+b=lst.pop(m)
+lst.remove(a)
+lst.insert(m-1,'a')
+lst.remove(b)
+lst.insert(n-1,'b')
+print(lst)
+

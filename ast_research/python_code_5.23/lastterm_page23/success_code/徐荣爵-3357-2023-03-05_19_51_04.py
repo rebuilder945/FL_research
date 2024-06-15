@@ -1,0 +1,5 @@
+sName = str(input("请输入飞机名称："))
+a = float(input("请输入飞机加速度："))
+v = float(input("请输入起飞速度："))
+length=v*v/(2*a)
+print("The acceleration of",sName,"is",a,"M / s, the take-off speed is","%.2f"%v,"M / s, and the shortest take-off runway length is","%.2f"%length,"M")

@@ -1,0 +1,7 @@
+n, m, l = eval(input())
+ls = [n]
+for i in range(m-1) :
+    n = n + l 
+    ls.append(n)
+print(ls)
+    

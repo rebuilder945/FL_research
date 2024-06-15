@@ -1,0 +1,22 @@
+<testDataSet count="5">
+    <testData1>
+        <input>sdffsd123werrer456fgdgdg1dfgdf12</input>
+        <output>456</output>
+    </testData1>
+    <testData2>
+        <input>123abc456</input>
+        <output>456</output>
+    </testData2>
+    <testData3>
+        <input>123456</input>
+        <output>123456</output>
+    </testData3>
+    <testData4>
+        <input>dfsadfafsafa</input>
+        <output>No digits</output>
+    </testData4>
+    <testData5>
+        <input>11ab34dddd789#</input>
+        <output>789</output>
+    </testData5>
+</testDataSet>

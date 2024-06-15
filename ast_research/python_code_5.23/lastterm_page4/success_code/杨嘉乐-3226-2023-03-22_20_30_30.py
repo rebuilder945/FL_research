@@ -1,0 +1,16 @@
+def search(a):
+    for i in a:
+        if a.count(i)>0.5*len(a):
+            return i
+        else:
+            return False
+
+
+
+
+
+nums = eval(input())
+y = search(nums)
+print(y)
+
+

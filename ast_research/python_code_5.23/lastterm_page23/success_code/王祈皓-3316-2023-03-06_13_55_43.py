@@ -1,0 +1,5 @@
+boynumber = input("男生人数")
+girlnumber = input("女生人数")
+maleratio = boynumber/(boynumber+girlnumber)
+femaleratio = girlnumber/(boynumber+girlnumber)
+print("The male students ratio is",maleratio,",","the female students ratio is",femaleratio)

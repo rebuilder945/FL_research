@@ -1,0 +1,32 @@
+<testDataSet count="5">
+    <testData1>
+        <input>Today is Sunday!
+is
+</input>
+        <output>Today  Sunday!</output>
+    </testData1>
+    <testData2>
+        <input>Ah Love!could you and I with Fate conspire
+ould
+</input>
+        <output>Ah Love!c you and I with Fate conspire</output>
+    </testData2>
+    <testData3>
+        <input>amethystic is a girl.
+ 
+</input>
+        <output>amethysticisagirl.</output>
+    </testData3>
+    <testData4>
+        <input>4+6=10
++
+</input>
+        <output>46=10</output>
+    </testData4>
+    <testData5>
+        <input>aabbaa
+aa
+</input>
+        <output>bb</output>
+    </testData5>
+</testDataSet>

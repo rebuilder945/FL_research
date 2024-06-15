@@ -1,0 +1,5 @@
+v=float(input("请输入起飞速度(m/s):"))
+a=float(input("请输入加速度(m/s**2)"))
+name=input("请输入名称")
+L=v*v/(2*a)
+print("The acceleration of",name,"M/s,the take-off speed is",v,"M/s,and the shortest take-off runway length is",L,"M.")

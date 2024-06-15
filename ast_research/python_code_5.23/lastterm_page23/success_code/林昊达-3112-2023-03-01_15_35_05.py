@@ -1,0 +1,5 @@
+n1=int(input())
+n2=int(input())
+n3=int(input())
+text=("%d,%.2f")%(n1+n2+n3,(n1+n2+n3)/3)
+print(text)

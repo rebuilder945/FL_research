@@ -1,0 +1,22 @@
+<testDataSet count="5">
+    <testData1>
+        <input>Li 70 90 100</input>
+        <output>Li 100.00 90.00 70.00 86.67</output>
+    </testData1>
+    <testData2>
+        <input>Liu 70 95 50</input>
+        <output>Liu 95.00 70.00 50.00 71.67</output>
+    </testData2>
+    <testData3>
+        <input>Wang 90 95 80</input>
+        <output>Wang 95.00 90.00 80.00 88.33</output>
+    </testData3>
+    <testData4>
+        <input>Wang 0 0 0</input>
+        <output>Wang 0.00 0.00 0.00 0.00</output>
+    </testData4>
+    <testData5>
+        <input>He 90 95 75</input>
+        <output>He 95.00 90.00 75.00 86.67</output>
+    </testData5>
+</testDataSet>

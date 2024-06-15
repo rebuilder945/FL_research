@@ -1,0 +1,9 @@
+list=input()
+m,n=input().split()
+m=int(m)
+n=int(n)
+t=list.split()
+a=t[m]
+t[m]=t[n]
+t[n]=a
+print(t)

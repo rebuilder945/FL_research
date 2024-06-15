@@ -1,0 +1,13 @@
+k=[]
+def calDegrees(nums):
+    for i in (nums):
+        c = b.count(i)
+        k.append(c)
+    return(max(k))
+
+
+
+nums = eval(input())
+d=calDegrees(nums) #调用自定义函数
+print(d)
+

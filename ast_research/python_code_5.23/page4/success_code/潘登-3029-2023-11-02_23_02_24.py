@@ -1,0 +1,6 @@
+a=str(input())
+b=str(input())
+x=a.split(',')
+y=b.split(',')
+c=list(zip[x,y])
+print(c)

@@ -1,0 +1,11 @@
+def calDegrees(nums, x):
+    nums = ['1', '2', '3', '3', '4', '5', '4', '3', '3']
+    x = 4
+    return nums[x]
+
+
+
+nums = eval(input())
+d=calDegrees(nums) #调用自定义函数
+print(d)
+

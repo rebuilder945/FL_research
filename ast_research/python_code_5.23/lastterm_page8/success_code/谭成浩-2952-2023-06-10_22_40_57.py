@@ -1,0 +1,18 @@
+def print_matrix(n):
+    for i in range(n):
+        s=[]
+        for x in range(n):
+            s.append(x+1)
+        for x in range(n):
+            if s[x]>i+1:
+                s[x]=i+1
+        for i in s:
+            print(i,end=' ')
+        print('\n')
+      
+
+number=eval(input())
+print_matrix(number)
+
+
+

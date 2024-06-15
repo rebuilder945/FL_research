@@ -1,0 +1,5 @@
+b=int(input())
+g=int(input())
+a=100*b/(b+g)
+c=100*g/(b+g)
+print("The male students ratio is %.2f%%,the female students ratio is %.2f%%"%(a,c))

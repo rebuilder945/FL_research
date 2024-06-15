@@ -1,0 +1,5 @@
+p=(input(name""))
+q=(input(a""))
+x=(input(v""))
+l=x*x/2/q
+print(The acceleration of p is q%.2f M / s, the take-off speed is x%.2f M / s, and the shortest take-off runway length is l%.2f M.)

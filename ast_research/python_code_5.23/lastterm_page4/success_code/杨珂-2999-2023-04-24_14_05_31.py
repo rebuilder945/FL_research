@@ -1,0 +1,10 @@
+a=input()
+list=a.split()
+e=input()
+e=e.split()
+b=int(e[0])
+c=int(e[1])
+d=list[b]
+list[b]=list[c]
+list[c]=d
+print(list)

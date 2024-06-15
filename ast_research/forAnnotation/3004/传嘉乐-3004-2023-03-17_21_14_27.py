@@ -1,0 +1,12 @@
+a=eval(input())
+b=[]
+c=[]
+for x in a:
+    for y in range(2,x):
+        if x%y!=0:
+            b.append(x)
+for i in b:
+    if i not in c:
+        c.append(i)
+print(c)
+

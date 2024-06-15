@@ -1,0 +1,14 @@
+lst = eval(input())
+x = max(lst)
+y = min(lst)
+a = lst.count(x)
+b = lst.count(y)
+for i in range(a):
+    lst.remove(x)
+if lst == 0:
+    print(lst)
+else:
+    for i in range(b):
+            lst.remove(y)
+    print(lst)
+

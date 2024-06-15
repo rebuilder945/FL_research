@@ -1,0 +1,15 @@
+def maxsum(nums):
+    nums=['2n']
+    nums.sort()
+    min_sum=0
+    for i in range(0,len(nums),2):
+        min_sum+=nums(i)
+    
+
+
+
+
+nums = eval(input())
+v = maxsum(nums)#调用自定义函数
+print(v)
+

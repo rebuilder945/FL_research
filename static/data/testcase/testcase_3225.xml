@@ -1,0 +1,22 @@
+<testDataSet count="5">
+    <testData1>
+        <input>5</input>
+        <output>{0: 1, 1: 1, 2: 2, 3: 6, 4: 24, 5: 120}</output>
+    </testData1>
+    <testData2>
+        <input>0</input>
+        <output>{0: 1}</output>
+    </testData2>
+    <testData3>
+        <input>2</input>
+        <output>{0: 1, 1: 1, 2: 2}</output>
+    </testData3>
+    <testData4>
+        <input>10</input>
+        <output>{0: 1, 1: 1, 2: 2, 3: 6, 4: 24, 5: 120, 6: 720, 7: 5040, 8: 40320, 9: 362880, 10: 3628800}</output>
+    </testData4>
+    <testData5>
+        <input>6</input>
+        <output>{0: 1, 1: 1, 2: 2, 3: 6, 4: 24, 5: 120, 6: 720}</output>
+    </testData5>
+</testDataSet>

@@ -1,0 +1,5 @@
+sName=input()
+a=float(input())
+v=float(input())
+length=v*v/(2*a)
+print("飞机起飞所需要的最短长度为%.2f/n,length")

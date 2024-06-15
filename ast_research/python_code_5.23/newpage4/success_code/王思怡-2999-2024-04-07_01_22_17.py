@@ -1,0 +1,10 @@
+a = list(input().split(" "))
+b= list(input().split(" "))
+n = int(b[0])
+m = int(b[1])
+N = a.pop(n)
+M = a.pop(m-1)
+a.insert(n,M)
+a.insert(m,N)
+print(a)
+

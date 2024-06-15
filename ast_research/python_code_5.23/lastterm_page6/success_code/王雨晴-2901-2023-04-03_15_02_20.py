@@ -1,0 +1,11 @@
+a=0
+b=1
+s=0
+while(b):
+    c=input()
+    if(c!="#"):
+        a+=1
+        s+=int(c)
+    else:
+        b=0
+print(a,s)

@@ -1,0 +1,5 @@
+planename=input()
+speed=input()
+length=input()
+cinde=float(length)**2/2*float(speed)
+print("The acceleration of",planename,"is",speed,"M/s",",","the take-off speed is",speed,"M/s",",","and the shortest take-off runaway length is","%.2f"%cinde,"M")

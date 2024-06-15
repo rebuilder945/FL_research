@@ -1,0 +1,5 @@
+v=float(input("起飞速度="))
+a=float(input("加速度="))
+length=v**2/(2*a)
+b=float(input("飞机名称："))
+print("最短跑道长度l=%.2f米"%length)

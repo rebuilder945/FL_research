@@ -1,0 +1,5 @@
+sname=input('飞机名称:')
+acc=int(input('加速度(米/秒的平方):'))
+vcc=int(input('起飞速度(米/秒):'))
+length=vcc*vcc/(2*acc)
+print(' The acceleration of',sname,'is' ,acc,'M/s','the take-off speed is ',vcc,'M/s and the shortest take-off runway length is%.2f'%length,'M')

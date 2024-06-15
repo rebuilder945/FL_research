@@ -1,0 +1,22 @@
+<testDataSet count="5">
+    <testData1>
+        <input>1</input>
+        <output>winter</output>
+    </testData1>
+    <testData2>
+        <input>4</input>
+        <output>spring</output>
+    </testData2>
+    <testData3>
+        <input>7</input>
+        <output>summer</output>
+    </testData3>
+    <testData4>
+        <input>11</input>
+        <output>autumn</output>
+    </testData4>
+    <testData5>
+        <input>15</input>
+        <output>error</output>
+    </testData5>
+</testDataSet>

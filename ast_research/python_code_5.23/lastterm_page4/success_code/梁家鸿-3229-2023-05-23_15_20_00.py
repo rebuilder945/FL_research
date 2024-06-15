@@ -1,0 +1,12 @@
+a = eval(input())
+b = []
+for i in a:
+    if a.count(i) == 1:
+        b.append(i)
+    else:
+        continue
+if len(b) == 0:
+    print(False)
+else:
+    b.sort()
+    print(",".join(str(e) for e in b))

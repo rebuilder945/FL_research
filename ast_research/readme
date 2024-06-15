@@ -1,0 +1,11 @@
+# ch_3004: 题目3004的所有提交程序，True为完全正确，False为逻辑错误。
+    # 使用implement/techs.py即可生成，输入为原始程序集，输出将其分为True和False集。
+# data/: 为学生程序。其中data/ch_3004表示所有章节的所有学生提交的对3004题目的解答程序，
+    # data/ch4_3004表示第四章的所有学生提交的对3004题目的解答程序。其中data/ch_3004/True  
+    # 表示所有正确解答程序，data/ch_3004/False表示所有逻辑错误解答程序。
+# out/: 输出ast聚类的输出结果，以及各种其他的输出。包含用bert+kmeans方法和editDis+22match方法聚类的结果。
+# main.py: 聚类主程序。
+# utils.py: 各种工具类和函数。
+# const.py: 常量。
+# cluster_22match.py: 实现了editDis+22match
+# cluster_kmeans.py: 实现了bert+kmeans

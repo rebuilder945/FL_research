@@ -1,0 +1,22 @@
+<testDataSet count="5">
+    <testData1>
+        <input>15</input>
+        <output>1351.00</output>
+    </testData1>
+    <testData2>
+        <input>21.5</input>
+        <output>2.12</output>
+    </testData2>
+    <testData3>
+        <input>20</input>
+        <output>0.00</output>
+    </testData3>
+    <testData4>
+        <input>50</input>
+        <output>1.96</output>
+    </testData4>
+    <testData5>
+        <input>-20</input>
+        <output>2401.00</output>
+    </testData5>
+</testDataSet>

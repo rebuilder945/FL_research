@@ -1,0 +1,27 @@
+def  myFun(a,b):
+       a=eval(a)
+       b=eval(b)
+       if type(a)=int and type(b)=int and a>0 and b>0:
+           if a>b:
+               c=len(str(a))-len(str(b))
+               b='0'*c+str(b)
+               a=str(a)
+               list0=[]
+               for i in range(len(a)):
+                   d=int(a[i])*int(b[i])
+                   list.append(d)
+               e=0
+               for i in range(d):
+                   e=e+d[i]
+           return e
+       else:
+           return 'error'
+
+num=input().split()
+a=num[0]
+b=num[1]
+if a.isdigit() and b.isdigit(): #判断a,b是否都是数字
+       print(myFun(a,b))  #调用自定义函数
+else:
+       print("error")
+

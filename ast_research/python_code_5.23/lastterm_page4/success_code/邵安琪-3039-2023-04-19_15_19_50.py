@@ -1,0 +1,8 @@
+lst=eval(input())
+a=max(lst)
+b=min(lst)
+lst1=[]
+for x in lst:
+    if x!=a or x!=b:
+        lst1.append(x)
+print(lst1)

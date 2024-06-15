@@ -1,0 +1,8 @@
+list = input().strip('[]').split(',')
+n, m = map(int, input().split(','))
+if n > m or n < 0 or m > len(list)-1 or n>len(list)-1 or m<0:
+    print("error")
+else:
+    del list[n:m]
+    print('[{}]'.format(', '.join(list)))
+

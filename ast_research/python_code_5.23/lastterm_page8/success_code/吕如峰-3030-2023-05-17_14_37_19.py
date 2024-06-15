@@ -1,0 +1,6 @@
+a=input().split(",")
+b=input().split(",")
+c=list(zip(a,b))
+d=map(lambda t: [*t], zip(a, b))
+d=sorted(d, key=lambda t: t[1])
+print(d)

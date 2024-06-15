@@ -1,0 +1,13 @@
+def work(a) :
+        import math       
+        di_nums={}
+        for x in list(range(a+1)):
+                di_nums[x]=math.factorial(x)
+        return di_nums
+
+	
+
+a = int(input())
+ans = work(a)
+print(ans)
+

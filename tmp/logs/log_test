@@ -1,0 +1,195 @@
+2024-05-18 15:04:05,717 - INFO - {
+    "msg_type": "LOGIC_ERROR",
+    "user": null,
+    "prob_input": "输入一个由字符串构成的列表和两个整数n和m（n和m在输入列表的下标范围以内），交换其中两个元素的值，打印输出交换后的列表。",
+    "code_input": "a=list(map(str,input().split()))\nb,c=map(int,input().split())\nd=a.copy()\nd[b]=a[c]\nd[c]=a[b]\nprint(a)\n",
+    "prob_id": "2999",
+    "fix_suggestion": "((([[1, 1, 1, 1, 1, 1, 0], [1, 1, 1, 1, 1, 1, 0], [1, 1, 1, 1, 1, 1, 0], [1, 1, 1, 1, 1, 1, 0], [1, 1, 1, 1, 1, 1, 0]], [0, 0, 0, 0, 0]), {4: [[0, 0, 0, 0, 0], [0, 0, 0, 0, 0], [0, 0, 0, 0, 0], [0, 0, 0, 0, 0]], 5: [[0, 0, 0, 0, 0], [0, 0, 0, 0, 0], [0, 0, 0, 0, 0], [0, 0, 0, 0, 0]]}), (17, 8, [[4, -1.0], [5, -1.0]]), {'tf': 5, 'tp': 0, 'f2p': 0, 'p2f': 0, 'f&p': {4: {'f': [0, 0, 0, 0], 'p': [0, 0, 0, 0]}, 5: {'f': [0, 0, 0, 0], 'p': [0, 0, 0, 0]}}}, [4, 5])",
+    "is_like": null,
+    "feedback": null,
+    "dialogue": null,
+    "err_info": null,
+    "traceback_info": null
+}
+2024-05-18 15:04:23,305 - ERROR - {
+    "msg_type": "EXCEPTION",
+    "user": null,
+    "prob_input": "输入一个由字符串构成的列表和两个整数n和m（n和m在输入列表的下标范围以内），交换其中两个元素的值，打印输出交换后的列表。",
+    "code_input": "a=list(map(str,input().split()))\nb,c=map(int,input().split())\nd=a.copy()\nd[b]=a[c]\nd[c]=a[b]\nprint(d)\n",
+    "prob_id": "2999",
+    "fix_suggestion": null,
+    "is_like": null,
+    "feedback": null,
+    "dialogue": null,
+    "err_info": "NoFailingTestError",
+    "traceback_info": "Traceback (most recent call last):\n  File \"/home/wdy/code_LLM/FL_research/demo.py\", line 99, in respond\n    res = Fl_app.get_res(code_=message, prob_id=prob_id, stu=prob_id) # (y, line_rank, outputs_info, target_lines)\n  File \"/home/wdy/code_LLM/FL_research/implement/techs.py\", line 461, in get_res\n  File \"/home/wdy/code_LLM/FL_research/implement/techs.py\", line 218, in cal\n    with open(\"tmp/tmp_ori_code.py\", \"w\", encoding=\"utf8\") as f:\nsbfl.base.NoFailingTestError\n"
+}
+2024-05-18 15:05:33,145 - INFO - {
+    "msg_type": "LOGIC_ERROR",
+    "user": null,
+    "prob_input": "输入一个由字符串构成的列表和两个整数n和m（n和m在输入列表的下标范围以内），交换其中两个元素的值，打印输出交换后的列表。",
+    "code_input": "a=input().split()\nm,n=input().split()\nx=int(n)\ny=int(m)\nb=a[y]\na[x]=a[y]\na[y]=b\nprint(a)\n",
+    "prob_id": "2999",
+    "fix_suggestion": "((([[1, 1, 1, 1, 1, 1, 1, 1, 0], [1, 1, 1, 1, 1, 1, 1, 1, 0], [1, 1, 1, 1, 1, 1, 1, 1, 0], [1, 1, 1, 1, 1, 1, 1, 1, 0], [1, 1, 1, 1, 1, 1, 1, 1, 0]], [0, 0, 0, 0, 0]), {5: [[0, 0, 0, 0, 0], [0, 0, 0, 0, 0], [0, 0, 0, 0, 0]], 6: [[0, 0, 0, 0, 0], [0, 0, 0, 0, 0], [0, 0, 0, 0, 0], [0, 0, 0, 0, 0]], 7: [[0, 0, 0, 0, 0], [0, 0, 0, 0, 0], [0, 0, 0, 0, 0]]}), (17, 10, [[5, -1.0], [6, -1.0], [7, -1.0]]), {'tf': 5, 'tp': 0, 'f2p': 0, 'p2f': 0, 'f&p': {5: {'f': [0, 0, 0], 'p': [0, 0, 0]}, 6: {'f': [0, 0, 0, 0], 'p': [0, 0, 0, 0]}, 7: {'f': [0, 0, 0], 'p': [0, 0, 0]}}}, [5, 6, 7])",
+    "is_like": null,
+    "feedback": null,
+    "dialogue": null,
+    "err_info": null,
+    "traceback_info": null
+}
+2024-05-18 15:05:41,495 - ERROR - {
+    "msg_type": "EXCEPTION",
+    "user": null,
+    "prob_input": "输入一个由字符串构成的列表和两个整数n和m（n和m在输入列表的下标范围以内），交换其中两个元素的值，打印输出交换后的列表。",
+    "code_input": "a=input().split()\nm,n=input().split()\nx=int(n)\ny=int(m)\nb=a[x]\na[x]=a[y]\na[y]=b\nprint(a)\n",
+    "prob_id": "2999",
+    "fix_suggestion": null,
+    "is_like": null,
+    "feedback": null,
+    "dialogue": null,
+    "err_info": "NoFailingTestError",
+    "traceback_info": "Traceback (most recent call last):\n  File \"/home/wdy/code_LLM/FL_research/demo.py\", line 99, in respond\n    res = Fl_app.get_res(code_=message, prob_id=prob_id, stu=prob_id) # (y, line_rank, outputs_info, target_lines)\n  File \"/home/wdy/code_LLM/FL_research/implement/techs.py\", line 461, in get_res\n  File \"/home/wdy/code_LLM/FL_research/implement/techs.py\", line 218, in cal\n    with open(\"tmp/tmp_ori_code.py\", \"w\", encoding=\"utf8\") as f:\nsbfl.base.NoFailingTestError\n"
+}
+2024-05-18 20:13:51,137 - ERROR - {
+    "msg_type": "EXCEPTION",
+    "user": null,
+    "prob_input": "输入一个由字符串构成的列表和两个整数n和m（n和m在输入列表的下标范围以内），交换其中两个元素的值，打印输出交换后的列表。",
+    "code_input": "a=list(map(str,input().split()))\nb,c=map(int,input().split())\nd=a.copy()\nd[b]=a[c]\nd[c]=a[b]\nprint(d)\n",
+    "prob_id": "2999",
+    "fix_suggestion": null,
+    "is_like": null,
+    "feedback": null,
+    "dialogue": null,
+    "err_info": "NoFailingTestError",
+    "traceback_info": "Traceback (most recent call last):\n  File \"/home/wdy/code_LLM/FL_research/demo.py\", line 99, in respond\n    res = Fl_app.get_res(code_=message, prob_id=prob_id, stu=prob_id) # (y, line_rank, outputs_info, target_lines)\n  File \"/home/wdy/code_LLM/FL_research/implement/techs.py\", line 461, in get_res\n  File \"/home/wdy/code_LLM/FL_research/implement/techs.py\", line 218, in cal\n    with open(\"tmp/tmp_ori_code.py\", \"w\", encoding=\"utf8\") as f:\nsbfl.base.NoFailingTestError\n"
+}
+2024-05-18 20:13:56,744 - ERROR - {
+    "msg_type": "EXCEPTION",
+    "user": null,
+    "prob_input": "输入一个由字符串构成的列表和两个整数n和m（n和m在输入列表的下标范围以内），交换其中两个元素的值，打印输出交换后的列表。",
+    "code_input": "a=list(map(str,input().split()))\nb,c=map(int,input().split())\nd=a.copy()\nd[b]=a[c]\nd[c]=a[b]\nprint(d)\n",
+    "prob_id": "2999",
+    "fix_suggestion": null,
+    "is_like": null,
+    "feedback": null,
+    "dialogue": null,
+    "err_info": "NoFailingTestError",
+    "traceback_info": "Traceback (most recent call last):\n  File \"/home/wdy/code_LLM/FL_research/demo.py\", line 99, in respond\n    res = Fl_app.get_res(code_=message, prob_id=prob_id, stu=prob_id) # (y, line_rank, outputs_info, target_lines)\n  File \"/home/wdy/code_LLM/FL_research/implement/techs.py\", line 461, in get_res\n  File \"/home/wdy/code_LLM/FL_research/implement/techs.py\", line 218, in cal\n    with open(\"tmp/tmp_ori_code.py\", \"w\", encoding=\"utf8\") as f:\nsbfl.base.NoFailingTestError\n"
+}
+2024-05-18 20:32:30,238 - ERROR - {
+    "msg_type": "EXCEPTION",
+    "user": null,
+    "prob_input": "输入一个由字符串构成的列表和两个整数n和m（n和m在输入列表的下标范围以内），交换其中两个元素的值，打印输出交换后的列表。",
+    "code_input": "a=list(map(str,input().split()))\nb,c=map(int,input().split())\nd=a.copy()\nd[b]=a[c]\nd[c]=a[b]\nprint(d)\n",
+    "prob_id": "2999",
+    "fix_suggestion": null,
+    "is_like": null,
+    "feedback": null,
+    "dialogue": null,
+    "err_info": "NoFailingTestError",
+    "traceback_info": "Traceback (most recent call last):\n  File \"/home/wdy/code_LLM/FL_research/demo.py\", line 99, in respond\n    res = Fl_app.get_res(code_=message, prob_id=prob_id, stu=prob_id) # (y, line_rank, outputs_info, target_lines)\n  File \"/home/wdy/code_LLM/FL_research/implement/techs.py\", line 461, in get_res\n    FL_app = FaultLoalization(\n  File \"/home/wdy/code_LLM/FL_research/implement/techs.py\", line 218, in cal\n    ori_cov_info: ((cov_vecs, correct_vec), out_dict)\nsbfl.base.NoFailingTestError\n"
+}
+2024-05-18 20:32:54,559 - ERROR - {
+    "msg_type": "EXCEPTION",
+    "user": null,
+    "prob_input": "输入一个由字符串构成的列表和两个整数n和m（n和m在输入列表的下标范围以内），交换其中两个元素的值，打印输出交换后的列表。",
+    "code_input": "a=list(map(str,input().split()))\nb,c=map(int,input().split())\nd=a.copy()\nd[b]=a[c]\nd[c]=a[b]\nprint(d)\n",
+    "prob_id": "2999",
+    "fix_suggestion": null,
+    "is_like": null,
+    "feedback": null,
+    "dialogue": null,
+    "err_info": "NoFailingTestError",
+    "traceback_info": "Traceback (most recent call last):\n  File \"/home/wdy/code_LLM/FL_research/demo.py\", line 99, in respond\n    res = Fl_app.get_res(code_=message, prob_id=prob_id, stu=prob_id) # (y, line_rank, outputs_info, target_lines)\n  File \"/home/wdy/code_LLM/FL_research/implement/techs.py\", line 461, in get_res\n    FL_app = FaultLoalization(\n  File \"/home/wdy/code_LLM/FL_research/implement/techs.py\", line 218, in cal\n    ori_cov_info: ((cov_vecs, correct_vec), out_dict)\nsbfl.base.NoFailingTestError\n"
+}
+2024-05-18 20:33:01,432 - ERROR - {
+    "msg_type": "EXCEPTION",
+    "user": null,
+    "prob_input": "输入一个由字符串构成的列表和两个整数n和m（n和m在输入列表的下标范围以内），交换其中两个元素的值，打印输出交换后的列表。",
+    "code_input": "a=list(map(str,input().split()))\nb,c=map(int,input().split())\nd=a.copy()\nd[b]=a[c]\nd[c]=a[b]\nprint(d)\n",
+    "prob_id": "2999",
+    "fix_suggestion": null,
+    "is_like": null,
+    "feedback": null,
+    "dialogue": null,
+    "err_info": "NoFailingTestError",
+    "traceback_info": "Traceback (most recent call last):\n  File \"/home/wdy/code_LLM/FL_research/demo.py\", line 99, in respond\n    res = Fl_app.get_res(code_=message, prob_id=prob_id, stu=prob_id) # (y, line_rank, outputs_info, target_lines)\n  File \"/home/wdy/code_LLM/FL_research/implement/techs.py\", line 461, in get_res\n    FL_app = FaultLoalization(\n  File \"/home/wdy/code_LLM/FL_research/implement/techs.py\", line 218, in cal\n    ori_cov_info: ((cov_vecs, correct_vec), out_dict)\nsbfl.base.NoFailingTestError\n"
+}
+2024-05-18 20:55:20,581 - INFO - {
+    "msg_type": "COMPILE_ERROR",
+    "user": null,
+    "prob_input": "输入一个由字符串构成的列表和两个整数n和m（n和m在输入列表的下标范围以内），交换其中两个元素的值，打印输出交换后的列表。",
+    "code_input": "b,c=map(int,input().split())\nd=a.copy()\nd[b]=a[c]\nd[c]=a[b]\nprint(d)",
+    "prob_id": "2999",
+    "fix_suggestion": "**存在的错误**：\n\n进行int类型转换的字符串存在非数字字符，错误主要存在于进行int类型强制转换时，存在无法转换成整型的字符串数据；_x000D_\n例如代码所示当对只含有数字的字符串类型进行int强制转换时可以成功，但包含非数字的字符串类型时出现错误\n\n\n\n**示例代码：**\n\n```ss\n#错误写法：c = int(\"100a\")\nc = int(\"100.1\")\nprint(c)\n",
+    "is_like": null,
+    "feedback": null,
+    "dialogue": null,
+    "err_info": null,
+    "traceback_info": "Traceback (most recent call last):\n  File \"/home/wdy/code_LLM/FL_research/demo.py\", line 99, in respond\n    res = Fl_app.get_res(code_=message, prob_id=prob_id, stu=prob_id) # (y, line_rank, outputs_info, target_lines)\n  File \"/home/wdy/code_LLM/FL_research/implement/techs.py\", line 461, in get_res\n    test_cases=test_cases,\n  File \"/home/wdy/code_LLM/FL_research/implement/techs.py\", line 213, in cal\n    code_: str,\n  File \"/home/wdy/code_LLM/FL_research/implement/techs.py\", line 48, in cal\n    def __init__(self, cov: Coverage, my_stdout: io.TextIOWrapper, text: str) -> None:\n  File \"/home/wdy/code_LLM/FL_research/implement/techs.py\", line 80, in get_exec_res\n    with self.redirect_io():\n  File \"/home/wdy/code_LLM/FL_research/tmp_code.py\", line 1, in <module>\n    b,c=map(int,input().split())\nValueError: invalid literal for int() with base 10: 'hello'\n"
+}
+2024-05-18 20:55:25,527 - INFO - {
+    "msg_type": "COMPILE_ERROR",
+    "user": null,
+    "prob_input": "输入一个由字符串构成的列表和两个整数n和m（n和m在输入列表的下标范围以内），交换其中两个元素的值，打印输出交换后的列表。",
+    "code_input": "b,c=map(int,input().split())\nd=a.copy()\nd[b]=a[c]\nd[c]=a[b]\nprint(d)",
+    "prob_id": "2999",
+    "fix_suggestion": "**存在的错误**：\n\n进行int类型转换的字符串存在非数字字符，错误主要存在于进行int类型强制转换时，存在无法转换成整型的字符串数据；_x000D_\n例如代码所示当对只含有数字的字符串类型进行int强制转换时可以成功，但包含非数字的字符串类型时出现错误\n\n\n\n**示例代码：**\n\n```ss\n#错误写法：c = int(\"100a\")\nc = int(\"100.1\")\nprint(c)\n",
+    "is_like": null,
+    "feedback": null,
+    "dialogue": null,
+    "err_info": null,
+    "traceback_info": "Traceback (most recent call last):\n  File \"/home/wdy/code_LLM/FL_research/demo.py\", line 99, in respond\n    res = Fl_app.get_res(code_=message, prob_id=prob_id, stu=prob_id) # (y, line_rank, outputs_info, target_lines)\n  File \"/home/wdy/code_LLM/FL_research/implement/techs.py\", line 461, in get_res\n    test_cases=test_cases,\n  File \"/home/wdy/code_LLM/FL_research/implement/techs.py\", line 213, in cal\n    code_: str,\n  File \"/home/wdy/code_LLM/FL_research/implement/techs.py\", line 48, in cal\n    def __init__(self, cov: Coverage, my_stdout: io.TextIOWrapper, text: str) -> None:\n  File \"/home/wdy/code_LLM/FL_research/implement/techs.py\", line 80, in get_exec_res\n    with self.redirect_io():\n  File \"/home/wdy/code_LLM/FL_research/tmp_code.py\", line 1, in <module>\n    b,c=map(int,input().split())\nValueError: invalid literal for int() with base 10: 'hello'\n"
+}
+2024-05-18 20:55:33,433 - ERROR - {
+    "msg_type": "EXCEPTION",
+    "user": null,
+    "prob_input": "输入一个由字符串构成的列表和两个整数n和m（n和m在输入列表的下标范围以内），交换其中两个元素的值，打印输出交换后的列表。",
+    "code_input": "a=list(map(str,input().split()))\nb,c=map(int,input().split())\nd=a.copy()\nd[b]=a[c]\nd[c]=a[b]\nprint(d)",
+    "prob_id": "2999",
+    "fix_suggestion": null,
+    "is_like": null,
+    "feedback": null,
+    "dialogue": null,
+    "err_info": "NoFailingTestError",
+    "traceback_info": "Traceback (most recent call last):\n  File \"/home/wdy/code_LLM/FL_research/demo.py\", line 99, in respond\n    res = Fl_app.get_res(code_=message, prob_id=prob_id, stu=prob_id) # (y, line_rank, outputs_info, target_lines)\n  File \"/home/wdy/code_LLM/FL_research/implement/techs.py\", line 461, in get_res\n    test_cases=test_cases,\n  File \"/home/wdy/code_LLM/FL_research/implement/techs.py\", line 218, in cal\n    flag: bool. is the code valid for mbfl FL?\nsbfl.base.NoFailingTestError\n"
+}
+2024-05-18 21:12:44,129 - ERROR - {
+    "msg_type": "EXCEPTION",
+    "user": null,
+    "prob_input": "输入一个由字符串构成的列表和两个整数n和m（n和m在输入列表的下标范围以内），交换其中两个元素的值，打印输出交换后的列表。",
+    "code_input": "a=list(map(str,input().split()))\nb,c=map(int,input().split())\nd=a.copy()\nd[b]=a[c]\nd[c]=a[b]\nprint(d)",
+    "prob_id": "2999",
+    "fix_suggestion": null,
+    "is_like": null,
+    "feedback": null,
+    "dialogue": null,
+    "err_info": "NoFailingTestError",
+    "traceback_info": "Traceback (most recent call last):\n  File \"/home/wdy/code_LLM/FL_research/demo.py\", line 99, in respond\n    res = Fl_app.get_res(code_=message, prob_id=prob_id, stu=prob_id) # (y, line_rank, outputs_info, target_lines)\n  File \"/home/wdy/code_LLM/FL_research/implement/techs.py\", line 461, in get_res\n    alg_sbfl = SBFL(cov=Coverage(), my_stdout=CustomStdout(sys.__stdout__), text='sbfl')\n  File \"/home/wdy/code_LLM/FL_research/implement/techs.py\", line 218, in cal\n    code_: str,\nsbfl.base.NoFailingTestError\n"
+}
+2024-05-18 21:12:50,840 - INFO - {
+    "msg_type": "LOGIC_ERROR",
+    "user": null,
+    "prob_input": "输入一个由字符串构成的列表和两个整数n和m（n和m在输入列表的下标范围以内），交换其中两个元素的值，打印输出交换后的列表。",
+    "code_input": "a=list(map(str,input().split()))\nb,c=map(int,input().split())\nd=a.copy()\nd[b]=a[c]\nd[c]=a[b]\nprint(a)",
+    "prob_id": "2999",
+    "fix_suggestion": "((([[1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1]], [0, 0, 0, 0, 0]), {4: [[0, 0, 0, 0, 0], [0, 0, 0, 0, 0], [0, 0, 0, 0, 0], [0, 0, 0, 0, 0]], 5: [[0, 0, 0, 0, 0], [0, 0, 0, 0, 0], [0, 0, 0, 0, 0], [0, 0, 0, 0, 0]]}), (17, 8, [[4, -1.0], [5, -1.0]]), {'tf': 5, 'tp': 0, 'f2p': 0, 'p2f': 0, 'f&p': {4: {'f': [0, 0, 0, 0], 'p': [0, 0, 0, 0]}, 5: {'f': [0, 0, 0, 0], 'p': [0, 0, 0, 0]}}}, [4, 5])",
+    "is_like": null,
+    "feedback": null,
+    "dialogue": null,
+    "err_info": null,
+    "traceback_info": null
+}
+2024-05-18 21:35:41,696 - ERROR - {
+    "msg_type": "EXCEPTION",
+    "user": null,
+    "prob_input": "输入一个由字符串构成的列表和两个整数n和m（n和m在输入列表的下标范围以内），交换其中两个元素的值，打印输出交换后的列表。",
+    "code_input": "a=input().split()\nm,n=input().split()\nx=int(n)\ny=int(m)\nb=a[x]\na[x]=a[y]\na[y]=b\nprint(a)\n",
+    "prob_id": "2999",
+    "fix_suggestion": null,
+    "is_like": null,
+    "feedback": null,
+    "dialogue": null,
+    "err_info": "NoFailingTestError",
+    "traceback_info": "Traceback (most recent call last):\n  File \"/home/wdy/code_LLM/FL_research/demo.py\", line 99, in respond\n    res = Fl_app.get_res(code_=message, prob_id=prob_id, stu=prob_id) # (y, line_rank, outputs_info, target_lines)\n  File \"/home/wdy/code_LLM/FL_research/implement/techs.py\", line 461, in get_res\n    alg_mbfl = MBFL(cov=Coverage(), my_stdout=CustomStdout(sys.__stdout__), text='mbfl')\n  File \"/home/wdy/code_LLM/FL_research/implement/techs.py\", line 218, in cal\n    params:\nsbfl.base.NoFailingTestError\n"
+}

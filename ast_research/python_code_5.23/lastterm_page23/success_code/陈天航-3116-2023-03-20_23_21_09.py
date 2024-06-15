@@ -1,0 +1,6 @@
+x1=input()
+x2=input()
+y1=input()
+y2=input()
+l=(x1-y1)*(x1-y1)+(x2-y2)*(x2-y2)
+print("%.2f%l")

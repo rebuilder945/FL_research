@@ -1,0 +1,27 @@
+<testDataSet count="5">
+    <testData1>
+        <input>'2001001','Zhang Si','female',65,False,[20,90,85]</input>
+        <output>('Zhang Si', 'female')
+65.00</output>
+    </testData1>
+    <testData2>
+        <input>'2001001','Li Si','female',65,False,[20,90,85,60]</input>
+        <output>('Li Si', 'female')
+63.75</output>
+    </testData2>
+    <testData3>
+        <input>'2001001','Wang Si','male',65,False,[45.54,90,85,60]</input>
+        <output>('Wang Si', 'male')
+70.13</output>
+    </testData3>
+    <testData4>
+        <input>'2001001','Wang Wu','female',65,False,[45.54,90,85,0]</input>
+        <output>('Wang Wu', 'female')
+55.13</output>
+    </testData4>
+    <testData5>
+        <input>'2001001','Wang Wu','male',65,False,[0]</input>
+        <output>('Wang Wu', 'male')
+0.00</output>
+    </testData5>
+</testDataSet>

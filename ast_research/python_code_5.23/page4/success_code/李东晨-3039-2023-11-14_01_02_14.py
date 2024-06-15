@@ -1,0 +1,5 @@
+a=eval(input())
+a.sort()
+a.remove(a[-1])
+a.remove(a[0])
+print(a)

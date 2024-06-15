@@ -1,0 +1,8 @@
+sName=input()
+a=eval(input())
+v=eval(input())
+length=v*v/(2*a)
+print("{}".format(sName))
+print("a:{:.2f}".format(a))
+print("v:{:.2f}".format(v))
+print("The acceleration of {} is {1:%,2f} M / s, the take-off speed is {:.2f} M / s, and the shortest take-off runway length is {:.2f} M.")(sName,a,v,length)

@@ -1,0 +1,12 @@
+i=eval(input())
+n={}
+for a in i:
+    if a in i:
+        n=n+1
+    else:
+        n=n+0
+if n==1:
+    print(a,end="")
+else:
+    print("False")
+ 

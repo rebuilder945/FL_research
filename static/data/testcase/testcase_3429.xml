@@ -1,0 +1,22 @@
+<testDataSet count="5">
+    <testData1>
+        <input>abcde</input>
+        <output>5 0 0 0</output>
+    </testData1>
+    <testData2>
+        <input>abcdf 12 34 55</input>
+        <output>5 3 6 0</output>
+    </testData2>
+    <testData3>
+        <input>!@$%^&amp;&amp;</input>
+        <output>0 0 0 7</output>
+    </testData3>
+    <testData4>
+        <input>The life is short,you need python!</input>
+        <output>27 5 0 2</output>
+    </testData4>
+    <testData5>
+        <input>123456767{}:&quot;&gt;&lt;</input>
+        <output>0 0 9 6</output>
+    </testData5>
+</testDataSet>

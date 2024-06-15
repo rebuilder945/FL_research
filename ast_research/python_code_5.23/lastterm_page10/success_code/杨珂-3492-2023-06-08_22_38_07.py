@@ -1,0 +1,6 @@
+a=str(input())
+ls=[a[0]]
+for i in a:
+    if i not in ls:
+        print(i)
+        break

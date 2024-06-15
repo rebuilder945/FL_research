@@ -1,0 +1,6 @@
+a=int(input())
+b=int(input())
+c=int(input())
+d=str(a+b+c)
+e=str(d/3)
+print("d,'%.2f'%e")
