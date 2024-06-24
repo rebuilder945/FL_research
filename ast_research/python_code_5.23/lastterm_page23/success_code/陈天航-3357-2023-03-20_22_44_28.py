@@ -1,8 +1,0 @@
-A=input()
-a=input(float())
-a=a
-v=input(float())
-v=v
-B=v*v/2*a
-print("The acceleration of %s,is %2f,M/s,the take-off speed is %2f,M/s,and the shortest take-off runway length is %2f,M."%(A,a,v,B))
-#("The  consumption  is  %.4f,  the  tip  is  %.4f,  the  tax  is  %.4f,so  the  total  consumption  is  %.4f"%(consumption,tip,tax,total))

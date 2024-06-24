@@ -1,5 +1,0 @@
-n = input()
-a = eval(input())
-v = eval(input())
-L = (v*v)/(2*a)
-print(' the shortest take-off runway length of %s is %.2f M/s')

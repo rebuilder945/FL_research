@@ -1,7 +1,0 @@
-nan=eval(input())
-nv=eval(input())
-a=nan/(nan+nv)
-b=nv/(nan+nv)
-c="{:.2%}".format(a)
-d="{:.2%}".format(b)
-print("The male students ratio is",c,",the female students ratio is", d)

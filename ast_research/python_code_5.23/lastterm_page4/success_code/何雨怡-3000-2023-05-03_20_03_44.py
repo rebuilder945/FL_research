@@ -1,5 +1,0 @@
-lst=eval(input())
-long=len(lst)
-he=sum(lst)
-result="%.2f"%(he/long)
-print(result)

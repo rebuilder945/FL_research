@@ -1,8 +1,0 @@
-nums = eval(input())
-nums.sort(reverse=True)
-num_str = "".join(str(x) for x in nums)
-print(int(num_str))
-nums = input().strip("[]").split(",")
-nums = sorted(nums,reverse=True)
-result = int(''.join(nums))
-print(result)

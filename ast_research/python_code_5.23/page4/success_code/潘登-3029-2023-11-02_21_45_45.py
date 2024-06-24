@@ -1,3 +1,0 @@
-a=input()
-b=input()
-c=[x+','+y for x in a for y in b]

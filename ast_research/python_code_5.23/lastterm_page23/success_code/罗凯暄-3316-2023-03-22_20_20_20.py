@@ -1,5 +1,0 @@
-b = eval (input())
-g = eval (input())
-ratb = '{:.2%}'.format(b/(g+b))
-ratg = '{:.2%}'.format(g/(g+b))
-print('The male students ratio is %s,the female students ratio is %s'%(ratb,ratg))

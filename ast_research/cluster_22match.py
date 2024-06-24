@@ -2,7 +2,7 @@ import os
 from tqdm import tqdm
 from zss import simple_distance
 from ast_research.utils import *
-
+from ast_research.cluster_kmeans import CentEncoding
 # kmeans
 import time
 import pandas as pd
@@ -23,13 +23,18 @@ def cluster_22match(sub_trees: list[SubTreeNode], dis_threshold, output_path, co
     cls_index = 0 # 目前最大的类别id，用于新增类
     flags = {} # 子树id：类别id
     cls_flags = {} # 类别id：类内子树数量
+    cent_encoder = CentEncoding(sub_trees)
+    # import time
+    # print(type(cent_encoder))
     for x in tqdm(range(len(sub_trees)), total=len(sub_trees), desc='cluster_22match...'):
+        # t1 = time.time()
         for y in range(x + 1, len(sub_trees)):
             id_x = id(sub_trees[x])
-            id_y = id(sub_trees[y])            
-            # 基于编辑距离归类
+            id_y = id(sub_trees[y])
+            # 计算编辑距离并两两聚类
             if sub_trees[x].__eq__(
-                value=sub_trees[y], 
+                value=sub_trees[y],
+                cent_encoder=cent_encoder,
                 threshold=dis_threshold
             ):
                 if cls_index not in cls_flags:
@@ -56,7 +61,8 @@ def cluster_22match(sub_trees: list[SubTreeNode], dis_threshold, output_path, co
                 ans[flags[id_x]].add(sub_trees[y])
                 sub_trees[x].type = flags[id_x]
                 sub_trees[y].type = flags[id_x]
-
+        # t2 = time.time()
+        # print(t2 - t1)
     # 处理未匹配到相似子树的离群点
     clsed_subtree_ids = []
     for cls, sb_s in ans.items():

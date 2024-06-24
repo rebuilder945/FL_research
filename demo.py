@@ -190,7 +190,7 @@ def respond(message, prob_txt, chat_history, req: gr.Request):
 if __name__ == "__main__":
 
     # configure params
-    switch = 1 # dev: 0; test: 1
+    switch = 0 # dev: 0; test: 1
     log_file_name = server_port = 0
     server_name = '10.242.187.27'
     # server_name = '127.0.0.1'

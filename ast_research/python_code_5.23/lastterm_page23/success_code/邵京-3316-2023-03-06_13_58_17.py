@@ -1,6 +1,0 @@
-mcount=input()
-fcount=input()
-mbili=mcount*100/(mcount+fcount)
-fbili=fcount*100/(mcount+fcount)
-stext="The male students ratio is %.2f %,the female students ratio is %.2f %"%(mbili,fbili)
-print(stext)

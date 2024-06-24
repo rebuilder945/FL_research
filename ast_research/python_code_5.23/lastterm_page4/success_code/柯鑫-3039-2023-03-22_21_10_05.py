@@ -1,5 +1,0 @@
-list1=input()
-a=max(list1)
-b=min(list1)
-list1.remove(a,b)
-print(list1)

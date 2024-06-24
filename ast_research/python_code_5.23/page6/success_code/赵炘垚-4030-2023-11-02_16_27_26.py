@@ -1,7 +1,0 @@
-n=eval(input())
-h1=0
-for i in range(0,n+1):
-      if x%2==0:
-            h1 +=1
-print(h1)
-

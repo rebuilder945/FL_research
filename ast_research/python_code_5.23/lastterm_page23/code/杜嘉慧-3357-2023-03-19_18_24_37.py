@@ -1,5 +1,0 @@
-sName = eval(input())
-a = eval(input())
-v = eval(input())
-length = v*v/(2a)
-print("The acceleration of",sName,"is",%.2f%a,"M/s,the take-off speed is",%.2f%v,"M/s,and the shortest take-off run way length is",%.2f%length,"M.")

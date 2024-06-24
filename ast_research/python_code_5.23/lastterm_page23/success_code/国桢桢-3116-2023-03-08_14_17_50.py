@@ -1,7 +1,0 @@
-a,b = eval(input())
-c,d = eval(input())
-e = (a-c)**(2)+(b-d)**(2)
-f = e**(1/2)
-f = float(f)
-g = "%.2f"%(f)
-print(g)

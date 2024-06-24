@@ -1,7 +1,0 @@
-a=input().split(",")
-b=input().split(",")
-c=list(zip(a,b))
-name_score=map(lambda t: [*t], zip(name, score))
-name_score=sorted(name_score, key=lambda t: t[1])
-print(name_score)
-print(c)

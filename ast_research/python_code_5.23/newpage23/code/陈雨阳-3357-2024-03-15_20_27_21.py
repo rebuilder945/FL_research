@@ -1,5 +1,0 @@
-m = input()
-a = eval(input())
-v = int(input())
-length = v*v/(2*a)
-print("The acceleration of",m,"is",a,"M/s,the take-off speed is",a,"M/s,and the shortest take-off runaway length is",length%.2f,"M.")

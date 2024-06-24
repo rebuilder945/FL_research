@@ -1,5 +1,0 @@
-p=input("飞机名称")
-q=int(input("a"))
-x=int(input("v"))
-l=x*x/q/2
-print(' The acceleration of p is q%.3f M / s, the take-off speed is x%.3f M / s, and the shortest take-off runway length is l%.3f M.')

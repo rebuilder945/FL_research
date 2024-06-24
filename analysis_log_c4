@@ -10043,3 +10043,138 @@ DAO PHUONG THAO-2900-2023-05-10_01_55_55.py-gold_true: NoFailingTestError
 江晨曦-2900-2023-06-07_17_44_19.py-sbfl_exception: 'float' object cannot be interpreted as an integer
 李响-2910-2023-06-06_13_52_22.py-gold_true: NoFailingTestError
 刘杰-2910-2023-04-04_14_56_03.py-gold_true: NoFailingTestError
+2994-mut_num: 53
+2994-mut-exception: get_exec_res() missing 1 required positional argument: 'stu'
+2994-mut-exception: get_exec_res() missing 1 required positional argument: 'stu'
+2994-mut-exception: get_exec_res() missing 1 required positional argument: 'stu'
+2994-mut-exception: get_exec_res() missing 1 required positional argument: 'stu'
+2994-mut-exception: get_exec_res() missing 1 required positional argument: 'stu'
+2994-mut-exception: get_exec_res() missing 1 required positional argument: 'stu'
+2994-mut-exception: get_exec_res() missing 1 required positional argument: 'stu'
+2994-mut-exception: get_exec_res() missing 1 required positional argument: 'stu'
+2994-mut-exception: get_exec_res() missing 1 required positional argument: 'stu'
+2994-mut-exception: get_exec_res() missing 1 required positional argument: 'stu'
+2994-mut-exception: get_exec_res() missing 1 required positional argument: 'stu'
+2994-mut-exception: get_exec_res() missing 1 required positional argument: 'stu'
+2994-mut-exception: get_exec_res() missing 1 required positional argument: 'stu'
+2994-mut-exception: get_exec_res() missing 1 required positional argument: 'stu'
+2994-mut-exception: get_exec_res() missing 1 required positional argument: 'stu'
+2994-mut-exception: get_exec_res() missing 1 required positional argument: 'stu'
+2994-mut-exception: get_exec_res() missing 1 required positional argument: 'stu'
+2994-mut-exception: get_exec_res() missing 1 required positional argument: 'stu'
+2994-mut-exception: get_exec_res() missing 1 required positional argument: 'stu'
+2994-mut-exception: get_exec_res() missing 1 required positional argument: 'stu'
+2994-mut-exception: get_exec_res() missing 1 required positional argument: 'stu'
+2994-mut-exception: get_exec_res() missing 1 required positional argument: 'stu'
+2994-mut-exception: get_exec_res() missing 1 required positional argument: 'stu'
+2994-mut-exception: get_exec_res() missing 1 required positional argument: 'stu'
+2994-mut-exception: get_exec_res() missing 1 required positional argument: 'stu'
+2994-mut-exception: get_exec_res() missing 1 required positional argument: 'stu'
+2994-mut-exception: get_exec_res() missing 1 required positional argument: 'stu'
+2994-mut-exception: get_exec_res() missing 1 required positional argument: 'stu'
+2994-mut-exception: get_exec_res() missing 1 required positional argument: 'stu'
+2994-mut-exception: get_exec_res() missing 1 required positional argument: 'stu'
+2994-mut-exception: get_exec_res() missing 1 required positional argument: 'stu'
+2994-mut-exception: get_exec_res() missing 1 required positional argument: 'stu'
+2994-mut-exception: get_exec_res() missing 1 required positional argument: 'stu'
+2994-mut-exception: get_exec_res() missing 1 required positional argument: 'stu'
+2994-mut-exception: get_exec_res() missing 1 required positional argument: 'stu'
+2994-mut-exception: get_exec_res() missing 1 required positional argument: 'stu'
+2994-mut-exception: get_exec_res() missing 1 required positional argument: 'stu'
+2994-mut-exception: get_exec_res() missing 1 required positional argument: 'stu'
+2994-mut-exception: get_exec_res() missing 1 required positional argument: 'stu'
+2994-mut-exception: get_exec_res() missing 1 required positional argument: 'stu'
+2994-mut-exception: get_exec_res() missing 1 required positional argument: 'stu'
+2994-mut-exception: get_exec_res() missing 1 required positional argument: 'stu'
+2994-mut-exception: get_exec_res() missing 1 required positional argument: 'stu'
+2994-mut-exception: get_exec_res() missing 1 required positional argument: 'stu'
+2994-mut-exception: get_exec_res() missing 1 required positional argument: 'stu'
+2994-mut-exception: get_exec_res() missing 1 required positional argument: 'stu'
+2994-mut-exception: get_exec_res() missing 1 required positional argument: 'stu'
+2994-mut-exception: get_exec_res() missing 1 required positional argument: 'stu'
+2994-mut-exception: get_exec_res() missing 1 required positional argument: 'stu'
+2994-mut-exception: get_exec_res() missing 1 required positional argument: 'stu'
+2994-mut-exception: get_exec_res() missing 1 required positional argument: 'stu'
+2994-mut-exception: get_exec_res() missing 1 required positional argument: 'stu'
+2994-mut-exception: get_exec_res() missing 1 required positional argument: 'stu'
+2994-compile_pass_mut_num: 0
+3108-mut_num: 13
+3108-mut-exception: get_exec_res() missing 1 required positional argument: 'stu'
+3108-mut-exception: get_exec_res() missing 1 required positional argument: 'stu'
+3108-mut-exception: get_exec_res() missing 1 required positional argument: 'stu'
+3108-mut-exception: get_exec_res() missing 1 required positional argument: 'stu'
+3108-mut-exception: get_exec_res() missing 1 required positional argument: 'stu'
+3108-mut-exception: get_exec_res() missing 1 required positional argument: 'stu'
+3108-mut-exception: get_exec_res() missing 1 required positional argument: 'stu'
+3108-mut-exception: get_exec_res() missing 1 required positional argument: 'stu'
+3108-mut-exception: get_exec_res() missing 1 required positional argument: 'stu'
+3108-mut-exception: get_exec_res() missing 1 required positional argument: 'stu'
+3108-mut-exception: get_exec_res() missing 1 required positional argument: 'stu'
+3108-mut-exception: get_exec_res() missing 1 required positional argument: 'stu'
+3108-mut-exception: get_exec_res() missing 1 required positional argument: 'stu'
+3108-compile_pass_mut_num: 0
+3108-mut_num: 13
+3108-mut-exception: get_exec_res() missing 1 required positional argument: 'stu'
+3108-mut-exception: get_exec_res() missing 1 required positional argument: 'stu'
+3108-mut-exception: get_exec_res() missing 1 required positional argument: 'stu'
+3108-mut-exception: get_exec_res() missing 1 required positional argument: 'stu'
+3108-mut-exception: get_exec_res() missing 1 required positional argument: 'stu'
+3108-mut-exception: get_exec_res() missing 1 required positional argument: 'stu'
+3108-mut-exception: get_exec_res() missing 1 required positional argument: 'stu'
+3108-mut-exception: get_exec_res() missing 1 required positional argument: 'stu'
+3108-mut-exception: get_exec_res() missing 1 required positional argument: 'stu'
+3108-mut-exception: get_exec_res() missing 1 required positional argument: 'stu'
+3108-mut-exception: get_exec_res() missing 1 required positional argument: 'stu'
+3108-mut-exception: get_exec_res() missing 1 required positional argument: 'stu'
+3108-mut-exception: get_exec_res() missing 1 required positional argument: 'stu'
+3108-compile_pass_mut_num: 0
+[False False False False False]
+/data/lable_code/3108/暴轶铭-3108-2023-06-11_09_30_47.py-gold_false: FaultLocalizationError: Fault localization failed
+3108-mut_num: 13
+3108-mut-exception: get_exec_res() missing 1 required positional argument: 'stu'
+3108-mut-exception: get_exec_res() missing 1 required positional argument: 'stu'
+3108-mut-exception: get_exec_res() missing 1 required positional argument: 'stu'
+3108-mut-exception: get_exec_res() missing 1 required positional argument: 'stu'
+3108-mut-exception: get_exec_res() missing 1 required positional argument: 'stu'
+3108-mut-exception: get_exec_res() missing 1 required positional argument: 'stu'
+3108-mut-exception: get_exec_res() missing 1 required positional argument: 'stu'
+3108-mut-exception: get_exec_res() missing 1 required positional argument: 'stu'
+3108-mut-exception: get_exec_res() missing 1 required positional argument: 'stu'
+3108-mut-exception: get_exec_res() missing 1 required positional argument: 'stu'
+3108-mut-exception: get_exec_res() missing 1 required positional argument: 'stu'
+3108-mut-exception: get_exec_res() missing 1 required positional argument: 'stu'
+3108-mut-exception: get_exec_res() missing 1 required positional argument: 'stu'
+3108-compile_pass_mut_num: 0
+[False False False False False]
+/data/lable_code/3108/暴轶铭-3108-2023-06-11_09_30_47.py-gold_false: FaultLocalizationError: Fault localization failed
+(['["aaab", "ccccdz"]', '["alsjfklajsdf","laksdjfoabbxjhshsuuhhjsd","hjkkhjkhjshjkshjkhjks"]', '["aaa","bbb","ccc","ddd"]', '["fasfs"]', '["gasjkjskfjsalkjiow","gfasjkljwiotqpow"]'], ['a,3\nb,1\nc,4\nd,1\nz,1', 'a,4\nb,2\nd,3\nf,3\nh,10\nj,11\nk,8\nl,3\no,1\ns,9\nu,2\nx,1', 'a,3\nb,3\nc,3\nd,3', 'a,1\nf,2\ns,2', 'a,3\nf,2\ng,2\ni,2\nj,6\nk,4\nl,2\no,3\np,1\nq,1\ns,4\nt,1\nw,3'])
+['a,3 \nb,1 \nc,4 \nd,1 \nz,1']
+['a,3\nb,1\nc,4\nd,1\nz,1']
+
+['a,3 \nb,1 \nc,4 \nd,1 \nz,1', 'a,4 \nb,2 \nd,3 \nf,3 \nh,10 \nj,11 \nk,8 \nl,3 \no,1 \ns,9 \nu,2 \nx,1']
+['a,3\nb,1\nc,4\nd,1\nz,1', 'a,4\nb,2\nd,3\nf,3\nh,10\nj,11\nk,8\nl,3\no,1\ns,9\nu,2\nx,1']
+
+['a,3 \nb,1 \nc,4 \nd,1 \nz,1', 'a,4 \nb,2 \nd,3 \nf,3 \nh,10 \nj,11 \nk,8 \nl,3 \no,1 \ns,9 \nu,2 \nx,1', 'a,3 \nb,3 \nc,3 \nd,3']
+['a,3\nb,1\nc,4\nd,1\nz,1', 'a,4\nb,2\nd,3\nf,3\nh,10\nj,11\nk,8\nl,3\no,1\ns,9\nu,2\nx,1', 'a,3\nb,3\nc,3\nd,3']
+
+['a,3 \nb,1 \nc,4 \nd,1 \nz,1', 'a,4 \nb,2 \nd,3 \nf,3 \nh,10 \nj,11 \nk,8 \nl,3 \no,1 \ns,9 \nu,2 \nx,1', 'a,3 \nb,3 \nc,3 \nd,3', 'a,1 \nf,2 \ns,2']
+['a,3\nb,1\nc,4\nd,1\nz,1', 'a,4\nb,2\nd,3\nf,3\nh,10\nj,11\nk,8\nl,3\no,1\ns,9\nu,2\nx,1', 'a,3\nb,3\nc,3\nd,3', 'a,1\nf,2\ns,2']
+
+['a,3 \nb,1 \nc,4 \nd,1 \nz,1', 'a,4 \nb,2 \nd,3 \nf,3 \nh,10 \nj,11 \nk,8 \nl,3 \no,1 \ns,9 \nu,2 \nx,1', 'a,3 \nb,3 \nc,3 \nd,3', 'a,1 \nf,2 \ns,2', 'a,3 \nf,2 \ng,2 \ni,2 \nj,6 \nk,4 \nl,2 \no,3 \np,1 \nq,1 \ns,4 \nt,1 \nw,3']
+['a,3\nb,1\nc,4\nd,1\nz,1', 'a,4\nb,2\nd,3\nf,3\nh,10\nj,11\nk,8\nl,3\no,1\ns,9\nu,2\nx,1', 'a,3\nb,3\nc,3\nd,3', 'a,1\nf,2\ns,2', 'a,3\nf,2\ng,2\ni,2\nj,6\nk,4\nl,2\no,3\np,1\nq,1\ns,4\nt,1\nw,3']
+
+[False False False False False]
+/data/lable_code/3108/暴轶铭-3108-2023-06-11_09_30_47.py-gold_false: FaultLocalizationError: Fault localization failed
+(['["aaab", "ccccdz"]', '["alsjfklajsdf","laksdjfoabbxjhshsuuhhjsd","hjkkhjkhjshjkshjkhjks"]', '["aaa","bbb","ccc","ddd"]', '["fasfs"]', '["gasjkjskfjsalkjiow","gfasjkljwiotqpow"]'], ['a,3\nb,1\nc,4\nd,1\nz,1', 'a,4\nb,2\nd,3\nf,3\nh,10\nj,11\nk,8\nl,3\no,1\ns,9\nu,2\nx,1', 'a,3\nb,3\nc,3\nd,3', 'a,1\nf,2\ns,2', 'a,3\nf,2\ng,2\ni,2\nj,6\nk,4\nl,2\no,3\np,1\nq,1\ns,4\nt,1\nw,3'])
+['a,3 \nb,1 \nc,4 \nd,1 \nz,1']
+['a,3\nb,1\nc,4\nd,1\nz,1']
+['a,3 \nb,1 \nc,4 \nd,1 \nz,1', 'a,4 \nb,2 \nd,3 \nf,3 \nh,10 \nj,11 \nk,8 \nl,3 \no,1 \ns,9 \nu,2 \nx,1']
+['a,3\nb,1\nc,4\nd,1\nz,1', 'a,4\nb,2\nd,3\nf,3\nh,10\nj,11\nk,8\nl,3\no,1\ns,9\nu,2\nx,1']
+['a,3 \nb,1 \nc,4 \nd,1 \nz,1', 'a,4 \nb,2 \nd,3 \nf,3 \nh,10 \nj,11 \nk,8 \nl,3 \no,1 \ns,9 \nu,2 \nx,1', 'a,3 \nb,3 \nc,3 \nd,3']
+['a,3\nb,1\nc,4\nd,1\nz,1', 'a,4\nb,2\nd,3\nf,3\nh,10\nj,11\nk,8\nl,3\no,1\ns,9\nu,2\nx,1', 'a,3\nb,3\nc,3\nd,3']
+['a,3 \nb,1 \nc,4 \nd,1 \nz,1', 'a,4 \nb,2 \nd,3 \nf,3 \nh,10 \nj,11 \nk,8 \nl,3 \no,1 \ns,9 \nu,2 \nx,1', 'a,3 \nb,3 \nc,3 \nd,3', 'a,1 \nf,2 \ns,2']
+['a,3\nb,1\nc,4\nd,1\nz,1', 'a,4\nb,2\nd,3\nf,3\nh,10\nj,11\nk,8\nl,3\no,1\ns,9\nu,2\nx,1', 'a,3\nb,3\nc,3\nd,3', 'a,1\nf,2\ns,2']
+['a,3 \nb,1 \nc,4 \nd,1 \nz,1', 'a,4 \nb,2 \nd,3 \nf,3 \nh,10 \nj,11 \nk,8 \nl,3 \no,1 \ns,9 \nu,2 \nx,1', 'a,3 \nb,3 \nc,3 \nd,3', 'a,1 \nf,2 \ns,2', 'a,3 \nf,2 \ng,2 \ni,2 \nj,6 \nk,4 \nl,2 \no,3 \np,1 \nq,1 \ns,4 \nt,1 \nw,3']
+['a,3\nb,1\nc,4\nd,1\nz,1', 'a,4\nb,2\nd,3\nf,3\nh,10\nj,11\nk,8\nl,3\no,1\ns,9\nu,2\nx,1', 'a,3\nb,3\nc,3\nd,3', 'a,1\nf,2\ns,2', 'a,3\nf,2\ng,2\ni,2\nj,6\nk,4\nl,2\no,3\np,1\nq,1\ns,4\nt,1\nw,3']
+[False False False False False]
+/data/lable_code/3108/暴轶铭-3108-2023-06-11_09_30_47.py-gold_false: FaultLocalizationError: Fault localization failed

@@ -1,8 +1,0 @@
-list=([])
-input()
-a=str(list[-1])
-b=str(list[2])
-c=str(list[1])
-d=str(list[0])
-i=int(a+b+c+d)
-print(i)

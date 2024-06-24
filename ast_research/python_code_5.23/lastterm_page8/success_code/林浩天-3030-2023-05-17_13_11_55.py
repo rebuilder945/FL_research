@@ -1,5 +1,0 @@
-names=input().split(",")
-scores=input().split(",")
-students=list(zip(names,scores))
-students_sorted=sorted(students,key=lambda x:x[1])
-print(students_sorted)

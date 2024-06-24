@@ -1,5 +1,0 @@
-sName = input()
-a = int(input())
-v = int(input())
-length=v*v/(2*a)
-print ("The acceleration of ",sName," is ",a,"M / s, the take-off speed is",v,"M / s, and the shortest take-off runway length is" ,length, ".")

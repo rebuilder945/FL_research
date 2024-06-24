@@ -1,5 +1,0 @@
-cMale=int(input())
-cFemale=int(input())
-zMale=cMale/(cMale+cFemale)
-zFemale=cFemale/(cMale+cFemale)
-print(The male students ratio is %.2f%,the female students ratio is %.2f%"(zMale,zFemale))

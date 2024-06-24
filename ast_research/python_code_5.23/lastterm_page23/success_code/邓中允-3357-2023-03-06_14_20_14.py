@@ -1,5 +1,0 @@
-b=input("飞机名称：")
-v=float(input("the take-off speed is =%.2fM / s**2"))
-a=float(input("The acceleration of'b'=%.2fM / s"))
-length=v**2/(2*a)
-print("the shortest take-off runway length is=%.2f米"%length)

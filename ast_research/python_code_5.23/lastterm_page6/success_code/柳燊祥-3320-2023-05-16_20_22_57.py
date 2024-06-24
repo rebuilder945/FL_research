@@ -1,8 +1,0 @@
-n=eval(input())
-m=eval(input())
-if n==m and n>0 and m>0:
-    print("It's a square")
-elif n>0 and m>0 and n!=m:
-    print("It's a rectangle")
-elif n<0 or m<0:
-    print("illegal data")

@@ -1,5 +1,0 @@
-name=input("")
-v=input("")
-a=input("")
-l=v*v/(2*a)
-print("acceleration of "name" is "a" M / s, the take-off speed is "v" M / s, and the shortest take-off runway length is "l" M." )

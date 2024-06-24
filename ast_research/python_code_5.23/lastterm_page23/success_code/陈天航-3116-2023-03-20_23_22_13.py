@@ -1,6 +1,0 @@
-X=input()
-x=input()
-Y=input()
-y=input()
-l=(X-Y)*(X-Y)+(x-y)*(x-y)
-print("%.2f%l")

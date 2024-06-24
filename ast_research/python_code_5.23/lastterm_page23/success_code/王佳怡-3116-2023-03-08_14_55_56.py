@@ -1,7 +1,0 @@
-a=eval(input())
-b=eval(input())
-c=eval(input())
-d=eval(input())
-r=pow(pow(a-c,2)+pow(b-d,2),0.5)
-sText="%.2f" % (r)
-print(sText)

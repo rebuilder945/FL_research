@@ -1,6 +1,0 @@
-b=int(input())
-g=int(input())
-bratio=b/(b+g)
-gratio=g/(b+g)
-print('{:.2%}'.format(bratio))
-print('{:.2%}'.format(gratio))

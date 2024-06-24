@@ -1,5 +1,0 @@
-names = input().split(',')
-scores = eval(input())
-namesandscores = list(zip(names,scores))
-listsorted = sorted(namesandscores,key=scores)
-print(listsorted)

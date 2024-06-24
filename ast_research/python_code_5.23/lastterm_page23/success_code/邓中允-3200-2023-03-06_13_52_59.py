@@ -1,2 +1,0 @@
-sn="%"
-print(sn.upper())

@@ -1,5 +1,0 @@
-f=eval(input())
-m=eval(input())
-fration=f/(f+m)
-mration=m/(f+m)
-print("The male students ratio is %.27",mration,"the female students ratio is %.2f",fration)

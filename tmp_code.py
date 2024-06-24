@@ -1,6 +1,10 @@
-h=eval(input())
-N=eval(input())
-L=h
-for i in range(1,N):
-    L+=2*h*0.5**i
-print("%.2f"%L)
+
+a = eval(input())
+b = {}
+c = list("".join(a))
+c.sort()
+for i in c:
+    b[i] = c.count(i)
+for m,n in b.items():
+    print("{},{} ".format(m,n))
+#     

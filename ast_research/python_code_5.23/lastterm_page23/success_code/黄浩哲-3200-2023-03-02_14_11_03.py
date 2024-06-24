@@ -1,2 +1,0 @@
-word=""
-print(word.upper())

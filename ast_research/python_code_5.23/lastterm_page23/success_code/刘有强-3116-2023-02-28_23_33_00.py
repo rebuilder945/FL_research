@@ -1,5 +1,0 @@
-ax,ay=input().split(',')
-bx,by=input().split(',')
-julix=abs(int(ax)-int(bx))
-juliy=abs(int(ay)-int(by))
-print("%.2f"%(julix+juliy))

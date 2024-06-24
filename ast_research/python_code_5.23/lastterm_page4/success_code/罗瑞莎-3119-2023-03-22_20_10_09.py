@@ -1,7 +1,0 @@
-lst = eval(input())
-lst.reverse()
-lst1 = []
-for i in lst:
-    if i not in lst1:
-        lst1.insert(0,i)
-print(lst1)

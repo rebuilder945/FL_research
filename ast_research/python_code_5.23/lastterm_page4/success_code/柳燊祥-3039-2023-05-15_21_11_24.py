@@ -1,6 +1,0 @@
-lst=eval(input())
-imax=int(max(lst))
-imin=int(min(lst))
-lst.remove(imax)
-lst.remove(imin)
-print(lst)

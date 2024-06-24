@@ -1,5 +1,0 @@
-nums=list(eval(input()))
-a=max(nums)
-b=min(nums)
-ls=nums.remove(a,b)
-print=list(ls)

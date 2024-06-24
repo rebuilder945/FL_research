@@ -1,5 +1,0 @@
-a , b = eval(input())
-c , d = eval(input())
-e = (a*a-c*c)+(b*b-d*d)
-q = pow(e,1/2)
-print("%.2f"%e)

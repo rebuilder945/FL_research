@@ -1,5 +1,0 @@
-a=eval(input())
-b=max(a)
-c=min(a)
-d=a.remove(b,c)
-print(d)

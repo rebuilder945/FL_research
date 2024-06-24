@@ -1,5 +1,0 @@
-boynumber = eval(input())
-girlnumber = eval(input())
-maleratio =100*boynumber/(boynumber+girlnumber)
-femaleratio = 100*girlnumber/(boynumber+girlnumber)
-print("The male students ratio is %.2f%%, the female students ratio is %.2f%%"%(maleratio,femaleratio ))

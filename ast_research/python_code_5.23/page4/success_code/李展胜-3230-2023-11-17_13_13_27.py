@@ -1,5 +1,0 @@
-a=eval(input())
-a.sort()
-print(a)
-c=' '.join(str(i for i in a))
-print(c)

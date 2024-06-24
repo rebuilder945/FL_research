@@ -1,5 +1,0 @@
-numB=input()
-numG=input()
-sB=numB/(numB+numG)
-sG=numG/(numB+numG)
-print("The male students radio is", sB, "the famale students radio is", sG)

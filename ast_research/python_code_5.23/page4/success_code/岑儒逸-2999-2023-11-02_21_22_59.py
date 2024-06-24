@@ -1,9 +1,0 @@
-ls=input().split()
-num=input().split()
-a=int(num[1])
-b=int(num[0])
-x=ls[a]
-y=ls[b]
-ls[a]=y
-ls[b]=x
-print(ls)

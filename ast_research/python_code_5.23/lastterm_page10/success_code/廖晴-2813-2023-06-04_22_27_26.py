@@ -1,6 +1,0 @@
-num=input()
-de=input()
-num1=num.replace(de,"")
-num2=num1.split()
-num2=" ".join(num2)
-print(num2)

@@ -1,6 +1,0 @@
-a=input()
-min=min(a)
-max=max(a)
-a.remove(min)
-a.remove(max)
-print(a)

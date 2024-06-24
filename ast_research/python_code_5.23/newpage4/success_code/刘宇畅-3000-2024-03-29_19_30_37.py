@@ -1,5 +1,0 @@
-a=eval(input())
-b=len(a)
-sum(a)
-c=int(sum(a)/b)
-print('%.2f' %(c))

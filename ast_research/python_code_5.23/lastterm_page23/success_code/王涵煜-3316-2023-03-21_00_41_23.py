@@ -1,5 +1,0 @@
-boy=int(input())
-girl=int(input())
-boyratio=boy/(boy+girl)
-girlratio=girl/(boy+girl)
-print(f"The male students ratio is {boyratio:.2%},the female students ratio is {girlratio:.2%}")

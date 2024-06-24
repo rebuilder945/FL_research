@@ -1,5 +1,0 @@
-a = eval(input())
-a.reverse()
-b = map(str,a)
-c = ''.join(b)
-print(c)

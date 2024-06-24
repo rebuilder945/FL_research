@@ -1,5 +1,0 @@
-man=eval(input())
-woman=eval(input())
-n=man*100/(man+woman)
-w=woman*100/(man+woman)
-print("The male students ratio is %.2f%%,the female students ratio is %.2f%%"%(n,w))

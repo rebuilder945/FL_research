@@ -1,5 +1,0 @@
-a=input()
-b=input()
-a=float(a)
-b=float(b)
-print("The male students ratio is",'{:.2%}'.format(a/(a+b)),",the female students ratio is",'{:.2%}'.format(b/(a+b)))

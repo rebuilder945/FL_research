@@ -1,6 +1,0 @@
-a=eval(input())
-a.sort(reverse=True)
-b=(str(x) for x in a)
-str1="".join(b)
-n=int(str1)
-print(str1)

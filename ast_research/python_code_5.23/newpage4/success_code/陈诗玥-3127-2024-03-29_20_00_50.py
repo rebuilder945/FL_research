@@ -1,5 +1,0 @@
-a = int(input())
-b = [i for i in range(1,a+1)]
-b.append(b[0])
-del b[0]
-print(b)

@@ -1,5 +1,0 @@
-sname=input()
-jiasudu=float(input())
-sudu=float(input())
-lenh=sudu*sudu/(2*jiasudu)
-print("The acceleration of %s is %.2f M/s,the take-off speed is%")

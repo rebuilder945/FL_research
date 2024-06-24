@@ -1,9 +1,0 @@
-def calDegrees(nums):
-    degree=len(nums)
-    return degree
-
-
-nums = eval(input())
-d=calDegrees(nums) #调用自定义函数
-print(d)
-

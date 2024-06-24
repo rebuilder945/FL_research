@@ -1,5 +1,0 @@
-sName=str(input())
-sA=float(input())
-sV=float(input())
-sLength=sV*sV/(2*sA)
-print("The acceleration of ",sName,"  is",'{:.2f}'.format(sA),"M / s, the take-off speed is",'{:.2f}'.format(sV),"M / s, and the shortest take-off runway length is",'{:.2f}'.format(sLength),"M.")

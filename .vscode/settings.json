@@ -48,5 +48,9 @@
     "baiduTranslate.appId": "20231121001887423",
     "baiduTranslate.appKey": "w8S3CU4BL33UN9JwVKRa",
     "commentTranslate.targetLanguage": "zh-CN",
+    "Codegeex.CompletionModel": "CodeGeeX Pro[Beta]",
+    "Codegeex.OnlyKeyControl": true,
+    "Codegeex.CandidateNum": "2 (medium)",
+    "python.REPL.enableREPLSmartSend": false,
         
 }

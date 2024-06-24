@@ -1,5 +1,0 @@
-n = eval(input())
-lst1 = list(range(1,n+1))
-x = lst1.pop(0)
-lst1.append(x)
-print(lst1)

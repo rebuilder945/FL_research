@@ -1,5 +1,0 @@
-lis = eval(input())
-sets = set(lis)
-lis2 = list(sets)
-lis2.sort(key=lis.index)
-print(lis2)

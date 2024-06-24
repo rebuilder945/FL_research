@@ -1,7 +1,0 @@
-lst = list(input())
-lst1 = []
-for i in len(lst):
-    if i not in lst1:
-        lst1.append(i)
-print(lst1)
-

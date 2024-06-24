@@ -1,6 +1,0 @@
-a=str(input())
-b=str(input())
-x=a.split(',')
-y=int(b)
-c=list(zip(x,y))
-print(c)

@@ -1,5 +1,0 @@
-a=eval(input())
-b=a.count(0)
-d=a.remove(0)
-c=d+([0]*b)
-print(c)

@@ -1,2 +1,0 @@
-jz=input()
-print(jz)

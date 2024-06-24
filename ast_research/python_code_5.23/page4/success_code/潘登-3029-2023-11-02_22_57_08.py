@@ -1,5 +1,0 @@
-a=str(input())
-b=list(input())
-x=a.split(',')
-c=list(zip(x,b))
-print(c)

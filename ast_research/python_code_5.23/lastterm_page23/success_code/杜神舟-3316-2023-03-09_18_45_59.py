@@ -1,5 +1,0 @@
-nan=eval(input())
-nv=eval(input())
-snan=nan/nv*100
-snv=nv/nan*100
-print("The male students ratio is %.2f %%,the female students ratio is %.2f %%"%(snan,snv))

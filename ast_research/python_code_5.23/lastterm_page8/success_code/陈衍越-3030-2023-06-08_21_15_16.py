@@ -1,5 +1,0 @@
-name=input().split(',')
-score=input().split(',')
-ns=map(lambda x:[*x],zip(name,score))
-ns=sorted(ns,key=lambda x:x[1])
-print(ns)

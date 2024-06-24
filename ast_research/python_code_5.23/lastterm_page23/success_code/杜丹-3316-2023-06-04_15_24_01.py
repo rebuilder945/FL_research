@@ -1,7 +1,0 @@
-s1=input()
-s2=input()
-s3=int(s1)
-s4=int(s2)
-s5=s3*100/(s3+s4)
-s6=s4*100/(s3+s4)
-print("The male students ratio is %.2f%%,the female students ratio is %.2f%%"%(s5,s6))

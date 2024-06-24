@@ -1,9 +1,0 @@
-a=eval(input())
-b=eval(input())
-c=eval(input())
-a=int(a)
-b=int(b)
-c=int(c)
-d=a+b+c
-e=d/3
-print("d,%.2f"%(e))

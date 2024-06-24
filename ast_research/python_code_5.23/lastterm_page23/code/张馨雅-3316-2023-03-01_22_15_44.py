@@ -1,6 +1,0 @@
-# print('persent:{:.2%}'.format(1/5))
-b=eval(input())
-g=eval(input())
-br=b/(b+g)
-gr=g/(b+g)
-print('The male students ratio is','{:.2%}'.format(br)',the female students ratio is ','{:.2%}'.format(gr))

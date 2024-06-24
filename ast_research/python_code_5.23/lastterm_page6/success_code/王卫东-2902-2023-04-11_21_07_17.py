@@ -1,9 +1,0 @@
-n=int(input())
-a=[x for x in range(1,n+1)]
-b=[2,3,5,8,13,21,34,55,89,144,233,377]
-c=0
-for x in range(1,n+1):
-    c = c+int(b[x-1])/int(a[x-1])
-print("%.4f"%c)
-
-

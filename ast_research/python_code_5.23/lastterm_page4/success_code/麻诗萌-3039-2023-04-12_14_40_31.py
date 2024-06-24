@@ -1,6 +1,0 @@
-lst=eval(input())
-n=min(lst)
-m=max(lst)
-lst.remove(m)
-lst.remove(n)
-print(lst)

@@ -1,5 +1,0 @@
-nums = eval(input())
-nums1 = sum(nums)
-nums2 = len(nums)
-nums4 = float(nums1/nums2)
-print("%.2f"%(nums4))

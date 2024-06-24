@@ -1,5 +1,0 @@
-airname = input()
-aira = eval(input())
-airv = eval(input())
-length = airv*airv/(2*aira)
-print('The acceleration of %d is %f M / s, the take-off speed is %f M / s, and the shortest take-off runway length is %.2f M.'%(airname,aira,airv,length))

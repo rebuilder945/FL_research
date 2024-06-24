@@ -1,5 +1,0 @@
-planename=input()
-a=input()
-v=input()
-length=v*v/(2*a)
-print("The acceleration of B350 is",a,"M / s,","the take-off speed is",v,"M / s,","the take-off speed is",length,"M.")

@@ -1,7 +1,0 @@
-b0 = input()
-b = int(b0)
-g0 = input()
-g = int(g0)
-x1 = b/(b+g)
-x2 = g/(b+g)
-print("The male students ratio is %.2f%%,the female students ratio is %.2f%%"%(x1*100,x2*100))

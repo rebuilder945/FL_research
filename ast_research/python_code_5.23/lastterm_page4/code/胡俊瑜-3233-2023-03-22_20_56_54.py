@@ -1,8 +1,0 @@
-n, m = eval(input())
-nums = [x x for in range(n,m) if x%2==0]
-
-
-
-print(nums)
-
-

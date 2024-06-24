@@ -1,5 +1,0 @@
-a=eval(input())
-a.sort(reverse=True)
-b="".join(a)
-c=eval(b)
-print(c)

@@ -1,7 +1,0 @@
-n = input()
-v = input()
-a = input()
-l = v*v/(2*a)
-v = float(v)
-l = float(l)
-print("The acceleration of n is %.2f M / s, the take-off speed is %.2f M / s, and the shortest take-off runway length is %.2f M."%(v,l))

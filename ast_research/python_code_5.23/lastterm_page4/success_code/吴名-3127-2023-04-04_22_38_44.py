@@ -1,7 +1,0 @@
-n=eval(input())
-a=list(range(n))
-a.pop(0)
-a.pop(0)
-a.append(n)
-a.append(1)
-print(a)

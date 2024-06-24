@@ -1,6 +1,6 @@
 <testDataSet count="5">
     <testData1>
-        <input>[&quot;aaab&quot;, &quot;ccccdz&quot;]</input>
+        <input>[&quot;aaab", "ccccdz"]</input>
         <output>a,3
 b,1
 c,4
@@ -8,7 +8,7 @@ d,1
 z,1</output>
     </testData1>
     <testData2>
-        <input>[&quot;alsjfklajsdf&quot;,&quot;laksdjfoabbxjhshsuuhhjsd&quot;,&quot;hjkkhjkhjshjkshjkhjks&quot;]</input>
+        <input>["alsjfklajsdf","laksdjfoabbxjhshsuuhhjsd","hjkkhjkhjshjkshjkhjks"]</input>
         <output>a,4
 b,2
 d,3
@@ -23,20 +23,20 @@ u,2
 x,1</output>
     </testData2>
     <testData3>
-        <input>[&quot;aaa&quot;,&quot;bbb&quot;,&quot;ccc&quot;,&quot;ddd&quot;]</input>
+        <input>["aaa","bbb","ccc","ddd"]</input>
         <output>a,3
 b,3
 c,3
 d,3</output>
     </testData3>
     <testData4>
-        <input>[&quot;fasfs&quot;]</input>
+        <input>["fasfs"]</input>
         <output>a,1
 f,2
 s,2</output>
     </testData4>
     <testData5>
-        <input>[&quot;gasjkjskfjsalkjiow&quot;,&quot;gfasjkljwiotqpow&quot;]</input>
+        <input>["gasjkjskfjsalkjiow","gfasjkljwiotqpow"]</input>
         <output>a,3
 f,2
 g,2

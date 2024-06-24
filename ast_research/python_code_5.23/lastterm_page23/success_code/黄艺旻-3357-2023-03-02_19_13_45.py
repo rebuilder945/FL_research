@@ -1,5 +1,0 @@
-name = input('请输入飞机名称:')
-a = eval(input('请输入加速度：'))
-v = eval(input('起飞速度：'))
-length = v*v/(2*a)
-print("The acceleration of %s is %.2f M / s, the take-off speed is %.2f M / s, and the shortest take-off runway length is %.2f M."%(name,a,v,length))

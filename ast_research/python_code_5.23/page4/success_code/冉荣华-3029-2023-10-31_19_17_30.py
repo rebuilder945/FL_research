@@ -1,5 +1,0 @@
-a,b,m,h = input()
-c = list(input())
-n=list(a,b,m,h)
-zipped=zip(n,c)
-print(list(zipped))

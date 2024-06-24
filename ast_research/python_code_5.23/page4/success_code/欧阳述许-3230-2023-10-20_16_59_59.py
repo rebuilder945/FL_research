@@ -1,5 +1,0 @@
-a=eval(input())
-a.reverse()
-b=()
-b.append(a)
-print(b)

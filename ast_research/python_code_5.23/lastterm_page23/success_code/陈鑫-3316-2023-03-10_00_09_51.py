@@ -1,5 +1,0 @@
-b=int(input())
-g=int(input())
-a=b/(b+g)
-c=g/(b+g)
-print("The male students ratio is %.2f%%,the female students ratio is %.2f%%"%(a,c))

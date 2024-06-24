@@ -1,6 +1,0 @@
-a=eval(input())
-b=eval(input())
-c=eval(input())
-d=str(a+b+c)
-e=str(d/3)
-print("d,'%.2f'%e")

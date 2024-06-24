@@ -11,8 +11,9 @@ import tree_sitter
 import numpy as np
 import matplotlib.pyplot as plt
 from zss import simple_distance
-from tree_sitter import Tree, Node
+from tree_sitter import Node
 import re
+import numpy as np
 from uuid import uuid4 as uuid
 
 
@@ -121,12 +122,22 @@ class SubTreeNode:
         self.type = 0
         self.tf_idf = 0
 
-    def __eq__(self, value: object, threshold: int = 3) -> bool:
+    def __eq__(self, value: object, cent_encoder, threshold: int = 3) -> bool:
         if isinstance(value, SubTreeNode):
-            dis = simple_distance(
-                get_tree4distance(self.ts_node), get_tree4distance(value.ts_node)
+            # edit dis
+            # dis = simple_distance(
+            #     get_tree4distance(self.ts_node), get_tree4distance(value.ts_node)
+            # )
+
+            # cent encoding
+            dis = np.linalg.norm(
+                np.array(cent_encoder.sing_tree_encode(self))
+                - np.array(cent_encoder.sing_tree_encode(value))
             )
-            if dis <= threshold:
+
+            # print(dis)
+
+            if dis < threshold:
                 return True
             else:
                 return False
@@ -342,7 +353,7 @@ def file_writer(file_path: str, content: str):
 
 def folder_check(path):
     """
-        检查路径是否存在，不存在则创建（沿途所有文件夹）
+        检查路径是否存在，不存在则递归地创建沿途所有文件夹
     """
     path_ = path.split("/")
     if len(path_) == 0:

@@ -1,6 +1,0 @@
-a=eval(input())
-h=set(a)
-b=list(h)
-b.sort(reverse=True)
-c=''.join(str(i) for i in b)
-print(c)

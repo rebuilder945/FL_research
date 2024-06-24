@@ -1,6 +1,0 @@
-boyname = input()
-gilrname = input()
-boyrat = boyname / (boyname + gilrname)
-gilrrat = gilrname / (boyname + gilrname)
-print("%.2f%%" % boyrat)
-print("%.2f%%" % gilrrat)

@@ -1,9 +1,0 @@
-def shift(lst):
-dick=list(lst.pop(len(lst)-1))
-ass=dick+lst
-return ass
-
-list1 = input().split(",") #输入格式 1,2,3,4,5
-shift(list1)
-print(list1)
-

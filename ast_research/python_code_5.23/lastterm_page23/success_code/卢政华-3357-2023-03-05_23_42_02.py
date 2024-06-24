@@ -1,6 +1,0 @@
-name=input ()
-a=eval(input())
-v=eval(input())
-length=v*v/(2*a)
-axz="The acceleration of ",name," is","%.2fM/s", "the take-off speed is","%.2fM/s","and the shortest take-off runway length is ","%.2fM"%(a,v,length)
-print(axz)

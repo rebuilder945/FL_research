@@ -1,6 +1,0 @@
-a=eval(input())
-b=max(a)
-c=min(a)
-del a(b)
-del a(c)
-print(a)

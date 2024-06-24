@@ -57,6 +57,7 @@ class FL_alg:
         self.exce_res = self.get_exec_res(code_, test_case, stu)
 
     def get_exec_res(self, code_: str, test_case: tuple[list], stu: str) -> dict:
+        logger_.info(test_case)
         """
         execute the `code_` with `test_case`, return cov_info and outputs_info
         """
@@ -98,7 +99,6 @@ class FL_alg:
                 # get stdout info for this test
                 split_index = find_json_positions(tmp_output_str)[-1][0]
                 
-                # TODO
                 # logger_.info(f"{stu}-tmp_output_str: {tmp_output_str}")
                 
                 stu_output = tmp_output_str[:split_index].strip()
@@ -109,7 +109,8 @@ class FL_alg:
 
                 stu_outputs.append(stu_output)
                 gold_outputs.append(test_output)
-
+                logger_.info(stu_outputs)
+                logger_.info(gold_outputs)
                 if stu_output == test_output.strip():
                     correct_vec.append(1)
                 else:
@@ -125,7 +126,6 @@ class FL_alg:
                 )
                 cov_vecs.append(cov_vec)
                 # self.logger_.info((correct_vec, cov_vecs))
-        # TODO
         # logger_.info(f"{stu}-sbfl_output-cov_vecs: {cov_vecs}")
         # logger_.info(f"{stu}-sbfl_output-correct_vec: {correct_vec}")
         # logger_.info(f"{stu}-sbfl_output-stu_outputs: {stu_outputs}")
@@ -188,6 +188,7 @@ class SBFL(FL_alg):
         # cal sbfl
         X = np.array(cov_info[0], dtype=bool)
         y = np.array(cov_info[1], dtype=bool)
+        logger_.info(y)
         sbfl_caler = sbfl_cal(formula="Ochiai")
         sbfl_caler.fit_predict(X, y)
         line_rank = sbfl_caler.ranks(method="max")
@@ -209,7 +210,7 @@ class MBFL(FL_alg):
 
     def __init__(self, cov: Coverage, my_stdout: io.TextIOWrapper, text: str) -> None:
         super().__init__(cov, my_stdout, text)
-    
+
     def cal(self, code_: str, test_case: tuple[list], stu: str) -> tuple:
         """
         params:
@@ -229,13 +230,13 @@ class MBFL(FL_alg):
             f.write(code_)
 
         ## 获取原代码的执行结果的覆盖信息，其中的异常在上一级处理
-        super().cal(code_, test_case)  # get self.exce_res
+        super().cal(code_, test_case, stu)  # get self.exce_res
         cov_mat = self.exce_res["cov_info"][0] # cov_info: (cov_vecs, correct_vec)
         pass_vec = self.exce_res["cov_info"][1]
         # 原代码已完全正确
         if 0 not in pass_vec:
             raise sbfl.base.NoFailingTestError
-        
+
         ## 得到错误测试用例覆盖行: M行
         fail_cov_lines = set() # start from 1
         for index, s in enumerate(pass_vec):
@@ -243,14 +244,14 @@ class MBFL(FL_alg):
                 for index_, x in enumerate(cov_mat[index]):
                     if x == 1:
                         fail_cov_lines.add(index_ + 1)
-        
+
         ## 获取变异体生成规则: Q = M * Ki 个
         mut_text = mbfl.Fom().fom_data("", "tmp/tmp_ori_code.py", list(fail_cov_lines))
         if mut_text == "":
             # 无法生成变异规则
             raise MutationFailedError
         muts = list(map(eval, mut_text.strip().split("\n")))
-        
+
         logger_.info(f'{stu}-mut_num: {len(muts)}')
         """
         muts: 
@@ -270,7 +271,7 @@ class MBFL(FL_alg):
             if not os.path.exists(mut_folder):
                 os.mkdir(mut_folder)
             mut_tmp_path = os.path.join(mut_folder, f"mut_code_{i}.py")
-           
+
             if not mbfl.Fom().mutation_build("tmp/tmp_ori_code.py", mut_tmp_path, mut):
                 # 生成失败
                 continue
@@ -280,9 +281,9 @@ class MBFL(FL_alg):
             with open(mut_tmp_path, "r", encoding="utf8") as mut_tmp:
                 mut_code_ = mut_tmp.read()
             try:
-                mut_pass_vec = self.get_exec_res(code_=mut_code_, test_case=test_case)[
-                    "cov_info"
-                ][1]
+                mut_pass_vec = self.get_exec_res(
+                    code_=mut_code_, test_case=test_case, stu=stu
+                )["cov_info"][1]
             except TimeoutException as t_e:
                 # 存在死循环
                 logger_.info(f'{stu}-mut-exception: {str(t_e)}')
@@ -301,7 +302,7 @@ class MBFL(FL_alg):
             out_dic[mes[0]].append(mut_pass_vec)
 
         logger_.info(f'{stu}-compile_pass_mut_num: {str(compile_pass_num)}')
-        
+
         # 计算mbfl怀疑度
         if len(out_dic) == 0:
             # out_dic为空，变异体全部编译错误或变异体都生成失败
@@ -321,7 +322,7 @@ class MBFL(FL_alg):
             sus_list.append([line, sus])
         sus_list_sort = sorted(sus_list, key=lambda x: x[1], reverse=True)
 
-        # get target 
+        # get target
         target_lines = []
         if len(sus_list_sort) != 0:
             target_lines = [x[0] for x in sus_list_sort if x[1] == sus_list_sort[0][1]]            
@@ -479,23 +480,23 @@ if __name__ == "__main__":
 
     # code_ = 'a=list(map(str,input().split()))\nb,c=map(int,input().split())\nd=a.copy()\nd[b]=a[c]\nd[c]=a[b]\nprint(d)\n'
 
-#     code_ = \
-#     """
-# lst=eval(input())
-# a=[]
-# for x in lst:
-#     for n in range[2:int(x)]:
-#         if x%n==0:
-#             n.append(a)
-# print(a)
-
+    code_ = \
+    """
+a = eval(input())
+b = {}
+c = list("".join(a))
+c.sort()
+for i in c:
+    b[i] = c.count(i)
+for m,n in b.items():
+    print("{},{} ".format(m,n))
 #     """
 
     # analysing
     log_file_name = "tmp/logs/log_analysis_dataset"
     test_cases_folder = "static/data/testcase"
     prob2id_folder = "static/prob2id_map"
-    src_code_folder = "analysis/ch*_3004"
+    # src_code_folder = "analysis/ch*_3004"
 
     session_manager = SessionManager()
     logger = Mylogger(session_manager, log_file_name)
@@ -509,23 +510,28 @@ if __name__ == "__main__":
         algorithm=alg_sbfl,
     )
 
-    import shutil
-    files = os.listdir(src_code_folder)
-    for file in tqdm(files, total=len(files)):
-        src_path = os.path.join(src_code_folder, file)
-        code_ = open(src_path, "r").read()
-        prob_id = file.split("-")[1]
-        res = FL_app.analysis(
-            code_=code_,
-            prob_id="3004",
-            stu=file
-        )
-        # 完全正确
-        if res == 1:
-            shutil.copy(src_path, os.path.join("ast_research/ch_3004/True", file))
-        # 逻辑错误
-        if res == -1:
-            shutil.copy(src_path, os.path.join("ast_research/ch_3004/False", file))
+    print(FL_app.analysis(
+        code_=code_,
+        prob_id="3108",
+        stu="/data/lable_code/3108/暴轶铭-3108-2023-06-11_09_30_47.py"
+    ))
+    # import shutil
+    # files = os.listdir(src_code_folder)
+    # for file in tqdm(files, total=len(files)):
+    #     src_path = os.path.join(src_code_folder, file)
+    #     code_ = open(src_path, "r").read()
+    #     prob_id = file.split("-")[1]
+    #     res = FL_app.analysis(
+    #         code_=code_,
+    #         prob_id="3004",
+    #         stu=file
+    #     )
+    #     # 完全正确
+    #     if res == 1:
+    #         shutil.copy(src_path, os.path.join("ast_research/ch_3004/True", file))
+    #     # 逻辑错误
+    #     if res == -1:
+    #         shutil.copy(src_path, os.path.join("ast_research/ch_3004/False", file))
 
             
 

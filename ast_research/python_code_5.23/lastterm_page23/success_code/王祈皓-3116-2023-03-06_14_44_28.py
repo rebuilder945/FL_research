@@ -1,5 +1,0 @@
-(x1,y1) = input()
-(x2,y2) = input()
-length1 = ((x1-x2)^2+(y1-y2)^2)^(1/2)
-length2 = "%.2f"%(length1)
-print(float(length2))

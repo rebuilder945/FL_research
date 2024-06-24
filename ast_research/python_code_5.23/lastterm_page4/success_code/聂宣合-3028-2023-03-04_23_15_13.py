@@ -1,9 +1,0 @@
-shuru=input()
-shuru=shuru.split(",")
-n=int(shuru[0])
-m=int(shuru[1])
-l=int(shuru[2])
-a=n+m*l
-shulie=range(n,a,l)
-shulie=list(shulie)
-print(shulie)

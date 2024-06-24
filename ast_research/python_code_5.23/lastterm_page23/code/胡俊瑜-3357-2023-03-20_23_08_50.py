@@ -1,5 +1,0 @@
-name=input('')
-a=eval(input())
-v=eval(input())
-length=v*v/(2*a)
-print('The acceleration of print(name) is print('%.2f'%a)  M / s, the take-off speed is print('%.2f'%v) M / s, and the shortest take-off runway length is print('%.2f'%length) M.')

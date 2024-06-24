@@ -1,5 +1,0 @@
-airname = input()
-aira = float(input())
-airv = float(input())
-length = airv*airv/(2*aira)
-print('The acceleration of {} is {:.2f} M / s, the take-off speed is {:.2f} M / s, and the shortest take-off runway length is {:.2f} M.'.format(airname,aira,airv,length))

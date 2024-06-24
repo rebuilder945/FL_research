@@ -1,5 +1,0 @@
-a=input()
-b=float(input())
-c=float("%.2f"%float(input()))
-d=("%.2f"%float((c*c/(2*b))))
-print("The acceleration of",a,"is","%.2f"%b,"M / s, the take-off speed is","%.2f"%c,"M / s, and the shortest take-off runway length is",d,"M")

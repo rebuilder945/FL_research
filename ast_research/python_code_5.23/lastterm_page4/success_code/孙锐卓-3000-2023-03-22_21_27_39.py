@@ -1,5 +1,0 @@
-lst = input()
-lst = eval(lst)
-total = sum(lst)
-avg = total / len(lst)
-print("%.2f"%avg)

@@ -1,6 +1,0 @@
-n = eval(input())
-n.sort(reverse=True)
-x = map(str,n)
-s = "".join(x)
-result = int(s)
-print(result)

@@ -1,6 +1,0 @@
-a=input()
-c=a.split(",")
-grade=eval(input())
-d=list(map(list,zip(c,grade)))
-list=list(d)
-print(list)

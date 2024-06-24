@@ -1,8 +1,0 @@
-n=str(input())
-a=eval(input())
-a1=str(a)
-v=eval(input())
-v1=str(v)
-length=v*v/(2*a)
-length1=round(length,2)
-print('The acceleration of',n,'is',a1,'M / s, the take-off speed is',v1,'M / s, and the shortest take-off runway length is',length1,'M.')

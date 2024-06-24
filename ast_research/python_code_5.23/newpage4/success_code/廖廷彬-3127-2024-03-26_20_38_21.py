@@ -1,5 +1,0 @@
-n = int(input())
-num_list = list(range(1, n+1))
-first_element = num_list.pop(0)
-num_list.append(first_element)
-print(num_list)

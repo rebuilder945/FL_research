@@ -1,5 +1,0 @@
-man = int(input())
-girl = int(input())
-a=man/(man+girl)
-b=girl/(man+girl)
-print("The male students ratio is "a"% ,the female students ratio is"b"%.)

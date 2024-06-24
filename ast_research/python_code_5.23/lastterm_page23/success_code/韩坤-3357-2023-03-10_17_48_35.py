@@ -1,6 +1,0 @@
-sname=input()
-a=eval(input())
-v=eval(input())
-length=(v*v)/(a+a)
-text="The acceleration of %s is %.2f M / S, the take-off speed is %.2f M / S, and the shortest take-off runway length is %.2f M."%(sname,a,v,length)
-print(text)

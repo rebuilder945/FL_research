@@ -1,4 +1,0 @@
-n=eval(input())
-m=eval(input())
-l=eval(input())
-print([x for x in range(n,n+m*l,l)])

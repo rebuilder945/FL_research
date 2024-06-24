@@ -1,8 +1,0 @@
-n=eval(input())
-a=2
-b=1
-sum=0
-for i in range(n):
-    sum+=a/b
-    a,b=(a+b),a
-print("%.4f"%sum)

@@ -1,6 +1,0 @@
-n=input()
-b=eval(input())
-c=eval(input())
-d=c*c/(2*a)
-sText = "The acceleration of %s is %.2f M/s, the take off speed is %.2f M/s, and the shortest take-off runway length is %.2f M."%(n,b,c,d)
-print(sText)

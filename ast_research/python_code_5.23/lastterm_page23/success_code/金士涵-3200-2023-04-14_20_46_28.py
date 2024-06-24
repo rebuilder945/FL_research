@@ -1,2 +1,0 @@
-sname=""
-print(sname.upper())

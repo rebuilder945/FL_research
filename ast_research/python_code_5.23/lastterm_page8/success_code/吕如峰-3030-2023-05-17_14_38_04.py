@@ -1,5 +1,0 @@
-a=input().split(",")
-b=input().split(",")
-c=map(lambda t: [*t], zip(a, b))
-c=sorted(c, key=lambda t: t[1])
-print(c)

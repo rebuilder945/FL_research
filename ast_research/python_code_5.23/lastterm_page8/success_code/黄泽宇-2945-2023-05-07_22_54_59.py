@@ -1,9 +1,0 @@
-def add_id(data2):
-     result = ["20" + x for x in data2]
-     return result
-
-data1=input().split()
-result=add_id(data1)
-for x in result:
-    print(x,end=" ")
-

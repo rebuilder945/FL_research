@@ -1,8 +1,0 @@
-a=int(input())
-b=int(input())
-c=int(input())
-nadd=(a+b+c)
-nadd=str(nadd)
-naver=float((a+b+c)/3)
-naver=str("%.2f"%naver)
-print(nadd+","+naver)

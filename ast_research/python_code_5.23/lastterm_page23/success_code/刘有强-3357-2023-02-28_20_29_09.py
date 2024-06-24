@@ -1,5 +1,0 @@
-planename=input()
-speed=float(input())
-length=float(input())
-cinde=float(length*length/(speed*2))
-print("The acceleration of",planename,"is","%.2f"%speed,"M / s",",","the take-off speed is","%.2f"%length,"M / s",",","and the shortest take-off runaway length is","%.2f"%cinde,"M")

@@ -1,2 +1,0 @@
-sWord = ''
-print (sWord.upper())

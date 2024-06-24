@@ -1,5 +1,0 @@
-sName=input("飞机的名称")
-a=input()
-v=input()
-length=v*v/(2a)
-print(sName, a, v, length)

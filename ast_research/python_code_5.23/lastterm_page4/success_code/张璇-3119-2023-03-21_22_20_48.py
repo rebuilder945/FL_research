@@ -1,8 +1,0 @@
-a=eval(input())
-a1=a.copy()
-for x in a:
-    b=a1.count(x)
-    if b>1:
-        a1.remove(x)
-
-print(a1)

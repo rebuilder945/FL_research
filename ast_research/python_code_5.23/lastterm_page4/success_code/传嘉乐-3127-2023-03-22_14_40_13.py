@@ -1,6 +1,0 @@
-n=eval(input())
-a=range(1,n+1)
-a=list(a)
-a.remove(1)
-a.append(1)
-print(a)

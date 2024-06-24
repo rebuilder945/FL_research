@@ -1,6 +1,0 @@
-b=eval(input())
-g=eval(input())
-m=b/(b+g)
-n=g/(b+g)
-stext="The male students ratio is %.2f ,the female students ratio is %.2f."%(m,n)
-print(stext)

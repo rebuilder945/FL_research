@@ -1,2 +1,0 @@
-sNzme=()
-print(sName.upper())

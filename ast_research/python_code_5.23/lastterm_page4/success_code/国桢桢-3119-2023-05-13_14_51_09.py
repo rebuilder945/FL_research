@@ -1,6 +1,0 @@
-l = eval(input())
-l.reverse()
-l1=list(set(l))
-l1.sort(key=l.index)
-l1.reverse()
-print(l1)       

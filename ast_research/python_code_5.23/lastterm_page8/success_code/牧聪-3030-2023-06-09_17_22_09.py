@@ -1,5 +1,0 @@
-a=input().split(",")
-b=input().split(",")
-zipped=zip(a,b)
-lst=list(zipped)
-print(lst)

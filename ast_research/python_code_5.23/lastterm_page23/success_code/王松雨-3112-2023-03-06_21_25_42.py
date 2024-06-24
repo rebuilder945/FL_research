@@ -1,9 +1,0 @@
-a=input()
-b=input()
-c=input()
-a1=float(a)
-b1=float(b)
-c1=float(c)
-d=a1+b1+c1
-e=d/3
-print("%d,%.2f"%(d,e))

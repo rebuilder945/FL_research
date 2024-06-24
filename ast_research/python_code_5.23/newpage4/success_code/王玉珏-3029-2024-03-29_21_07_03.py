@@ -1,8 +1,0 @@
-a=input().split(",")
-names=list((a))
-b=input()
-scores=list(eval(b))
-scores=list(eval(b))
-result=list(zip(names,scores))
-sorted_result=sorted(result,key=lambda x:x[1])
-print(sorted_result)

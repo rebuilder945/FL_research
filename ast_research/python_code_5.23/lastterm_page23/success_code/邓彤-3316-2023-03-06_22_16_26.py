@@ -1,5 +1,0 @@
-a=int(print())
-b=int(print())
-c=a/(a+b)
-d=b/(a+b)
-print("The male students ratio is ""%.2f"%c,"the female students ratio is""%.2f"%d)

@@ -1,5 +1,0 @@
-names = input().split(',')
-scores = input().split(',')
-pairs = list(zip(names, map(int, scores)))
-sorted_pairs = sorted(pairs, key=lambda x: x[1])
-print(sorted_pairs)

@@ -1,5 +1,0 @@
-ls=list(eval(input()))
-ls.sort(reverse=True)
-ls=list(map(str,ls))
-s="".join(ls)
-print(int(s))

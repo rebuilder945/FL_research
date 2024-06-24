@@ -1,8 +1,0 @@
-(x1,y1)=input()
-(x2,y2)=input()
-p1=float(x1)
-p2=float(y1)
-p3=float(x2)
-p4=float(y2)
-d=(p1-p2)**2+(p3-p4)**2
-D=d**0.5

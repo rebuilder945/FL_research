@@ -1,6 +1,0 @@
-list=eval(input())
-a=max(list)
-b=min(list)
-list.remove(a)
-list.remove(b)
-print(list)

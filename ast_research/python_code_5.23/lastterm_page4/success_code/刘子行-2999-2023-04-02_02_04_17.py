@@ -1,9 +1,0 @@
-shit=input().split()
-ass=input().split()
-n=int(tuple(ass)[0])
-m=int(tuple(ass)[1])
-dick1=str(tuple(shit)[n])
-dick2=str(tuple(shit)[m])
-shit[n]=dick2
-shit[m]=dick1
-print(shit)

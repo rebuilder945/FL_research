@@ -1,6 +1,0 @@
-n,m,l = input().split(",")
-n=int(n)
-m=int(m)
-l=int(l)
-a = list(range(n,(n+m*l),l))
-print(a)

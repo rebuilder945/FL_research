@@ -1,5 +1,0 @@
-nums=eval(input())
-max_value=max(nums)
-min_value=min(nums)
-filtered_nums=[num for num in nums if nums !=max_value and nums !=min_value]
-print(filtered_nums)

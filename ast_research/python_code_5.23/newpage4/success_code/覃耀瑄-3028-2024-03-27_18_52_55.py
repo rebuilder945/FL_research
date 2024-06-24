@@ -1,9 +1,0 @@
-list1=eval(input())
-list2=[]
-n=list1[0]
-a=list1[2]
-list2.append(n)
-m=list1[1]
-list3=list(range(n+a,n+m*a,a))
-list4=list2+list3
-print(list4)

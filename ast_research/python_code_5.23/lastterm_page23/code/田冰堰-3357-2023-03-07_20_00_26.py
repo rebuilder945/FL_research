@@ -1,3 +1,0 @@
-name,a,v=eval(input())
-length=v*v/(2a)
-print(The acceleration of name is v M/s,the take-off spend is a M/s,and the shortest take-off runway length is “%.2f"%length M)

@@ -1,7 +1,0 @@
-numB=input()
-numG=input()
-nB=float(numB)
-nG=float(numG)
-sB=nB/(nB+nG)
-sG=nG/(nB+nG)
-print("The male students ratio is %.2f%%,the female students ratio is %.2f%%."%(sB*100,sG*100))

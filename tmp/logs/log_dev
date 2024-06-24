@@ -1,0 +1,598 @@
+2024-06-16 10:51:38,137 - INFO - {
+    "msg_type": "COMPILE_ERROR",
+    "user": null,
+    "prob_input": "读入一个自然数构成的列表，找出其中的每一个素数，然后放入另外一个列表，并输出这个列表。",
+    "code_input": "输入一个整数列表和整数n(n可以是负数）和正整数m，从该列表中选择第n个元素，把该元素重复m次，然后放到列表的尾端，最后输出列表。如果输入的n值不在列表下标范围之内，则输出\"error\"",
+    "prob_id": "3004",
+    "fix_suggestion": "**存在的错误**：\n\n这个错误提示表明有一个无效的字符 （，它应该是 ( 的错误使用。例如在示例代码中，错误使用的中文字符的（，而不是(。\n\n\n\n**示例代码：**\n\n```ss\ndef calDegrees(nums):\n    d = 0\n    for n in nums:\n        if nums.count(n) > d:\n            #错误使用的中文字符的（，而不是(\n            d = nums.count(n)\n    return d\n\nnums = eval(input())\nd = calDegrees(nums)  # 调用自定义函数\nprint(d)\n",
+    "is_like": null,
+    "feedback": null,
+    "dialogue": null,
+    "err_info": null,
+    "traceback_info": "Traceback (most recent call last):\n  File \"/home/wdy/code_LLM/FL_research/demo.py\", line 99, in respond\n    res = Fl_app.get_res(code_=message, prob_id=prob_id, stu=prob_id) # (y, line_rank, outputs_info, target_lines)\n  File \"/home/wdy/code_LLM/FL_research/implement/techs.py\", line 428, in get_res\n    return self.algorithm.cal(code_=code_, test_case=self.test_cases[prob_id], stu=stu)\n  File \"/home/wdy/code_LLM/FL_research/implement/techs.py\", line 184, in cal\n    super().cal(code_, test_case, stu)  # get self.cov_info: (cov_mat, pass_vec)\n  File \"/home/wdy/code_LLM/FL_research/implement/techs.py\", line 57, in cal\n    self.exce_res = self.get_exec_res(code_, test_case, stu)\n  File \"/home/wdy/code_LLM/FL_research/implement/techs.py\", line 89, in get_exec_res\n    import tmp_code\n  File \"/home/wdy/code_LLM/FL_research/tmp_code.py\", line 1\n    输入一个整数列表和整数n(n可以是负数）和正整数m，从该列表中选择第n个元素，把该元素重复m次，然后放到列表的尾端，最后输出列表。如果输入的n值不在列表下标范围之内，则输出\"error\"\n                       ^\nSyntaxError: invalid character '）' (U+FF09)\n"
+}
+2024-06-16 10:51:45,055 - INFO - {
+    "msg_type": "LOGIC_ERROR",
+    "user": null,
+    "prob_input": "输入一个整数列表和整数n(n可以是负数）和正整数m，从该列表中选择第n个元素，把该元素重复m次，然后放到列表的尾端，最后输出列表。如果输入的n值不在列表下标范围之内，则输出\"error\"",
+    "code_input": "liebiao = eval(input())\nliebiao = list(liebiao)\nxiabiao,cishu = eval(input())\nchangdu = len(liebiao)\nif xiabiao >= 0: \n    if xiabiao > changdu:\n        print(\"error\")\n    else:\n        shu = liebiao[xiabiao-1]\n        for i in range(0,cishu):\n            liebiao.append(shu)\n        print(liebiao)   \nelse:\n    if -xiabiao>changdu:\n        print(\"error\")\n    else:\n        shu = liebiao[xiabiao+1]\n        for i in range(0,cishu):\n            liebiao.append(shu)\n        print(liebiao)\n\n",
+    "prob_id": "2994",
+    "fix_suggestion": "(([[1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1, 0, 0], [1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1, 0, 0], [1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]], [0, 0, 0, 0, 1]), array([ 5,  5,  5,  5,  5, 15, 22, 22, 14, 14, 14, 14, 22, 14, 22, 22, 14,\n       14, 14, 14, 22, 22]), (['[1, 2, 3, 4, 5, 2, 2, 2]', '[5, 7, 9, 0, 12, 8, 12, 12, 12, 12]', '[1, 22, 23, 24, 5, 22, 22, 22, 22]', '[1, 4, 7, 6, 90, 87, 100, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]', 'error'], ['[1, 2, 3, 4, 5, 3, 3, 3]\\n', '[5, 7, 9, 0, 12, 8, 0, 0, 0, 0]', '[1, 22, 23, 24, 5, 23, 23, 23, 23]', '[1, 4, 7, 6, 90, 87, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100]', 'error']), [1, 2, 3, 4, 5])",
+    "is_like": null,
+    "feedback": null,
+    "dialogue": null,
+    "err_info": null,
+    "traceback_info": null
+}
+2024-06-16 11:07:04,754 - INFO - {
+    "msg_type": "COMPILE_ERROR",
+    "user": null,
+    "prob_input": "输入一个整数列表和整数n(n可以是负数）和正整数m，从该列表中选择第n个元素，把该元素重复m次，然后放到列表的尾端，最后输出列表。如果输入的n值不在列表下标范围之内，则输出\"error\"",
+    "code_input": "liebiao = eval(input())\nliebiao = list(liebiao)\nxiabiao,cishu = eval(input())\nchangdu = len(liebiao)\nif xiabiao >= 0: \n    if xiabiao > changdu:\n        print(\"error\")\n    else:\n        shu = liebiao[xiabiao-1]\n        for i in range(0,cishu):\n            liebiao.append(shu)\n        print(liebiao)   \nelse:\n    if -xiabiao>changdu:\n        print(\"error\")\n    else:\n        shu = liebiao[xiabiao+1]\n        for i in range(0,cishu):\n            liebiao.append(shu)\n        print(liebiao)\n\n",
+    "prob_id": "2994",
+    "fix_suggestion": "**存在的错误**：\n\nsample() 方法是用于从指定的序列中随机选择指定数量的元素，错误信息表示在调用random.sample()函数时，缺少必需的参数。例如代码所示，通过将 random.sample(nums) 修改为 random.sample(nums, 1)，指定抽取一个样本，然后通过 n[0] 获取抽样结果，并统计其在 nums 中出现的次数。\n\n\n\n**示例代码：**\n\n```ss\ndef calDegrees(nums):\n    import random\n    n = random.sample(nums, 1)  # 将 random.sample(nums) 修改为 random.sample(nums, 1)，指定抽取一个样本\n    count = nums.count(n[0])  # 通过 n[0] 获取抽样结果，并统计其在 nums 中出现的次数\n    return count\n\nnums = eval(input())\nd = calDegrees(nums)\nprint(d)\n",
+    "is_like": null,
+    "feedback": null,
+    "dialogue": null,
+    "err_info": null,
+    "traceback_info": "Traceback (most recent call last):\n  File \"/home/wdy/code_LLM/FL_research/demo.py\", line 99, in respond\n    res = Fl_app.get_res(code_=message, prob_id=prob_id, stu=prob_id) # (y, line_rank, outputs_info, target_lines)\n  File \"/home/wdy/code_LLM/FL_research/implement/techs.py\", line 428, in get_res\n    return self.algorithm.cal(code_=code_, test_case=self.test_cases[prob_id], stu=stu)\n  File \"/home/wdy/code_LLM/FL_research/implement/techs.py\", line 232, in cal\n    super().cal(code_, test_case)  # get self.exce_res\nTypeError: cal() missing 1 required positional argument: 'stu'\n"
+}
+2024-06-16 11:07:36,685 - INFO - {
+    "msg_type": "COMPILE_ERROR",
+    "user": null,
+    "prob_input": "输入一个整数列表和整数n(n可以是负数）和正整数m，从该列表中选择第n个元素，把该元素重复m次，然后放到列表的尾端，最后输出列表。如果输入的n值不在列表下标范围之内，则输出\"error\"",
+    "code_input": "liebiao = eval(input())\nliebiao = list(liebiao)\nxiabiao,cishu = eval(input())\nchangdu = len(liebiao)\nif xiabiao >= 0: \n    if xiabiao > changdu:\n        print(\"error\")\n    else:\n        shu = liebiao[xiabiao-1]\n        for i in range(0,cishu):\n            liebiao.append(shu)\n        print(liebiao)   \nelse:\n    if -xiabiao>changdu:\n        print(\"error\")\n    else:\n        shu = liebiao[xiabiao+1]\n        for i in range(0,cishu):\n            liebiao.append(shu)\n        print(liebiao)\n\n",
+    "prob_id": "2994",
+    "fix_suggestion": "**存在的错误**：\n\nsample() 方法是用于从指定的序列中随机选择指定数量的元素，错误信息表示在调用random.sample()函数时，缺少必需的参数。例如代码所示，通过将 random.sample(nums) 修改为 random.sample(nums, 1)，指定抽取一个样本，然后通过 n[0] 获取抽样结果，并统计其在 nums 中出现的次数。\n\n\n\n**示例代码：**\n\n```ss\ndef calDegrees(nums):\n    import random\n    n = random.sample(nums, 1)  # 将 random.sample(nums) 修改为 random.sample(nums, 1)，指定抽取一个样本\n    count = nums.count(n[0])  # 通过 n[0] 获取抽样结果，并统计其在 nums 中出现的次数\n    return count\n\nnums = eval(input())\nd = calDegrees(nums)\nprint(d)\n",
+    "is_like": null,
+    "feedback": null,
+    "dialogue": null,
+    "err_info": null,
+    "traceback_info": "Traceback (most recent call last):\n  File \"/home/wdy/code_LLM/FL_research/demo.py\", line 99, in respond\n    res = Fl_app.get_res(code_=message, prob_id=prob_id, stu=prob_id) # (y, line_rank, outputs_info, target_lines)\n  File \"/home/wdy/code_LLM/FL_research/implement/techs.py\", line 428, in get_res\n    return self.algorithm.cal(code_=code_, test_case=self.test_cases[prob_id], stu=stu)\n  File \"/home/wdy/code_LLM/FL_research/implement/techs.py\", line 232, in cal\n    super().cal(code_, test_case)  # get self.exce_res\nTypeError: cal() missing 1 required positional argument: 'stu'\n"
+}
+2024-06-16 11:07:47,783 - INFO - {
+    "msg_type": "LOGIC_ERROR",
+    "user": null,
+    "prob_input": "输入一个整数列表和整数n(n可以是负数）和正整数m，从该列表中选择第n个元素，把该元素重复m次，然后放到列表的尾端，最后输出列表。如果输入的n值不在列表下标范围之内，则输出\"error\"",
+    "code_input": "liebiao = eval(input())\nliebiao = list(liebiao)\nxiabiao,cishu = eval(input())\nchangdu = len(liebiao)\nif xiabiao >= 0: \n    if xiabiao > changdu:\n        print(\"error\")\n    else:\n        shu = liebiao[xiabiao-1]\n        for i in range(0,cishu):\n            liebiao.append(shu)\n        print(liebiao)   \nelse:\n    if -xiabiao>changdu:\n        print(\"error\")\n    else:\n        shu = liebiao[xiabiao+1]\n        for i in range(0,cishu):\n            liebiao.append(shu)\n        print(liebiao)\n\n",
+    "prob_id": "2994",
+    "fix_suggestion": "(([[1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1, 0, 0], [1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1, 0, 0], [1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]], [0, 0, 0, 0, 1]), array([ 5,  5,  5,  5,  5, 15, 22, 22, 14, 14, 14, 14, 22, 14, 22, 22, 14,\n       14, 14, 14, 22, 22]), (['[1, 2, 3, 4, 5, 2, 2, 2]', '[5, 7, 9, 0, 12, 8, 12, 12, 12, 12]', '[1, 22, 23, 24, 5, 22, 22, 22, 22]', '[1, 4, 7, 6, 90, 87, 100, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]', 'error'], ['[1, 2, 3, 4, 5, 3, 3, 3]\\n', '[5, 7, 9, 0, 12, 8, 0, 0, 0, 0]', '[1, 22, 23, 24, 5, 23, 23, 23, 23]', '[1, 4, 7, 6, 90, 87, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100]', 'error']), [1, 2, 3, 4, 5])",
+    "is_like": null,
+    "feedback": null,
+    "dialogue": null,
+    "err_info": null,
+    "traceback_info": null
+}
+2024-06-16 11:07:52,008 - INFO - {
+    "msg_type": "COMPILE_ERROR",
+    "user": null,
+    "prob_input": "输入一个整数列表和整数n(n可以是负数）和正整数m，从该列表中选择第n个元素，把该元素重复m次，然后放到列表的尾端，最后输出列表。如果输入的n值不在列表下标范围之内，则输出\"error\"",
+    "code_input": "liebiao = eval(input())\nliebiao = list(liebiao)\nxiabiao,cishu = eval(input())\nchangdu = len(liebiao)\nif xiabiao >= 0: \n    if xiabiao > changdu:\n        print(\"error\")\n    else:\n        shu = liebiao[xiabiao-1]\n        for i in range(0,cishu):\n            liebiao.append(shu)\n        print(liebiao)   \nelse:\n    if -xiabiao>changdu:\n        print(\"error\")\n    else:\n        shu = liebiao[xiabiao+1]\n        for i in range(0,cishu):\n            liebiao.append(shu)\n        print(liebiao)\n\n",
+    "prob_id": "2994",
+    "fix_suggestion": "**存在的错误**：\n\nsample() 方法是用于从指定的序列中随机选择指定数量的元素，错误信息表示在调用random.sample()函数时，缺少必需的参数。例如代码所示，通过将 random.sample(nums) 修改为 random.sample(nums, 1)，指定抽取一个样本，然后通过 n[0] 获取抽样结果，并统计其在 nums 中出现的次数。\n\n\n\n**示例代码：**\n\n```ss\ndef calDegrees(nums):\n    import random\n    n = random.sample(nums, 1)  # 将 random.sample(nums) 修改为 random.sample(nums, 1)，指定抽取一个样本\n    count = nums.count(n[0])  # 通过 n[0] 获取抽样结果，并统计其在 nums 中出现的次数\n    return count\n\nnums = eval(input())\nd = calDegrees(nums)\nprint(d)\n",
+    "is_like": null,
+    "feedback": null,
+    "dialogue": null,
+    "err_info": null,
+    "traceback_info": "Traceback (most recent call last):\n  File \"/home/wdy/code_LLM/FL_research/demo.py\", line 99, in respond\n    res = Fl_app.get_res(code_=message, prob_id=prob_id, stu=prob_id) # (y, line_rank, outputs_info, target_lines)\n  File \"/home/wdy/code_LLM/FL_research/implement/techs.py\", line 428, in get_res\n    return self.algorithm.cal(code_=code_, test_case=self.test_cases[prob_id], stu=stu)\n  File \"/home/wdy/code_LLM/FL_research/implement/techs.py\", line 232, in cal\n    super().cal(code_, test_case)  # get self.exce_res\nTypeError: cal() missing 1 required positional argument: 'stu'\n"
+}
+2024-06-16 11:12:33,802 - INFO - {
+    "msg_type": "LOGIC_ERROR",
+    "user": null,
+    "prob_input": "输入一个整数列表和整数n(n可以是负数）和正整数m，从该列表中选择第n个元素，把该元素重复m次，然后放到列表的尾端，最后输出列表。如果输入的n值不在列表下标范围之内，则输出\"error\"",
+    "code_input": "liebiao = eval(input())\nliebiao = list(liebiao)\nxiabiao,cishu = eval(input())\nchangdu = len(liebiao)\nif xiabiao >= 0: \n    if xiabiao > changdu:\n        print(\"error\")\n    else:\n        shu = liebiao[xiabiao-1]\n        for i in range(0,cishu):\n            liebiao.append(shu)\n        print(liebiao)   \nelse:\n    if -xiabiao>changdu:\n        print(\"error\")\n    else:\n        shu = liebiao[xiabiao+1]\n        for i in range(0,cishu):\n            liebiao.append(shu)\n        print(liebiao)\n\n",
+    "prob_id": "2994",
+    "fix_suggestion": "(([[1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1, 0, 0], [1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1, 0, 0], [1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]], [0, 0, 0, 0, 1]), array([ 5,  5,  5,  5,  5, 15, 22, 22, 14, 14, 14, 14, 22, 14, 22, 22, 14,\n       14, 14, 14, 22, 22]), (['[1, 2, 3, 4, 5, 2, 2, 2]', '[5, 7, 9, 0, 12, 8, 12, 12, 12, 12]', '[1, 22, 23, 24, 5, 22, 22, 22, 22]', '[1, 4, 7, 6, 90, 87, 100, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]', 'error'], ['[1, 2, 3, 4, 5, 3, 3, 3]\\n', '[5, 7, 9, 0, 12, 8, 0, 0, 0, 0]', '[1, 22, 23, 24, 5, 23, 23, 23, 23]', '[1, 4, 7, 6, 90, 87, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100]', 'error']), [1, 2, 3, 4, 5])",
+    "is_like": null,
+    "feedback": null,
+    "dialogue": null,
+    "err_info": null,
+    "traceback_info": null
+}
+2024-06-16 11:12:37,723 - ERROR - {
+    "msg_type": "EXCEPTION",
+    "user": null,
+    "prob_input": "输入一个整数列表和整数n(n可以是负数）和正整数m，从该列表中选择第n个元素，把该元素重复m次，然后放到列表的尾端，最后输出列表。如果输入的n值不在列表下标范围之内，则输出\"error\"",
+    "code_input": "liebiao = eval(input())\nliebiao = list(liebiao)\nxiabiao,cishu = eval(input())\nchangdu = len(liebiao)\nif xiabiao >= 0: \n    if xiabiao > changdu:\n        print(\"error\")\n    else:\n        shu = liebiao[xiabiao-1]\n        for i in range(0,cishu):\n            liebiao.append(shu)\n        print(liebiao)   \nelse:\n    if -xiabiao>changdu:\n        print(\"error\")\n    else:\n        shu = liebiao[xiabiao+1]\n        for i in range(0,cishu):\n            liebiao.append(shu)\n        print(liebiao)\n\n",
+    "prob_id": "2994",
+    "fix_suggestion": null,
+    "is_like": null,
+    "feedback": null,
+    "dialogue": null,
+    "err_info": "MutationFailedError: 可能原因：1）变异体文件全部构造失败；2）变异体全部变编译不通过；3）变异体规则生成失败。",
+    "traceback_info": "Traceback (most recent call last):\n  File \"/home/wdy/code_LLM/FL_research/demo.py\", line 99, in respond\n    res = Fl_app.get_res(code_=message, prob_id=prob_id, stu=prob_id) # (y, line_rank, outputs_info, target_lines)\n  File \"/home/wdy/code_LLM/FL_research/implement/techs.py\", line 428, in get_res\n    return self.algorithm.cal(code_=code_, test_case=self.test_cases[prob_id], stu=stu)\n  File \"/home/wdy/code_LLM/FL_research/implement/techs.py\", line 308, in cal\n    raise MutationFailedError\nimplement.exceptions.MutationFailedError: MutationFailedError: 可能原因：1）变异体文件全部构造失败；2）变异体全部变编译不通过；3）变异体规则生成失败。\n"
+}
+2024-06-16 11:13:15,898 - INFO - {
+    "msg_type": "LOGIC_ERROR",
+    "user": null,
+    "prob_input": "输入一个整数列表和整数n(n可以是负数）和正整数m，从该列表中选择第n个元素，把该元素重复m次，然后放到列表的尾端，最后输出列表。如果输入的n值不在列表下标范围之内，则输出\"error\"",
+    "code_input": "liebiao = eval(input())\nliebiao = list(liebiao)\nxiabiao,cishu = eval(input())\nchangdu = len(liebiao)\nif xiabiao >= 0: \n    if xiabiao > changdu:\n        print(\"error\")\n    else:\n        shu = liebiao[xiabiao-1]\n        for i in range(0,cishu):\n            liebiao.append(shu)\n        print(liebiao)   \nelse:\n    if -xiabiao>changdu:\n        print(\"error\")\n    else:\n        shu = liebiao[xiabiao+1]\n        for i in range(0,cishu):\n            liebiao.append(shu)\n        print(liebiao)\n\n",
+    "prob_id": "2994",
+    "fix_suggestion": "(([[1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1, 0, 0], [1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1, 0, 0], [1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]], [0, 0, 0, 0, 1]), array([ 5,  5,  5,  5,  5, 15, 22, 22, 14, 14, 14, 14, 22, 14, 22, 22, 14,\n       14, 14, 14, 22, 22]), (['[1, 2, 3, 4, 5, 2, 2, 2]', '[5, 7, 9, 0, 12, 8, 12, 12, 12, 12]', '[1, 22, 23, 24, 5, 22, 22, 22, 22]', '[1, 4, 7, 6, 90, 87, 100, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]', 'error'], ['[1, 2, 3, 4, 5, 3, 3, 3]\\n', '[5, 7, 9, 0, 12, 8, 0, 0, 0, 0]', '[1, 22, 23, 24, 5, 23, 23, 23, 23]', '[1, 4, 7, 6, 90, 87, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100]', 'error']), [1, 2, 3, 4, 5])",
+    "is_like": null,
+    "feedback": null,
+    "dialogue": null,
+    "err_info": null,
+    "traceback_info": null
+}
+2024-06-16 11:19:20,755 - ERROR - {
+    "msg_type": "EXCEPTION",
+    "user": null,
+    "prob_input": "输入一个整数列表和整数n(n可以是负数）和正整数m，从该列表中选择第n个元素，把该元素重复m次，然后放到列表的尾端，最后输出列表。如果输入的n值不在列表下标范围之内，则输出\"error\"",
+    "code_input": "liebiao = eval(input())\nliebiao = list(liebiao)\nxiabiao,cishu = eval(input())\nchangdu = len(liebiao)\nif xiabiao >= 0: \n    if xiabiao > changdu:\n        print(\"error\")\n    else:\n        shu = liebiao[xiabiao]\n        for i in range(0,cishu):\n            liebiao.append(shu)\n        print(liebiao)   \nelse:\n    if -xiabiao>changdu:\n        print(\"error\")\n    else:\n        shu = liebiao[xiabiao]\n        for i in range(0,cishu):\n            liebiao.append(shu)\n        print(liebiao)\n\n",
+    "prob_id": "2994",
+    "fix_suggestion": null,
+    "is_like": null,
+    "feedback": null,
+    "dialogue": null,
+    "err_info": "NoFailingTestError",
+    "traceback_info": "Traceback (most recent call last):\n  File \"/home/wdy/code_LLM/FL_research/demo.py\", line 99, in respond\n    res = Fl_app.get_res(code_=message, prob_id=prob_id, stu=prob_id) # (y, line_rank, outputs_info, target_lines)\n  File \"/home/wdy/code_LLM/FL_research/implement/techs.py\", line 428, in get_res\n    return self.algorithm.cal(code_=code_, test_case=self.test_cases[prob_id], stu=stu)\n  File \"/home/wdy/code_LLM/FL_research/implement/techs.py\", line 192, in cal\n    sbfl_caler.fit_predict(X, y)\n  File \"/root/miniconda3/envs/chatbot/lib/python3.9/site-packages/sbfl/base.py\", line 67, in fit_predict\n    self.fit(X, y)\n  File \"/root/miniconda3/envs/chatbot/lib/python3.9/site-packages/sbfl/base.py\", line 61, in fit\n    e_p, e_f, n_p, n_f = self.get_spectrum(X, y)\n  File \"/root/miniconda3/envs/chatbot/lib/python3.9/site-packages/sbfl/base.py\", line 47, in get_spectrum\n    X, y = self.validate_input(X, y)\n  File \"/root/miniconda3/envs/chatbot/lib/python3.9/site-packages/sbfl/base.py\", line 34, in validate_input\n    raise NoFailingTestError\nsbfl.base.NoFailingTestError\n"
+}
+2024-06-16 11:19:29,441 - ERROR - {
+    "msg_type": "EXCEPTION",
+    "user": null,
+    "prob_input": "输入一个整数列表和整数n(n可以是负数）和正整数m，从该列表中选择第n个元素，把该元素重复m次，然后放到列表的尾端，最后输出列表。如果输入的n值不在列表下标范围之内，则输出\"error\"",
+    "code_input": "liebiao = eval(input())\nliebiao = list(liebiao)\nxiabiao,cishu = eval(input())\nchangdu = len(liebiao)\nif xiabiao >= 0: \n    if xiabiao > changdu:\n        print(\"error\")\n    else:\n        shu = liebiao[xiabiao]\n        for i in range(0,cishu):\n            liebiao.append(shu)\n        print(liebiao)   \nelse:\n    if -xiabiao>changdu:\n        print(\"error\")\n    else:\n        shu = liebiao[xiabiao]\n        for i in range(0,cishu):\n            liebiao.append(shu)\n        print(liebiao)\n\n",
+    "prob_id": "2994",
+    "fix_suggestion": null,
+    "is_like": null,
+    "feedback": null,
+    "dialogue": null,
+    "err_info": "NoFailingTestError",
+    "traceback_info": "Traceback (most recent call last):\n  File \"/home/wdy/code_LLM/FL_research/demo.py\", line 99, in respond\n    res = Fl_app.get_res(code_=message, prob_id=prob_id, stu=prob_id) # (y, line_rank, outputs_info, target_lines)\n  File \"/home/wdy/code_LLM/FL_research/implement/techs.py\", line 428, in get_res\n    return self.algorithm.cal(code_=code_, test_case=self.test_cases[prob_id], stu=stu)\n  File \"/home/wdy/code_LLM/FL_research/implement/techs.py\", line 192, in cal\n    sbfl_caler.fit_predict(X, y)\n  File \"/root/miniconda3/envs/chatbot/lib/python3.9/site-packages/sbfl/base.py\", line 67, in fit_predict\n    self.fit(X, y)\n  File \"/root/miniconda3/envs/chatbot/lib/python3.9/site-packages/sbfl/base.py\", line 61, in fit\n    e_p, e_f, n_p, n_f = self.get_spectrum(X, y)\n  File \"/root/miniconda3/envs/chatbot/lib/python3.9/site-packages/sbfl/base.py\", line 47, in get_spectrum\n    X, y = self.validate_input(X, y)\n  File \"/root/miniconda3/envs/chatbot/lib/python3.9/site-packages/sbfl/base.py\", line 34, in validate_input\n    raise NoFailingTestError\nsbfl.base.NoFailingTestError\n"
+}
+2024-06-16 11:45:55,249 - INFO - {
+    "msg_type": "LOGIC_ERROR",
+    "user": null,
+    "prob_input": "输入一个整数列表和整数n(n可以是负数）和正整数m，从该列表中选择第n个元素，把该元素重复m次，然后放到列表的尾端，最后输出列表。如果输入的n值不在列表下标范围之内，则输出\"error\"",
+    "code_input": "ls=list(input().split(','))\nn,m=eval(input())\nif n>+len(ls) or n<len(ls)*(-1):\n    print('error')\nelse:\n    ls1=[ls[n]]*m\n    print(ls+ls1)\n",
+    "prob_id": "2994",
+    "fix_suggestion": "(([[1, 1, 1, 0, 0, 1, 1, 0], [1, 1, 1, 0, 0, 1, 1, 0], [1, 1, 1, 0, 0, 1, 1, 0], [1, 1, 1, 0, 0, 1, 1, 0], [1, 1, 1, 1, 0, 0, 0, 0]], [0, 0, 0, 0, 1]), array([5, 5, 5, 8, 8, 2, 2, 8]), ([\"['1', '2', '3', '4', '5', '3', '3', '3']\", \"['5', '7', '9', '0', '12', '8', '0', '0', '0', '0']\", \"['1', '22', '23', '24', '5', '23', '23', '23', '23']\", \"['1', '4', '7', '6', '90', '87', '100', '100', '100', '100', '100', '100', '100', '100', '100', '100', '100']\", 'error'], ['[1, 2, 3, 4, 5, 3, 3, 3]\\n', '[5, 7, 9, 0, 12, 8, 0, 0, 0, 0]', '[1, 22, 23, 24, 5, 23, 23, 23, 23]', '[1, 4, 7, 6, 90, 87, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100]', 'error']), [6, 7])",
+    "is_like": null,
+    "feedback": null,
+    "dialogue": null,
+    "err_info": null,
+    "traceback_info": null
+}
+2024-06-16 11:46:59,144 - INFO - {
+    "msg_type": "LOGIC_ERROR",
+    "user": null,
+    "prob_input": "输入一个整数列表和整数n(n可以是负数）和正整数m，从该列表中选择第n个元素，把该元素重复m次，然后放到列表的尾端，最后输出列表。如果输入的n值不在列表下标范围之内，则输出\"error\"",
+    "code_input": "ls=list(input().split(','))\nn,m=eval(input())\nif n>+len(ls) or n<len(ls)*(-1):\n    print('error')\nelse:\n    ls1=[ls[n]]*m\n    print(ls+ls1)\n",
+    "prob_id": "2994",
+    "fix_suggestion": "(([[1, 1, 1, 0, 0, 1, 1, 0], [1, 1, 1, 0, 0, 1, 1, 0], [1, 1, 1, 0, 0, 1, 1, 0], [1, 1, 1, 0, 0, 1, 1, 0], [1, 1, 1, 1, 0, 0, 0, 0]], [0, 0, 0, 0, 1]), array([5, 5, 5, 8, 8, 2, 2, 8]), ([\"['1', '2', '3', '4', '5', '3', '3', '3']\", \"['5', '7', '9', '0', '12', '8', '0', '0', '0', '0']\", \"['1', '22', '23', '24', '5', '23', '23', '23', '23']\", \"['1', '4', '7', '6', '90', '87', '100', '100', '100', '100', '100', '100', '100', '100', '100', '100', '100']\", 'error'], ['[1, 2, 3, 4, 5, 3, 3, 3]\\n', '[5, 7, 9, 0, 12, 8, 0, 0, 0, 0]', '[1, 22, 23, 24, 5, 23, 23, 23, 23]', '[1, 4, 7, 6, 90, 87, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100]', 'error']), [6, 7])",
+    "is_like": null,
+    "feedback": null,
+    "dialogue": null,
+    "err_info": null,
+    "traceback_info": null
+}
+2024-06-16 11:48:10,775 - ERROR - {
+    "msg_type": "EXCEPTION",
+    "user": null,
+    "prob_input": "输入一个整数列表和整数n(n可以是负数）和正整数m，从该列表中选择第n个元素，把该元素重复m次，然后放到列表的尾端，最后输出列表。如果输入的n值不在列表下标范围之内，则输出\"error\"",
+    "code_input": "ls=list(eval(input()))\nn,m=eval(input())\nif n>+len(ls) or n<len(ls)*(-1):\n    print('error')\nelse:\n    ls1=[ls[n]]*m\n    print(ls+ls1)\n",
+    "prob_id": "2994",
+    "fix_suggestion": null,
+    "is_like": null,
+    "feedback": null,
+    "dialogue": null,
+    "err_info": "NoFailingTestError",
+    "traceback_info": "Traceback (most recent call last):\n  File \"/home/wdy/code_LLM/FL_research/demo.py\", line 99, in respond\n    res = Fl_app.get_res(code_=message, prob_id=prob_id, stu=prob_id) # (y, line_rank, outputs_info, target_lines)\n  File \"/home/wdy/code_LLM/FL_research/implement/techs.py\", line 428, in get_res\n    return self.algorithm.cal(code_=code_, test_case=self.test_cases[prob_id], stu=stu)\n  File \"/home/wdy/code_LLM/FL_research/implement/techs.py\", line 192, in cal\n    sbfl_caler.fit_predict(X, y)\n  File \"/root/miniconda3/envs/chatbot/lib/python3.9/site-packages/sbfl/base.py\", line 67, in fit_predict\n    self.fit(X, y)\n  File \"/root/miniconda3/envs/chatbot/lib/python3.9/site-packages/sbfl/base.py\", line 61, in fit\n    e_p, e_f, n_p, n_f = self.get_spectrum(X, y)\n  File \"/root/miniconda3/envs/chatbot/lib/python3.9/site-packages/sbfl/base.py\", line 47, in get_spectrum\n    X, y = self.validate_input(X, y)\n  File \"/root/miniconda3/envs/chatbot/lib/python3.9/site-packages/sbfl/base.py\", line 34, in validate_input\n    raise NoFailingTestError\nsbfl.base.NoFailingTestError\n"
+}
+2024-06-16 12:03:08,633 - INFO - {
+    "msg_type": "LOGIC_ERROR",
+    "user": null,
+    "prob_input": "输入一个整数列表和整数n(n可以是负数）和正整数m，从该列表中选择第n个元素，把该元素重复m次，然后放到列表的尾端，最后输出列表。如果输入的n值不在列表下标范围之内，则输出\"error\"",
+    "code_input": "# 12\n# n = eval(input())\n# m = []\n# x = False\n# for a in n:\n#     if n.count(a) == 1:\n#         m.append(a)\n#         x = True\n# m.sort()\n# result = \",\".join(str(num) for num in m)\n# if x:\n#     print(result)\n# else:\n#     print(\"False\")\n\n\n\n# 13\n# n = eval(input())\n# for i in range(len(n)):\n#     if n[i]==0:\n#         n.pop(i)\n#         n.append(0)\n# print(n)\n\n\n\n# 14\nn = eval('['+input()+']')\na,b = input().split(',')\na = int(a)\nb = int(b)\nif a < len(n):\n    for i in range(b):\n        n.append(n[a])\n    print(n)\nelse:\n    print('error')\n",
+    "prob_id": "2994",
+    "fix_suggestion": "(([[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0]], [1, 0, 1, 1, 1]), array([39, 39, 39, 39, 39, 39, 39, 39, 39, 39, 39, 39, 39, 39, 39, 39, 39,\n       39, 39, 39, 39, 39, 39, 39, 39, 39, 39, 39,  8,  8,  8,  8,  8,  3,\n        3,  3, 39, 39, 39]), (['[1, 2, 3, 4, 5, 3, 3, 3]', '[5, 7, 9, 0, 12, 8, 0, 12, 8, 0]', '[1, 22, 23, 24, 5, 23, 23, 23, 23]', '[1, 4, 7, 6, 90, 87, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100]', 'error'], ['[1, 2, 3, 4, 5, 3, 3, 3]\\n', '[5, 7, 9, 0, 12, 8, 0, 0, 0, 0]', '[1, 22, 23, 24, 5, 23, 23, 23, 23]', '[1, 4, 7, 6, 90, 87, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100]', 'error']), [34, 35, 36])",
+    "is_like": null,
+    "feedback": null,
+    "dialogue": null,
+    "err_info": null,
+    "traceback_info": null
+}
+2024-06-16 14:40:01,177 - INFO - {
+    "msg_type": "LOGIC_ERROR",
+    "user": null,
+    "prob_input": "输入一个整数列表和整数n(n可以是负数）和正整数m，从该列表中选择第n个元素，把该元素重复m次，然后放到列表的尾端，最后输出列表。如果输入的n值不在列表下标范围之内，则输出\"error\"",
+    "code_input": "a=eval(input())\nc=list(map(int,a))\nn,m=eval(input())\nif n>len(c):\n    print(\"error\")\nelse:\n    b=c[n-1]\n    for i in range(m):\n        c.append(b)\n    print(c)\n",
+    "prob_id": "2994",
+    "fix_suggestion": "(([[1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0], [1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0], [1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0], [1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0], [1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0]], [0, 0, 0, 0, 1]), array([ 8,  8,  8,  8, 11, 11,  4,  4,  4,  4, 11]), (['[1, 2, 3, 4, 5, 2, 2, 2]', '[5, 7, 9, 0, 12, 8, 9, 9, 9, 9]', '[1, 22, 23, 24, 5, 22, 22, 22, 22]', '[1, 4, 7, 6, 90, 87, 100, 87, 87, 87, 87, 87, 87, 87, 87, 87, 87]', 'error'], ['[1, 2, 3, 4, 5, 3, 3, 3]\\n', '[5, 7, 9, 0, 12, 8, 0, 0, 0, 0]', '[1, 22, 23, 24, 5, 23, 23, 23, 23]', '[1, 4, 7, 6, 90, 87, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100]', 'error']), [7, 8, 9, 10])",
+    "is_like": null,
+    "feedback": null,
+    "dialogue": null,
+    "err_info": null,
+    "traceback_info": null
+}
+2024-06-16 14:45:53,286 - INFO - {
+    "msg_type": "LOGIC_ERROR",
+    "user": null,
+    "prob_input": "输入一个整数列表和整数n(n可以是负数）和正整数m，从该列表中选择第n个元素，把该元素重复m次，然后放到列表的尾端，最后输出列表。如果输入的n值不在列表下标范围之内，则输出\"error\"",
+    "code_input": "a=[eval(input())]\nn,m=eval(input())\nif n in range(0,len(a)+1):\n    b=[a[n]]*m\n    a.append(b)\nelif n in range(-1,-len(a)):\n    b=[a[n]]*m\n    a.append(b)\nelse:\n    print(\"error\")\n",
+    "prob_id": "2994",
+    "fix_suggestion": "(([[1, 1, 1, 0, 0, 1, 0, 0, 0, 1, 0], [1, 1, 1, 0, 0, 1, 0, 0, 0, 1, 0], [1, 1, 1, 0, 0, 1, 0, 0, 0, 1, 0], [1, 1, 1, 0, 0, 1, 0, 0, 0, 1, 0], [1, 1, 1, 0, 0, 1, 0, 0, 0, 1, 0]], [0, 0, 0, 0, 1]), array([ 5,  5,  5, 11, 11,  5, 11, 11, 11,  5, 11]), (['error', 'error', 'error', 'error', 'error'], ['[1, 2, 3, 4, 5, 3, 3, 3]\\n', '[5, 7, 9, 0, 12, 8, 0, 0, 0, 0]', '[1, 22, 23, 24, 5, 23, 23, 23, 23]', '[1, 4, 7, 6, 90, 87, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100]', 'error']), [1, 2, 3, 6, 10])",
+    "is_like": null,
+    "feedback": null,
+    "dialogue": null,
+    "err_info": null,
+    "traceback_info": null
+}
+2024-06-16 15:06:34,068 - INFO - {
+    "msg_type": "LOGIC_ERROR",
+    "user": null,
+    "prob_input": "输入一个整数列表和整数n(n可以是负数）和正整数m，从该列表中选择第n个元素，把该元素重复m次，然后放到列表的尾端，最后输出列表。如果输入的n值不在列表下标范围之内，则输出\"error\"",
+    "code_input": "a=map(int,input().split(','))\nn,m=map(int,input().split(','))\na=list(a)\nb=[]\nif n-1>=len(a):\n    print(\"error\")\nelif n-1<len(a):\n  while m>0:\n    b.append(a[n])\n    m-=1\n    for i in range(len(b)):\n     a.append(b[i])\nprint(a)\n\n",
+    "prob_id": "2994",
+    "fix_suggestion": "(([[1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0], [1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0], [1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0], [1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0], [1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0]], [0, 0, 0, 0, 0]), array([ 6,  6,  6,  6,  6, 13, 12, 12, 12, 12, 12, 12,  6, 15, 15]), (['[1, 2, 3, 4, 5, 3, 3, 3, 3, 3, 3]', '[5, 7, 9, 0, 12, 8, 0, 0, 12, 0, 12, 0, 0, 12, 0, 0]', '[1, 22, 23, 24, 5, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23]', '[1, 4, 7, 6, 90, 87, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100]', 'error\\n[11, 22, 33, 44, 55]'], ['[1, 2, 3, 4, 5, 3, 3, 3]\\n', '[5, 7, 9, 0, 12, 8, 0, 0, 0, 0]', '[1, 22, 23, 24, 5, 23, 23, 23, 23]', '[1, 4, 7, 6, 90, 87, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100]', 'error']), [1, 2, 3, 4, 5, 13])",
+    "is_like": null,
+    "feedback": null,
+    "dialogue": null,
+    "err_info": null,
+    "traceback_info": null
+}
+2024-06-16 15:09:03,309 - INFO - {
+    "msg_type": "LOGIC_ERROR",
+    "user": null,
+    "prob_input": "输入一个整数列表和整数n(n可以是负数）和正整数m，从该列表中选择第n个元素，把该元素重复m次，然后放到列表的尾端，最后输出列表。如果输入的n值不在列表下标范围之内，则输出\"error\"",
+    "code_input": "a=input().split(',')\nn,m=eval(input())\nif n>=len(a) or n<=-len(a):\n    print('error')\nelse:\n    b=a[n]\n    for i in range(m):\n        a.append(b)\n    print(a)\n\n\n\n\n\n\n\n\n     \n\n    \n\n\n",
+    "prob_id": "2994",
+    "fix_suggestion": "(([[1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]], [0, 0, 0, 0, 1]), array([ 7,  7,  7, 23, 23,  4,  4,  4,  4, 23, 23, 23, 23, 23, 23, 23, 23,\n       23, 23, 23, 23, 23, 23]), ([\"['1', '2', '3', '4', '5', '3', '3', '3']\", \"['5', '7', '9', '0', '12', '8', '0', '0', '0', '0']\", \"['1', '22', '23', '24', '5', '23', '23', '23', '23']\", \"['1', '4', '7', '6', '90', '87', '100', '100', '100', '100', '100', '100', '100', '100', '100', '100', '100']\", 'error'], ['[1, 2, 3, 4, 5, 3, 3, 3]\\n', '[5, 7, 9, 0, 12, 8, 0, 0, 0, 0]', '[1, 22, 23, 24, 5, 23, 23, 23, 23]', '[1, 4, 7, 6, 90, 87, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100]', 'error']), [6, 7, 8, 9])",
+    "is_like": null,
+    "feedback": null,
+    "dialogue": null,
+    "err_info": null,
+    "traceback_info": null
+}
+2024-06-16 15:09:36,894 - INFO - {
+    "msg_type": "COMPILE_ERROR",
+    "user": null,
+    "prob_input": "输入一个整数列表和整数n(n可以是负数）和正整数m，从该列表中选择第n个元素，把该元素重复m次，然后放到列表的尾端，最后输出列表。如果输入的n值不在列表下标范围之内，则输出\"error\"",
+    "code_input": "a=map(int, input().split(','))\nn,m=eval(input())\nif n>=len(a) or n<=-len(a):\n    print('error')\nelse:\n    b=a[n]\n    for i in range(m):\n        a.append(b)\n    print(a)\n\n\n\n\n\n\n\n\n     \n\n    \n\n\n",
+    "prob_id": "2994",
+    "fix_suggestion": "**存在的错误**：\n\n这个错误通常出现在尝试对一个类型对象（type object）使用 len() 函数时。在Python中，len() 函数通常用于获取对象的长度，但是对于类型对象来说，并没有定义长度的概念。例如代码所示，将 len(list) 改为 len(lst)，这样就可以正确计算列表 lst 的长度并打印出平均值了。\n\n\n\n**示例代码：**\n\n```ss\nlst = eval(input())\nprint(\"%.2f\" % (sum(lst) / len(lst)))\n#len() 函数不能直接应用于类型对象（type），因为它期望一个序列或集合类型，而不是一个类型对象。\n",
+    "is_like": null,
+    "feedback": null,
+    "dialogue": null,
+    "err_info": null,
+    "traceback_info": "Traceback (most recent call last):\n  File \"/home/wdy/code_LLM/FL_research/demo.py\", line 99, in respond\n    res = Fl_app.get_res(code_=message, prob_id=prob_id, stu=prob_id) # (y, line_rank, outputs_info, target_lines)\n  File \"/home/wdy/code_LLM/FL_research/implement/techs.py\", line 428, in get_res\n    return self.algorithm.cal(code_=code_, test_case=self.test_cases[prob_id], stu=stu)\n  File \"/home/wdy/code_LLM/FL_research/implement/techs.py\", line 184, in cal\n    super().cal(code_, test_case, stu)  # get self.cov_info: (cov_mat, pass_vec)\n  File \"/home/wdy/code_LLM/FL_research/implement/techs.py\", line 57, in cal\n    self.exce_res = self.get_exec_res(code_, test_case, stu)\n  File \"/home/wdy/code_LLM/FL_research/implement/techs.py\", line 89, in get_exec_res\n    import tmp_code\n  File \"/home/wdy/code_LLM/FL_research/tmp_code.py\", line 3, in <module>\n    if n>=len(a) or n<=-len(a):\nTypeError: object of type 'map' has no len()\n"
+}
+2024-06-16 15:09:54,912 - ERROR - {
+    "msg_type": "EXCEPTION",
+    "user": null,
+    "prob_input": "输入一个整数列表和整数n(n可以是负数）和正整数m，从该列表中选择第n个元素，把该元素重复m次，然后放到列表的尾端，最后输出列表。如果输入的n值不在列表下标范围之内，则输出\"error\"",
+    "code_input": "a=list(map(int, input().split(',')))\nn,m=eval(input())\nif n>=len(a) or n<=-len(a):\n    print('error')\nelse:\n    b=a[n]\n    for i in range(m):\n        a.append(b)\n    print(a)\n\n\n\n\n\n\n\n\n     \n\n    \n\n\n",
+    "prob_id": "2994",
+    "fix_suggestion": null,
+    "is_like": null,
+    "feedback": null,
+    "dialogue": null,
+    "err_info": "NoFailingTestError",
+    "traceback_info": "Traceback (most recent call last):\n  File \"/home/wdy/code_LLM/FL_research/demo.py\", line 99, in respond\n    res = Fl_app.get_res(code_=message, prob_id=prob_id, stu=prob_id) # (y, line_rank, outputs_info, target_lines)\n  File \"/home/wdy/code_LLM/FL_research/implement/techs.py\", line 428, in get_res\n    return self.algorithm.cal(code_=code_, test_case=self.test_cases[prob_id], stu=stu)\n  File \"/home/wdy/code_LLM/FL_research/implement/techs.py\", line 192, in cal\n    sbfl_caler.fit_predict(X, y)\n  File \"/root/miniconda3/envs/chatbot/lib/python3.9/site-packages/sbfl/base.py\", line 67, in fit_predict\n    self.fit(X, y)\n  File \"/root/miniconda3/envs/chatbot/lib/python3.9/site-packages/sbfl/base.py\", line 61, in fit\n    e_p, e_f, n_p, n_f = self.get_spectrum(X, y)\n  File \"/root/miniconda3/envs/chatbot/lib/python3.9/site-packages/sbfl/base.py\", line 47, in get_spectrum\n    X, y = self.validate_input(X, y)\n  File \"/root/miniconda3/envs/chatbot/lib/python3.9/site-packages/sbfl/base.py\", line 34, in validate_input\n    raise NoFailingTestError\nsbfl.base.NoFailingTestError\n"
+}
+2024-06-16 15:11:23,081 - INFO - {
+    "msg_type": "LOGIC_ERROR",
+    "user": null,
+    "prob_input": "输入一个整数列表和整数n(n可以是负数）和正整数m，从该列表中选择第n个元素，把该元素重复m次，然后放到列表的尾端，最后输出列表。如果输入的n值不在列表下标范围之内，则输出\"error\"",
+    "code_input": "a = list(eval(input()))\nn,m = eval(input())\nif n<=len(a)-1:\n    while m:\n        a.append(a[n])\n        m-=1\n    print(a)\nelse:\n    print('error')\n\n",
+    "prob_id": "2994",
+    "fix_suggestion": "(([[1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0], [1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0], [1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0], [1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0], [1, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0]], [1, 0, 1, 1, 1]), array([ 7,  7,  7,  4,  4,  4,  4, 11, 11, 11, 11]), (['[1, 2, 3, 4, 5, 3, 3, 3]', '[5, 7, 9, 0, 12, 8, 0, 12, 8, 0]', '[1, 22, 23, 24, 5, 23, 23, 23, 23]', '[1, 4, 7, 6, 90, 87, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100]', 'error'], ['[1, 2, 3, 4, 5, 3, 3, 3]\\n', '[5, 7, 9, 0, 12, 8, 0, 0, 0, 0]', '[1, 22, 23, 24, 5, 23, 23, 23, 23]', '[1, 4, 7, 6, 90, 87, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100]', 'error']), [4, 5, 6, 7])",
+    "is_like": null,
+    "feedback": null,
+    "dialogue": null,
+    "err_info": null,
+    "traceback_info": null
+}
+2024-06-16 15:14:02,437 - INFO - {
+    "msg_type": "LOGIC_ERROR",
+    "user": null,
+    "prob_input": "输入一个整数列表和整数n(n可以是负数）和正整数m，从该列表中选择第n个元素，把该元素重复m次，然后放到列表的尾端，最后输出列表。如果输入的n值不在列表下标范围之内，则输出\"error\"",
+    "code_input": "ls1=list(eval(input()))\nn,m=eval(input())\nif n>=0 and n<len(ls1):\n    ls2=[ls1[n]]*m\n    ls3=ls1+ls2\n    print(ls3)\nelse:\n    print(\"error\")\n",
+    "prob_id": "2994",
+    "fix_suggestion": "(([[1, 1, 1, 1, 1, 1, 0, 0, 0], [1, 1, 1, 0, 0, 0, 0, 1, 0], [1, 1, 1, 1, 1, 1, 0, 0, 0], [1, 1, 1, 0, 0, 0, 0, 1, 0], [1, 1, 1, 0, 0, 0, 0, 1, 0]], [1, 0, 1, 0, 1]), array([4, 4, 4, 9, 9, 9, 9, 1, 9]), (['[1, 2, 3, 4, 5, 3, 3, 3]', 'error', '[1, 22, 23, 24, 5, 23, 23, 23, 23]', 'error', 'error'], ['[1, 2, 3, 4, 5, 3, 3, 3]\\n', '[5, 7, 9, 0, 12, 8, 0, 0, 0, 0]', '[1, 22, 23, 24, 5, 23, 23, 23, 23]', '[1, 4, 7, 6, 90, 87, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100]', 'error']), [8])",
+    "is_like": null,
+    "feedback": null,
+    "dialogue": null,
+    "err_info": null,
+    "traceback_info": null
+}
+2024-06-16 15:18:29,615 - INFO - {
+    "msg_type": "LOGIC_ERROR",
+    "user": null,
+    "prob_input": "输入一个整数列表和整数n(n可以是负数）和正整数m，从该列表中选择第n个元素，把该元素重复m次，然后放到列表的尾端，最后输出列表。如果输入的n值不在列表下标范围之内，则输出\"error\"",
+    "code_input": "nums = input().split(',')\nn, m = map(int, input().split(','))\nnums=[int(i) for i in nums]\nif abs(n) < len(nums):\n    a=str(nums[n])\n    nums.extend(a * m)\n    nums=[int(i) for i in nums]\n    print(nums)\nelse:\n    print(\"error\")\n\n\n\n\n",
+    "prob_id": "2994",
+    "fix_suggestion": "(([[1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0], [1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0], [1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0], [1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0], [1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0]], [1, 1, 0, 0, 1]), array([ 8,  8,  8,  8,  4,  4,  4,  4, 15, 15, 15, 15, 15, 15, 15]), (['[1, 2, 3, 4, 5, 3, 3, 3]', '[5, 7, 9, 0, 12, 8, 0, 0, 0, 0]', '[1, 22, 23, 24, 5, 2, 3, 2, 3, 2, 3, 2, 3]', '[1, 4, 7, 6, 90, 87, 100, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0]', 'error'], ['[1, 2, 3, 4, 5, 3, 3, 3]\\n', '[5, 7, 9, 0, 12, 8, 0, 0, 0, 0]', '[1, 22, 23, 24, 5, 23, 23, 23, 23]', '[1, 4, 7, 6, 90, 87, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100]', 'error']), [5, 6, 7, 8])",
+    "is_like": null,
+    "feedback": null,
+    "dialogue": null,
+    "err_info": null,
+    "traceback_info": null
+}
+2024-06-16 15:33:06,564 - INFO - {
+    "msg_type": "LOGIC_ERROR",
+    "user": null,
+    "prob_input": "输入一个整数列表和整数n(n可以是负数）和正整数m，从该列表中选择第n个元素，把该元素重复m次，然后放到列表的尾端，最后输出列表。如果输入的n值不在列表下标范围之内，则输出\"error\"",
+    "code_input": "a=list(input().split(\",\"))\nn,m=eval(input())\nb=[]\nif n>=0:\n    if n<len(a):\n        for i in range(m):\n            a.append(a[n])\n        for x in a:\n            x=int(x)\n            b.append(x)\n        print(b)\n\n    else:\n        print(\"error\")\nelse:\n    if (-n)<=len(a):\n        for i in range(m):\n            a.append(a[n])\n        for x in a:\n            x=int(x)\n            b.append(x)\n        print(b)\n    else:\n        print(\"error\")\n",
+    "prob_id": "2994",
+    "fix_suggestion": "(([[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0], [1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]], [1, 0, 1, 1, 1]), array([11, 11, 11, 11, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25,  7,  7,\n        7,  7,  7,  7,  7, 25, 25, 25]), (['[1, 2, 3, 4, 5, 3, 3, 3]', '[5, 7, 9, 0, 12, 8, 0, 12, 8, 0]', '[1, 22, 23, 24, 5, 23, 23, 23, 23]', '[1, 4, 7, 6, 90, 87, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100]', 'error'], ['[1, 2, 3, 4, 5, 3, 3, 3]\\n', '[5, 7, 9, 0, 12, 8, 0, 0, 0, 0]', '[1, 22, 23, 24, 5, 23, 23, 23, 23]', '[1, 4, 7, 6, 90, 87, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100]', 'error']), [16, 17, 18, 19, 20, 21, 22])",
+    "is_like": null,
+    "feedback": null,
+    "dialogue": null,
+    "err_info": null,
+    "traceback_info": null
+}
+2024-06-16 15:41:09,296 - INFO - {
+    "msg_type": "LOGIC_ERROR",
+    "user": null,
+    "prob_input": "输入一个整数列表和整数n(n可以是负数）和正整数m，从该列表中选择第n个元素，把该元素重复m次，然后放到列表的尾端，最后输出列表。如果输入的n值不在列表下标范围之内，则输出\"error\"",
+    "code_input": "list=input()\nlist1=list.split(\",\")\nn,m=eval(input())\na=len(list)\nif -a-1<n<a:\n    c=list[n]\n    d=[c]*m\n    list2=list1+d\n    print(list2)\nelse:\n    print('error')\n",
+    "prob_id": "2994",
+    "fix_suggestion": "(([[1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0], [1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0], [1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0], [1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0], [1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0]], [0, 0, 0, 0, 0]), array([ 9,  9,  9,  9,  9,  9,  9,  9,  9, 12, 12, 12]), ([\"['1', '2', '3', '4', '5', '2', '2', '2']\", \"['5', '7', '9', '0', '12', '8', '2', '2', '2', '2']\", \"['1', '22', '23', '24', '5', '2', '2', '2', '2']\", \"['1', '4', '7', '6', '90', '87', '100', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0']\", \"['11', '22', '33', '44', '55', '3', '3', '3', '3']\"], ['[1, 2, 3, 4, 5, 3, 3, 3]\\n', '[5, 7, 9, 0, 12, 8, 0, 0, 0, 0]', '[1, 22, 23, 24, 5, 23, 23, 23, 23]', '[1, 4, 7, 6, 90, 87, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100]', 'error']), [1, 2, 3, 4, 5, 6, 7, 8, 9])",
+    "is_like": null,
+    "feedback": null,
+    "dialogue": null,
+    "err_info": null,
+    "traceback_info": null
+}
+2024-06-16 15:48:30,623 - INFO - {
+    "msg_type": "LOGIC_ERROR",
+    "user": null,
+    "prob_input": "输入一个整数列表和整数n(n可以是负数）和正整数m，从该列表中选择第n个元素，把该元素重复m次，然后放到列表的尾端，最后输出列表。如果输入的n值不在列表下标范围之内，则输出\"error\"",
+    "code_input": "a = input().split(',')\nc,b = eval(input())\n# try:\ncopy = a[c:c+1]\nif c>len(a)-1 or c<-len(a):\n    print('error')\nelif c==len(a)-1:\n    copy = a[c:]\n    for k in range(b):\n        a.extend(copy)\n    for i in range(len(a)):\n        a[i] = int(a[i])\n    print(a)\nelse:\n    copy = a[c:c + 1]\n    for k in range(b):\n        a.extend(copy)\n    for i in range(len(a)):\n        a[i] = int(a[i])\n    print(a)\n",
+    "prob_id": "2994",
+    "fix_suggestion": "(([[1, 1, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0], [1, 1, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0], [1, 1, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0], [1, 1, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0], [1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]], [1, 1, 1, 0, 1]), array([11, 11, 21, 11, 11, 21,  7, 21, 21, 21, 21, 21, 21, 21,  7,  7,  7,\n        7,  7,  7, 21]), (['[1, 2, 3, 4, 5, 3, 3, 3]', '[5, 7, 9, 0, 12, 8, 0, 0, 0, 0]', '[1, 22, 23, 24, 5, 23, 23, 23, 23]', '[1, 4, 7, 6, 90, 87, 100]', 'error'], ['[1, 2, 3, 4, 5, 3, 3, 3]\\n', '[5, 7, 9, 0, 12, 8, 0, 0, 0, 0]', '[1, 22, 23, 24, 5, 23, 23, 23, 23]', '[1, 4, 7, 6, 90, 87, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100]', 'error']), [7, 15, 16, 17, 18, 19, 20])",
+    "is_like": null,
+    "feedback": null,
+    "dialogue": null,
+    "err_info": null,
+    "traceback_info": null
+}
+2024-06-16 17:26:25,383 - INFO - {
+    "msg_type": "LOGIC_ERROR",
+    "user": null,
+    "prob_input": "输入一个整数列表和整数n(n可以是负数）和正整数m，从该列表中选择第n个元素，把该元素重复m次，然后放到列表的尾端，最后输出列表。如果输入的n值不在列表下标范围之内，则输出\"error\"",
+    "code_input": "ls = list(eval(input()))\nn,m = eval(input())\nls1 = []\nif -len(ls) <= n <= len(ls)-1:\n    for x in range(m):\n        ls.append(ls[n])\n    ls = ls + ls1\n    print(ls)\nelse:\n    print(\"error\")\n",
+    "prob_id": "2994",
+    "fix_suggestion": "(([[1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0], [1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0], [1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0], [1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0], [1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 0]], [1, 0, 1, 1, 1]), array([ 8,  8,  8,  8,  4,  4,  4,  4, 11, 11, 11]), (['[1, 2, 3, 4, 5, 3, 3, 3]', '[5, 7, 9, 0, 12, 8, 0, 12, 8, 0]', '[1, 22, 23, 24, 5, 23, 23, 23, 23]', '[1, 4, 7, 6, 90, 87, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100]', 'error'], ['[1, 2, 3, 4, 5, 3, 3, 3]\\n', '[5, 7, 9, 0, 12, 8, 0, 0, 0, 0]', '[1, 22, 23, 24, 5, 23, 23, 23, 23]', '[1, 4, 7, 6, 90, 87, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100]', 'error']), [5, 6, 7, 8])",
+    "is_like": null,
+    "feedback": null,
+    "dialogue": null,
+    "err_info": null,
+    "traceback_info": null
+}
+2024-06-16 17:55:09,763 - ERROR - {
+    "msg_type": "EXCEPTION",
+    "user": "No user logged in with this username",
+    "prob_input": "统计字符串列表中每个字母出现的次数。 编写程序，读入一个仅包含字符串对象的列表，然后统计该列表中每个字母出现的次数。 列表中的字符串对象仅包含小写英文字母。",
+    "code_input": "a = eval(input())\nb = {}\nc = list(\"\".join(a))\nc.sort()\nfor i in c:\n    b[i] = c.count(i)\nfor m,n in b.items():\n    print(\"{},{} \".format(m,n))\n\n",
+    "prob_id": "3108",
+    "fix_suggestion": null,
+    "is_like": null,
+    "feedback": null,
+    "dialogue": null,
+    "err_info": "FaultLocalizationError: Fault localization failed",
+    "traceback_info": "Traceback (most recent call last):\n  File \"/home/wdy/code_LLM/FL_research/demo.py\", line 99, in respond\n    res = Fl_app.get_res(code_=message, prob_id=prob_id, stu=prob_id) # (y, line_rank, outputs_info, target_lines)\n  File \"/home/wdy/code_LLM/FL_research/implement/techs.py\", line 428, in get_res\n    return self.algorithm.cal(code_=code_, test_case=self.test_cases[prob_id], stu=stu)\n  File \"/home/wdy/code_LLM/FL_research/implement/techs.py\", line 201, in cal\n    raise FaultLocalizationError(target_lines, self.total_code_line)\nimplement.exceptions.FaultLocalizationError: FaultLocalizationError: Fault localization failed\n",
+    "target_lines": "[1, 2, 3, 4, 5, 6, 7, 8]",
+    "total_code_line: ": "8"
+}
+2024-06-16 17:55:17,193 - ERROR - {
+    "msg_type": "EXCEPTION",
+    "user": "No user logged in with this username",
+    "prob_input": "统计字符串列表中每个字母出现的次数。 编写程序，读入一个仅包含字符串对象的列表，然后统计该列表中每个字母出现的次数。 列表中的字符串对象仅包含小写英文字母。",
+    "code_input": "a = eval(input())\nb = {}\nc = list(\"\".join(a))\nc.sort()\nfor i in c:\n    b[i] = c.count(i)\nfor m,n in b.items():\n    print(\"{},{} \".format(m,n))\n\n",
+    "prob_id": "3108",
+    "fix_suggestion": null,
+    "is_like": null,
+    "feedback": null,
+    "dialogue": null,
+    "err_info": "MutationFailedError: 可能原因：1）变异体文件全部构造失败；2）变异体全部变编译不通过；3）变异体规则生成失败。",
+    "traceback_info": "Traceback (most recent call last):\n  File \"/home/wdy/code_LLM/FL_research/demo.py\", line 99, in respond\n    res = Fl_app.get_res(code_=message, prob_id=prob_id, stu=prob_id) # (y, line_rank, outputs_info, target_lines)\n  File \"/home/wdy/code_LLM/FL_research/implement/techs.py\", line 428, in get_res\n    return self.algorithm.cal(code_=code_, test_case=self.test_cases[prob_id], stu=stu)\n  File \"/home/wdy/code_LLM/FL_research/implement/techs.py\", line 308, in cal\n    raise MutationFailedError\nimplement.exceptions.MutationFailedError: MutationFailedError: 可能原因：1）变异体文件全部构造失败；2）变异体全部变编译不通过；3）变异体规则生成失败。\n"
+}
+2024-06-16 17:55:27,684 - ERROR - {
+    "msg_type": "EXCEPTION",
+    "user": "No user logged in with this username",
+    "prob_input": "统计字符串列表中每个字母出现的次数。 编写程序，读入一个仅包含字符串对象的列表，然后统计该列表中每个字母出现的次数。 列表中的字符串对象仅包含小写英文字母。",
+    "code_input": "a = eval(input())\nb = {}\nc = list(\"\".join(a))\nc.sort()\nfor i in c:\n    b[i] = c.count(i)\nfor m,n in b.items():\n    print(\"{},{} \".format(m,n))\n\n",
+    "prob_id": "3108",
+    "fix_suggestion": null,
+    "is_like": null,
+    "feedback": null,
+    "dialogue": null,
+    "err_info": "FaultLocalizationError: Fault localization failed",
+    "traceback_info": "Traceback (most recent call last):\n  File \"/home/wdy/code_LLM/FL_research/demo.py\", line 99, in respond\n    res = Fl_app.get_res(code_=message, prob_id=prob_id, stu=prob_id) # (y, line_rank, outputs_info, target_lines)\n  File \"/home/wdy/code_LLM/FL_research/implement/techs.py\", line 428, in get_res\n    return self.algorithm.cal(code_=code_, test_case=self.test_cases[prob_id], stu=stu)\n  File \"/home/wdy/code_LLM/FL_research/implement/techs.py\", line 201, in cal\n    raise FaultLocalizationError(target_lines, self.total_code_line)\nimplement.exceptions.FaultLocalizationError: FaultLocalizationError: Fault localization failed\n",
+    "target_lines": "[1, 2, 3, 4, 5, 6, 7, 8]",
+    "total_code_line: ": "8"
+}
+2024-06-16 18:01:26,973 - ERROR - {
+    "msg_type": "EXCEPTION",
+    "user": "No user logged in with this username",
+    "prob_input": "统计字符串列表中每个字母出现的次数。 编写程序，读入一个仅包含字符串对象的列表，然后统计该列表中每个字母出现的次数。 列表中的字符串对象仅包含小写英文字母。",
+    "code_input": "a = eval(input())\nb = {}\nc = list(\"\".join(a))\nc.sort()\nfor i in c:\n    b[i] = c.count(i)\nfor m,n in b.items():\n    print(\"{},{} \".format(m,n))\n\n",
+    "prob_id": "3108",
+    "fix_suggestion": null,
+    "is_like": null,
+    "feedback": null,
+    "dialogue": null,
+    "err_info": "FaultLocalizationError: Fault localization failed",
+    "traceback_info": "Traceback (most recent call last):\n  File \"/home/wdy/code_LLM/FL_research/demo.py\", line 99, in respond\n    res = Fl_app.get_res(code_=message, prob_id=prob_id, stu=prob_id) # (y, line_rank, outputs_info, target_lines)\n  File \"/home/wdy/code_LLM/FL_research/implement/techs.py\", line 428, in get_res\n    return self.algorithm.cal(code_=code_, test_case=self.test_cases[prob_id], stu=stu)\n  File \"/home/wdy/code_LLM/FL_research/implement/techs.py\", line 201, in cal\n    raise FaultLocalizationError(target_lines, self.total_code_line)\nimplement.exceptions.FaultLocalizationError: FaultLocalizationError: Fault localization failed\n",
+    "target_lines": "[1, 2, 3, 4, 5, 6, 7, 8]",
+    "total_code_line: ": "8"
+}
+2024-06-16 18:01:27,566 - ERROR - {
+    "msg_type": "EXCEPTION",
+    "user": "No user logged in with this username",
+    "prob_input": "统计字符串列表中每个字母出现的次数。 编写程序，读入一个仅包含字符串对象的列表，然后统计该列表中每个字母出现的次数。 列表中的字符串对象仅包含小写英文字母。",
+    "code_input": "a = eval(input())\nb = {}\nc = list(\"\".join(a))\nc.sort()\nfor i in c:\n    b[i] = c.count(i)\nfor m,n in b.items():\n    print(\"{},{} \".format(m,n))\n\n",
+    "prob_id": "3108",
+    "fix_suggestion": null,
+    "is_like": null,
+    "feedback": null,
+    "dialogue": null,
+    "err_info": "FaultLocalizationError: Fault localization failed",
+    "traceback_info": "Traceback (most recent call last):\n  File \"/home/wdy/code_LLM/FL_research/demo.py\", line 99, in respond\n    res = Fl_app.get_res(code_=message, prob_id=prob_id, stu=prob_id) # (y, line_rank, outputs_info, target_lines)\n  File \"/home/wdy/code_LLM/FL_research/implement/techs.py\", line 428, in get_res\n    return self.algorithm.cal(code_=code_, test_case=self.test_cases[prob_id], stu=stu)\n  File \"/home/wdy/code_LLM/FL_research/implement/techs.py\", line 201, in cal\n    raise FaultLocalizationError(target_lines, self.total_code_line)\nimplement.exceptions.FaultLocalizationError: FaultLocalizationError: Fault localization failed\n",
+    "target_lines": "[1, 2, 3, 4, 5, 6, 7, 8]",
+    "total_code_line: ": "8"
+}
+2024-06-16 18:01:27,973 - ERROR - {
+    "msg_type": "EXCEPTION",
+    "user": "No user logged in with this username",
+    "prob_input": "统计字符串列表中每个字母出现的次数。 编写程序，读入一个仅包含字符串对象的列表，然后统计该列表中每个字母出现的次数。 列表中的字符串对象仅包含小写英文字母。",
+    "code_input": "a = eval(input())\nb = {}\nc = list(\"\".join(a))\nc.sort()\nfor i in c:\n    b[i] = c.count(i)\nfor m,n in b.items():\n    print(\"{},{} \".format(m,n))\n\n",
+    "prob_id": "3108",
+    "fix_suggestion": null,
+    "is_like": null,
+    "feedback": null,
+    "dialogue": null,
+    "err_info": "FaultLocalizationError: Fault localization failed",
+    "traceback_info": "Traceback (most recent call last):\n  File \"/home/wdy/code_LLM/FL_research/demo.py\", line 99, in respond\n    res = Fl_app.get_res(code_=message, prob_id=prob_id, stu=prob_id) # (y, line_rank, outputs_info, target_lines)\n  File \"/home/wdy/code_LLM/FL_research/implement/techs.py\", line 428, in get_res\n    return self.algorithm.cal(code_=code_, test_case=self.test_cases[prob_id], stu=stu)\n  File \"/home/wdy/code_LLM/FL_research/implement/techs.py\", line 201, in cal\n    raise FaultLocalizationError(target_lines, self.total_code_line)\nimplement.exceptions.FaultLocalizationError: FaultLocalizationError: Fault localization failed\n",
+    "target_lines": "[1, 2, 3, 4, 5, 6, 7, 8]",
+    "total_code_line: ": "8"
+}
+2024-06-16 18:01:29,023 - ERROR - {
+    "msg_type": "EXCEPTION",
+    "user": "No user logged in with this username",
+    "prob_input": "统计字符串列表中每个字母出现的次数。 编写程序，读入一个仅包含字符串对象的列表，然后统计该列表中每个字母出现的次数。 列表中的字符串对象仅包含小写英文字母。",
+    "code_input": "a = eval(input())\nb = {}\nc = list(\"\".join(a))\nc.sort()\nfor i in c:\n    b[i] = c.count(i)\nfor m,n in b.items():\n    print(\"{},{} \".format(m,n))\n\n",
+    "prob_id": "3108",
+    "fix_suggestion": null,
+    "is_like": null,
+    "feedback": null,
+    "dialogue": null,
+    "err_info": "FaultLocalizationError: Fault localization failed",
+    "traceback_info": "Traceback (most recent call last):\n  File \"/home/wdy/code_LLM/FL_research/demo.py\", line 99, in respond\n    res = Fl_app.get_res(code_=message, prob_id=prob_id, stu=prob_id) # (y, line_rank, outputs_info, target_lines)\n  File \"/home/wdy/code_LLM/FL_research/implement/techs.py\", line 428, in get_res\n    return self.algorithm.cal(code_=code_, test_case=self.test_cases[prob_id], stu=stu)\n  File \"/home/wdy/code_LLM/FL_research/implement/techs.py\", line 201, in cal\n    raise FaultLocalizationError(target_lines, self.total_code_line)\nimplement.exceptions.FaultLocalizationError: FaultLocalizationError: Fault localization failed\n",
+    "target_lines": "[1, 2, 3, 4, 5, 6, 7, 8]",
+    "total_code_line: ": "8"
+}
+2024-06-16 18:01:29,477 - ERROR - {
+    "msg_type": "EXCEPTION",
+    "user": "No user logged in with this username",
+    "prob_input": "统计字符串列表中每个字母出现的次数。 编写程序，读入一个仅包含字符串对象的列表，然后统计该列表中每个字母出现的次数。 列表中的字符串对象仅包含小写英文字母。",
+    "code_input": "a = eval(input())\nb = {}\nc = list(\"\".join(a))\nc.sort()\nfor i in c:\n    b[i] = c.count(i)\nfor m,n in b.items():\n    print(\"{},{} \".format(m,n))\n\n",
+    "prob_id": "3108",
+    "fix_suggestion": null,
+    "is_like": null,
+    "feedback": null,
+    "dialogue": null,
+    "err_info": "FaultLocalizationError: Fault localization failed",
+    "traceback_info": "Traceback (most recent call last):\n  File \"/home/wdy/code_LLM/FL_research/demo.py\", line 99, in respond\n    res = Fl_app.get_res(code_=message, prob_id=prob_id, stu=prob_id) # (y, line_rank, outputs_info, target_lines)\n  File \"/home/wdy/code_LLM/FL_research/implement/techs.py\", line 428, in get_res\n    return self.algorithm.cal(code_=code_, test_case=self.test_cases[prob_id], stu=stu)\n  File \"/home/wdy/code_LLM/FL_research/implement/techs.py\", line 201, in cal\n    raise FaultLocalizationError(target_lines, self.total_code_line)\nimplement.exceptions.FaultLocalizationError: FaultLocalizationError: Fault localization failed\n",
+    "target_lines": "[1, 2, 3, 4, 5, 6, 7, 8]",
+    "total_code_line: ": "8"
+}
+2024-06-16 18:01:29,727 - ERROR - {
+    "msg_type": "EXCEPTION",
+    "user": "No user logged in with this username",
+    "prob_input": "统计字符串列表中每个字母出现的次数。 编写程序，读入一个仅包含字符串对象的列表，然后统计该列表中每个字母出现的次数。 列表中的字符串对象仅包含小写英文字母。",
+    "code_input": "a = eval(input())\nb = {}\nc = list(\"\".join(a))\nc.sort()\nfor i in c:\n    b[i] = c.count(i)\nfor m,n in b.items():\n    print(\"{},{} \".format(m,n))\n\n",
+    "prob_id": "3108",
+    "fix_suggestion": null,
+    "is_like": null,
+    "feedback": null,
+    "dialogue": null,
+    "err_info": "FaultLocalizationError: Fault localization failed",
+    "traceback_info": "Traceback (most recent call last):\n  File \"/home/wdy/code_LLM/FL_research/demo.py\", line 99, in respond\n    res = Fl_app.get_res(code_=message, prob_id=prob_id, stu=prob_id) # (y, line_rank, outputs_info, target_lines)\n  File \"/home/wdy/code_LLM/FL_research/implement/techs.py\", line 428, in get_res\n    return self.algorithm.cal(code_=code_, test_case=self.test_cases[prob_id], stu=stu)\n  File \"/home/wdy/code_LLM/FL_research/implement/techs.py\", line 201, in cal\n    raise FaultLocalizationError(target_lines, self.total_code_line)\nimplement.exceptions.FaultLocalizationError: FaultLocalizationError: Fault localization failed\n",
+    "target_lines": "[1, 2, 3, 4, 5, 6, 7, 8]",
+    "total_code_line: ": "8"
+}
+2024-06-16 18:01:29,931 - ERROR - {
+    "msg_type": "EXCEPTION",
+    "user": "No user logged in with this username",
+    "prob_input": "统计字符串列表中每个字母出现的次数。 编写程序，读入一个仅包含字符串对象的列表，然后统计该列表中每个字母出现的次数。 列表中的字符串对象仅包含小写英文字母。",
+    "code_input": "a = eval(input())\nb = {}\nc = list(\"\".join(a))\nc.sort()\nfor i in c:\n    b[i] = c.count(i)\nfor m,n in b.items():\n    print(\"{},{} \".format(m,n))\n\n",
+    "prob_id": "3108",
+    "fix_suggestion": null,
+    "is_like": null,
+    "feedback": null,
+    "dialogue": null,
+    "err_info": "FaultLocalizationError: Fault localization failed",
+    "traceback_info": "Traceback (most recent call last):\n  File \"/home/wdy/code_LLM/FL_research/demo.py\", line 99, in respond\n    res = Fl_app.get_res(code_=message, prob_id=prob_id, stu=prob_id) # (y, line_rank, outputs_info, target_lines)\n  File \"/home/wdy/code_LLM/FL_research/implement/techs.py\", line 428, in get_res\n    return self.algorithm.cal(code_=code_, test_case=self.test_cases[prob_id], stu=stu)\n  File \"/home/wdy/code_LLM/FL_research/implement/techs.py\", line 201, in cal\n    raise FaultLocalizationError(target_lines, self.total_code_line)\nimplement.exceptions.FaultLocalizationError: FaultLocalizationError: Fault localization failed\n",
+    "target_lines": "[1, 2, 3, 4, 5, 6, 7, 8]",
+    "total_code_line: ": "8"
+}
+2024-06-16 18:01:30,076 - ERROR - {
+    "msg_type": "EXCEPTION",
+    "user": "No user logged in with this username",
+    "prob_input": "统计字符串列表中每个字母出现的次数。 编写程序，读入一个仅包含字符串对象的列表，然后统计该列表中每个字母出现的次数。 列表中的字符串对象仅包含小写英文字母。",
+    "code_input": "a = eval(input())\nb = {}\nc = list(\"\".join(a))\nc.sort()\nfor i in c:\n    b[i] = c.count(i)\nfor m,n in b.items():\n    print(\"{},{} \".format(m,n))\n\n",
+    "prob_id": "3108",
+    "fix_suggestion": null,
+    "is_like": null,
+    "feedback": null,
+    "dialogue": null,
+    "err_info": "FaultLocalizationError: Fault localization failed",
+    "traceback_info": "Traceback (most recent call last):\n  File \"/home/wdy/code_LLM/FL_research/demo.py\", line 99, in respond\n    res = Fl_app.get_res(code_=message, prob_id=prob_id, stu=prob_id) # (y, line_rank, outputs_info, target_lines)\n  File \"/home/wdy/code_LLM/FL_research/implement/techs.py\", line 428, in get_res\n    return self.algorithm.cal(code_=code_, test_case=self.test_cases[prob_id], stu=stu)\n  File \"/home/wdy/code_LLM/FL_research/implement/techs.py\", line 201, in cal\n    raise FaultLocalizationError(target_lines, self.total_code_line)\nimplement.exceptions.FaultLocalizationError: FaultLocalizationError: Fault localization failed\n",
+    "target_lines": "[1, 2, 3, 4, 5, 6, 7, 8]",
+    "total_code_line: ": "8"
+}
+2024-06-16 18:01:30,330 - ERROR - {
+    "msg_type": "EXCEPTION",
+    "user": "No user logged in with this username",
+    "prob_input": "统计字符串列表中每个字母出现的次数。 编写程序，读入一个仅包含字符串对象的列表，然后统计该列表中每个字母出现的次数。 列表中的字符串对象仅包含小写英文字母。",
+    "code_input": "a = eval(input())\nb = {}\nc = list(\"\".join(a))\nc.sort()\nfor i in c:\n    b[i] = c.count(i)\nfor m,n in b.items():\n    print(\"{},{} \".format(m,n))\n\n",
+    "prob_id": "3108",
+    "fix_suggestion": null,
+    "is_like": null,
+    "feedback": null,
+    "dialogue": null,
+    "err_info": "FaultLocalizationError: Fault localization failed",
+    "traceback_info": "Traceback (most recent call last):\n  File \"/home/wdy/code_LLM/FL_research/demo.py\", line 99, in respond\n    res = Fl_app.get_res(code_=message, prob_id=prob_id, stu=prob_id) # (y, line_rank, outputs_info, target_lines)\n  File \"/home/wdy/code_LLM/FL_research/implement/techs.py\", line 428, in get_res\n    return self.algorithm.cal(code_=code_, test_case=self.test_cases[prob_id], stu=stu)\n  File \"/home/wdy/code_LLM/FL_research/implement/techs.py\", line 201, in cal\n    raise FaultLocalizationError(target_lines, self.total_code_line)\nimplement.exceptions.FaultLocalizationError: FaultLocalizationError: Fault localization failed\n",
+    "target_lines": "[1, 2, 3, 4, 5, 6, 7, 8]",
+    "total_code_line: ": "8"
+}
+2024-06-16 18:01:30,588 - ERROR - {
+    "msg_type": "EXCEPTION",
+    "user": "No user logged in with this username",
+    "prob_input": "统计字符串列表中每个字母出现的次数。 编写程序，读入一个仅包含字符串对象的列表，然后统计该列表中每个字母出现的次数。 列表中的字符串对象仅包含小写英文字母。",
+    "code_input": "a = eval(input())\nb = {}\nc = list(\"\".join(a))\nc.sort()\nfor i in c:\n    b[i] = c.count(i)\nfor m,n in b.items():\n    print(\"{},{} \".format(m,n))\n\n",
+    "prob_id": "3108",
+    "fix_suggestion": null,
+    "is_like": null,
+    "feedback": null,
+    "dialogue": null,
+    "err_info": "FaultLocalizationError: Fault localization failed",
+    "traceback_info": "Traceback (most recent call last):\n  File \"/home/wdy/code_LLM/FL_research/demo.py\", line 99, in respond\n    res = Fl_app.get_res(code_=message, prob_id=prob_id, stu=prob_id) # (y, line_rank, outputs_info, target_lines)\n  File \"/home/wdy/code_LLM/FL_research/implement/techs.py\", line 428, in get_res\n    return self.algorithm.cal(code_=code_, test_case=self.test_cases[prob_id], stu=stu)\n  File \"/home/wdy/code_LLM/FL_research/implement/techs.py\", line 201, in cal\n    raise FaultLocalizationError(target_lines, self.total_code_line)\nimplement.exceptions.FaultLocalizationError: FaultLocalizationError: Fault localization failed\n",
+    "target_lines": "[1, 2, 3, 4, 5, 6, 7, 8]",
+    "total_code_line: ": "8"
+}
+2024-06-16 18:01:34,833 - ERROR - {
+    "msg_type": "EXCEPTION",
+    "user": "No user logged in with this username",
+    "prob_input": "统计字符串列表中每个字母出现的次数。 编写程序，读入一个仅包含字符串对象的列表，然后统计该列表中每个字母出现的次数。 列表中的字符串对象仅包含小写英文字母。",
+    "code_input": "a = eval(input())\nb = {}\nc = list(\"\".join(a))\nc.sort()\nfor i in c:\n    b[i] = c.count(i)\nfor m,n in b.items():\n    print(\"{},{} \".format(m,n))\n\n",
+    "prob_id": "3108",
+    "fix_suggestion": null,
+    "is_like": null,
+    "feedback": null,
+    "dialogue": null,
+    "err_info": "MutationFailedError: 可能原因：1）变异体文件全部构造失败；2）变异体全部变编译不通过；3）变异体规则生成失败。",
+    "traceback_info": "Traceback (most recent call last):\n  File \"/home/wdy/code_LLM/FL_research/demo.py\", line 99, in respond\n    res = Fl_app.get_res(code_=message, prob_id=prob_id, stu=prob_id) # (y, line_rank, outputs_info, target_lines)\n  File \"/home/wdy/code_LLM/FL_research/implement/techs.py\", line 428, in get_res\n    return self.algorithm.cal(code_=code_, test_case=self.test_cases[prob_id], stu=stu)\n  File \"/home/wdy/code_LLM/FL_research/implement/techs.py\", line 308, in cal\n    raise MutationFailedError\nimplement.exceptions.MutationFailedError: MutationFailedError: 可能原因：1）变异体文件全部构造失败；2）变异体全部变编译不通过；3）变异体规则生成失败。\n"
+}
+2024-06-16 18:01:39,831 - ERROR - {
+    "msg_type": "EXCEPTION",
+    "user": "No user logged in with this username",
+    "prob_input": "统计字符串列表中每个字母出现的次数。 编写程序，读入一个仅包含字符串对象的列表，然后统计该列表中每个字母出现的次数。 列表中的字符串对象仅包含小写英文字母。",
+    "code_input": "a = eval(input())\nb = {}\nc = list(\"\".join(a))\nc.sort()\nfor i in c:\n    b[i] = c.count(i)\nfor m,n in b.items():\n    print(\"{},{} \".format(m,n))\n\n",
+    "prob_id": "3108",
+    "fix_suggestion": null,
+    "is_like": null,
+    "feedback": null,
+    "dialogue": null,
+    "err_info": "FaultLocalizationError: Fault localization failed",
+    "traceback_info": "Traceback (most recent call last):\n  File \"/home/wdy/code_LLM/FL_research/demo.py\", line 99, in respond\n    res = Fl_app.get_res(code_=message, prob_id=prob_id, stu=prob_id) # (y, line_rank, outputs_info, target_lines)\n  File \"/home/wdy/code_LLM/FL_research/implement/techs.py\", line 428, in get_res\n    return self.algorithm.cal(code_=code_, test_case=self.test_cases[prob_id], stu=stu)\n  File \"/home/wdy/code_LLM/FL_research/implement/techs.py\", line 201, in cal\n    raise FaultLocalizationError(target_lines, self.total_code_line)\nimplement.exceptions.FaultLocalizationError: FaultLocalizationError: Fault localization failed\n",
+    "target_lines": "[1, 2, 3, 4, 5, 6, 7, 8]",
+    "total_code_line: ": "8"
+}
+2024-06-16 18:10:49,019 - ERROR - {
+    "msg_type": "EXCEPTION",
+    "user": "No user logged in with this username",
+    "prob_input": "统计字符串列表中每个字母出现的次数。 编写程序，读入一个仅包含字符串对象的列表，然后统计该列表中每个字母出现的次数。 列表中的字符串对象仅包含小写英文字母。",
+    "code_input": "a = eval(input())\nb = {}\nc = list(\"\".join(a))\nc.sort()\nfor i in c:\n    b[i] = c.count(i)\nfor m,n in b.items():\n    print(\"{},{} \".format(m,n))\n\n",
+    "prob_id": "3108",
+    "fix_suggestion": null,
+    "is_like": null,
+    "feedback": null,
+    "dialogue": null,
+    "err_info": "MutationFailedError: 可能原因：1）变异体文件全部构造失败；2）变异体全部变编译不通过；3）变异体规则生成失败。",
+    "traceback_info": "Traceback (most recent call last):\n  File \"/home/wdy/code_LLM/FL_research/demo.py\", line 99, in respond\n    res = Fl_app.get_res(code_=message, prob_id=prob_id, stu=prob_id) # (y, line_rank, outputs_info, target_lines)\n  File \"/home/wdy/code_LLM/FL_research/implement/techs.py\", line 428, in get_res\n  File \"/home/wdy/code_LLM/FL_research/implement/techs.py\", line 308, in cal\n    # out_dic为空，变异体全部编译错误或变异体都生成失败\nimplement.exceptions.MutationFailedError: MutationFailedError: 可能原因：1）变异体文件全部构造失败；2）变异体全部变编译不通过；3）变异体规则生成失败。\n"
+}

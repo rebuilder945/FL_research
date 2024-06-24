@@ -1,6 +1,0 @@
-mannumber=int(input())
-womannumber=int(input())
-manper=float(mannumber/(mannumber+womannumber)*100)
-womanper=float(womannumber/(mannumber+womannumber)*100)
-sText="The male students ratio is %.2f%%,the female students ratio is %.2f%%"%(manper,womanper)
-print(sText)

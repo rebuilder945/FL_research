@@ -1,5 +1,0 @@
-b=int(input())
-g=int(input())
-bratio=b/(b+g)
-gratio=g/(b+g)
-print("The male students ratio is",'{:.2%}'.format(bratio),",the female students ratio is",'{:.2%}'.format(gratio))

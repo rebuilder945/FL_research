@@ -1,5 +1,0 @@
-fname=input()
-acceleration=float(input())
-speed=float(input())
-length=round(speed*speed/(2*acceleration) , 2)
-print("The acceleration of", fname, "is ", acceleration, ", the take-off speed is",speed,",and the shortest take-off runway length is",length,"M.") 

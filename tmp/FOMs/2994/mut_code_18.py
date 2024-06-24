@@ -1,8 +1,21 @@
-list1 = list(eval(input()))
-n,m = eval(input())
-if n > len(list1)-1 or n <= -len(list1):
-    print("error")
+liebiao = eval(input())
+liebiao = list(liebiao)
+xiabiao,cishu = eval(input())
+changdu = len(liebiao)
+if xiabiao >= 0: 
+    if xiabiao <= changdu:
+        print("error")
+    else:
+        shu = liebiao[xiabiao-1]
+        for i in range(0,cishu):
+            liebiao.append(shu)
+        print(liebiao)   
 else:
-    list2 = [int(n*i/i) for i in range(1,m+1)]
-    list3 = list1 + list2
-    print(list3)
+    if -xiabiao>changdu:
+        print("error")
+    else:
+        shu = liebiao[xiabiao+1]
+        for i in range(0,cishu):
+            liebiao.append(shu)
+        print(liebiao)
+

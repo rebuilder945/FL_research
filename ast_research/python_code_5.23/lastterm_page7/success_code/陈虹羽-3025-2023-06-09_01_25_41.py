@@ -1,2 +1,0 @@
-a=print(input().split())
-

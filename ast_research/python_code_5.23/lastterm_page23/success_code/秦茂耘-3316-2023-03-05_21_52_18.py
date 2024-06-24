@@ -1,5 +1,0 @@
-male=eval(input())
-female=eval(input())
-a=male/(male+female)
-b=female/(male+female)
-print("The male students ratio is",'{:.2%}'.format(a),",the female students ratio is",'{:.2%}'.format(b))

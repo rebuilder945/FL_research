@@ -1,5 +1,0 @@
-flower=eval(input())
-flower.sort(reverse=True)
-amflower=''.join(map(str,flower))
-youflower=int(amflower)
-print(youflower)

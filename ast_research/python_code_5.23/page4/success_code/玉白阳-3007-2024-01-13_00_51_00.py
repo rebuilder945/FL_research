@@ -1,9 +1,0 @@
-list=eval(input())
-a=input().split(",")
-n=int(a[0])
-m=int(a[1])
-if n<0 or m>=len(list) or n>=len(list):
-    print("error")
-else:
-    del list[n:m]
-    print(list)
